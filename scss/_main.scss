@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+button,
+input,
+textarea,
+select {
+    background: none;
+    border: none;
+    outline: none;
+    display: block;
+    resize: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
