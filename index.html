@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="scss/homepage/index.css">
 </head>
 
@@ -16,6 +17,8 @@
                 <div class="navbar__ads">
                     <img src="images/navbarAds.png" alt="" class="navbar__ads_img">
                 </div>
+            </div>
+            <div class="wrapper">
                 <div class="navbar__container">
                     <div class="navbar__menu">
                         <button type="button" class="navbar__menu_btn" onclick="toggleActive('burger')">
@@ -70,18 +73,21 @@
                                         <li><a href="" class="burger__menu_list_link">Կապ Մեզ Հետ</a></li>
                                     </ul>
                                     <div class="burger__menu_lang">
-                                        <button type="button" class="burger__menu_lang_btn" onclick="toggleActive('menuLang')">
+                                        <button type="button" class="burger__menu_lang_btn"
+                                            onclick="toggleActive('menuLang')">
                                             <img src="images/flag.png" alt="" class="burger__menu_lang_btn_flag">
                                             <span class="burger__menu_lang_btn_txt">Հայ</span>
                                             <img src="images/arrow.png" alt="" class="burger__menu_lang_btn_icon">
                                         </button>
                                         <div class="burger__menu_lang_list" id="menuLang">
                                             <button type="button" class="burger__menu_lang_list_btn">
-                                                <img src="images/flag.png" alt="" class="burger__menu_lang_list_btn_flag">
+                                                <img src="images/flag.png" alt=""
+                                                    class="burger__menu_lang_list_btn_flag">
                                                 <span class="burger__menu_lang_list_btn_txt">Rus</span>
                                             </button>
                                             <button type="button" class="burger__menu_lang_list_btn">
-                                                <img src="images/flag.png" alt="" class="burger__menu_lang_list_btn_flag">
+                                                <img src="images/flag.png" alt=""
+                                                    class="burger__menu_lang_list_btn_flag">
                                                 <span class="burger__menu_lang_list_btn_txt">Eng</span>
                                             </button>
                                         </div>
@@ -90,32 +96,42 @@
                                 <div class="burger__contacts">
                                     <img src="images/menuImg.png" alt="" class="burger__contacts_img">
                                     <div class="burger__contacts_phone">
-                                        <a href="tel:+37495949466" class="burger__contacts_phone_link bold">+374-95-94-94-66</a>
-                                        <a href="tel:+37496949466" class="burger__contacts_phone_link bold">+374-96-94-94-66</a>
-                                        <a href="mailto:info@ecomotors.am" class="burger__contacts_phone_link">info@ecomotors.am</a>
+                                        <a href="tel:+37495949466"
+                                            class="burger__contacts_phone_link bold">+374-95-94-94-66</a>
+                                        <a href="tel:+37496949466"
+                                            class="burger__contacts_phone_link bold">+374-96-94-94-66</a>
+                                        <a href="mailto:info@ecomotors.am"
+                                            class="burger__contacts_phone_link">info@ecomotors.am</a>
                                     </div>
                                     <div class="burger__contacts_social">
                                         <div class="burger__contacts_social_list">
                                             <a href="" class="burger__contacts_social_list_link">
-                                                <img src="images/social1.png" alt="" class="burger__contacts_social_list_link_icon">
+                                                <img src="images/social1.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
                                             </a>
                                             <a href="" class="burger__contacts_social_list_link">
-                                                <img src="images/social2.png" alt="" class="burger__contacts_social_list_link_icon">
+                                                <img src="images/social2.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
                                             </a>
                                             <a href="" class="burger__contacts_social_list_link">
-                                                <img src="images/social3.png" alt="" class="burger__contacts_social_list_link_icon">
+                                                <img src="images/social3.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
                                             </a>
                                             <a href="" class="burger__contacts_social_list_link">
-                                                <img src="images/social4.png" alt="" class="burger__contacts_social_list_link_icon">
+                                                <img src="images/social4.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
                                             </a>
                                             <a href="" class="burger__contacts_social_list_link">
-                                                <img src="images/social5.png" alt="" class="burger__contacts_social_list_link_icon">
+                                                <img src="images/social5.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
                                             </a>
                                         </div>
                                         <label for="" class="burger__contacts_subscribe">
-                                            <input type="mail" class="burger__contacts_subscribe_inp" placeholder="Էլ. Հասցե">
+                                            <input type="mail" class="burger__contacts_subscribe_inp"
+                                                placeholder="Էլ. Հասցե">
                                             <button class="burger__contacts_subscribe_btn">
-                                                <img src="images/subscribe.png" alt="" class="burger__contacts_subscribe_btn_icon">
+                                                <img src="images/subscribe.png" alt=""
+                                                    class="burger__contacts_subscribe_btn_icon">
                                             </button>
                                         </label>
                                     </div>
@@ -125,7 +141,8 @@
                     </div>
                     <a href="" class="navbar__logo"><img src="images/logo.png" alt="" class="navbar__logo_img"></a>
                     <div class="navbar__search">
-                        <input type="search" name="" id="" class="navbar__search_inp" placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
+                        <input type="search" name="" id="" class="navbar__search_inp"
+                            placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
                         <button type="button" class="navbar__search_btn">
                             <img src="images/loop.png" alt="" class="navbar__search_btn_icon">
                         </button>
@@ -151,8 +168,272 @@
             </div>
         </nav>
 
+        <header class="header">
+            <div class="header__wrapper">
+                <!-- <div class="ads">
+                    <img src="images/ad1.png" alt="" class="ads__img">
+                    <img src="images/ad2.png" alt="" class="ads__img">
+                    <img src="images/ad3.png" alt="" class="ads__img col2">
+                    <img src="images/ad4.png" alt="" class="ads__img col2">
+                </div> -->
+                <div class="wrapper">
+                    <div class="header__menu">
+                        <ul class="header__menu_list">
+                            <li><a href="" class="header__menu_list_link">Առկա Մեքենաներ</a></li>
+                            <li><a href="" class="header__menu_list_link">Մեքենաներ</a></li>
+                            <li><a href="" class="header__menu_list_link">Ավտոպահեստամասեր</a></li>
+                            <li><a href="" class="header__menu_list_link">Մոտոցիկլետներ</a></li>
+                            <li><a href="" class="header__menu_list_link">Առկա Մոտոցիկլներներ</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__submenu">
+                        <ul class="header__submenu_list">
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto1.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">Սեդան</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto2.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">Հեթչբեք</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto3.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">Մինիվեն</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto4.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">Մինի</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto5.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">ՍՈՒՎ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto6.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">Ամենագնաց</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="header__submenu_list_link">
+                                    <img src="images/auto7.png" alt="" class="header__submenu_list_link_icon">
+                                    <span class="header__submenu_list_link_txt">Բեռնատար</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__filter">
+                        <form action="">
+                            <div class="header__filter_wrapper">
+                                <div class="header__filter_item">
+                                    <div class="header__filter_item_select">
+                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <select name="" id="">
+                                            <option value="Մակնիշը" selected>Մակնիշը</option>
+                                            <option value="2">option-2</option>
+                                            <option value="3">option-3</option>
+                                            <option value="4">option-4</option>
+                                            <option value="5">option-5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="header__filter_item">
+                                    <div class="header__filter_item_select">
+                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <select name="" id="">
+                                            <option value="Մոդելը" selected>Մոդելը</option>
+                                            <option value="2">option-2</option>
+                                            <option value="3">option-3</option>
+                                            <option value="4">option-4</option>
+                                            <option value="5">option-5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="header__filter_item">
+                                    <div class="header__filter_item_select">
+                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <select name="" id="">
+                                            <option value="Տարին սկսած" selected>Տարին սկսած</option>
+                                            <option value="2">option-2</option>
+                                            <option value="3">option-3</option>
+                                            <option value="4">option-4</option>
+                                            <option value="5">option-5</option>
+                                        </select>
+                                    </div>
+                                    <div class="header__filter_item_select">
+                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <select name="" id="">
+                                            <option value="Տարին մինչև" selected>Տարին մինչև</option>
+                                            <option value="2">option-2</option>
+                                            <option value="3">option-3</option>
+                                            <option value="4">option-4</option>
+                                            <option value="5">option-5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="header__filter_item">
+                                    <div class="header__filter_item_select">
+                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <select name="" id="">
+                                            <option value="Գինը սկսած" selected>Գինը սկսած</option>
+                                            <option value="2">option-2</option>
+                                            <option value="3">option-3</option>
+                                            <option value="4">option-4</option>
+                                            <option value="5">option-5</option>
+                                        </select>
+                                    </div>
+                                    <div class="header__filter_item_select">
+                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <select name="" id="">
+                                            <option value="Գինը մինչև" selected>Գինը մինչև</option>
+                                            <option value="2">option-2</option>
+                                            <option value="3">option-3</option>
+                                            <option value="4">option-4</option>
+                                            <option value="5">option-5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__filter_bottom">
+                                <div class="header__filter_bottom_wrapper">
+                                    <label class="header__filter_bottom_lab">
+                                        <input type="radio" name="carfil" checked>
+                                        Բոլոր
+                                    </label>
+                                    <label class="header__filter_bottom_lab">
+                                        <input type="radio" name="carfil">
+                                        Չինաստան
+                                    </label>
+                                    <label class="header__filter_bottom_lab">
+                                        <input type="radio" name="carfil">
+                                        Դուբայ
+                                    </label>
+                                    <label class="header__filter_bottom_lab">
+                                        <input type="radio" name="carfil">
+                                        Գերմանիա
+                                    </label>
+                                </div>
+                                <button type="submit" class="header__filter_bottom_submit">
+                                    <img src="images/loop2.png" alt="" class="header__filter_bottom_submit_icon">
+                                    <span class="header__filter_bottom_submit_txt">Որոնել</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="ads">
+                    <img src="images/ad5.png" alt="" class="ads__img">
+                    <img src="images/ad6.png" alt="" class="ads__img">
+                    <img src="images/ad7.png" alt="" class="ads__img col2">
+                    <img src="images/ad8.png" alt="" class="ads__img col2">
+                </div> -->
+            </div>
+        </header>
+
+        <main>
+            <section class="catalog">
+                <div class="wrapper">
+                    <h1 class="catalog__title">
+                        <img src="images/titleDecor1.png" alt="" class="catalog__title_icon">
+                        ԹՈՓ ՄԵՔԵՆԱՆԵՐ
+                    </h1>
+                    <div class="catalog__wrapper">
+                        <div class="catalog__item product">
+                            <div class="product__slider">
+                                <div class="swiper productSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <button type="button" class="product__wishlist">
+                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
+                                </button>
+                            </div>
+                            <div class="product__desc">
+                                <div class="product__desc_header">
+                                    <p class="product__desc_name">Toyota Camry</p>
+                                    <p class="product__desc_date">2024</p>
+                                </div>
+                                <p class="product__desc_price">$39,735</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+                </div>
+            </section>
+
+            <div class="ads2 wrapper">
+                <img src="images/navbarAds.png" alt="" class="ads2__img">
+            </div>
+
+            <section class="catalog">
+                <div class="wrapper">
+                    <h2 class="catalog__title">
+                        <img src="images/titleDecor2.png" alt="" class="catalog__title_icon">
+                        ԼՅՈՒՔՍ ՄԵՔԵՆԱՆԵՐ
+                    </h2>
+                    <div class="catalog__wrapper">
+                        <div class="catalog__item">
+
+                        </div>
+                    </div>
+                    <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+                </div>
+            </section>
+
+            <div class="ads2 wrapper">
+                <img src="images/ads2.png" alt="" class="ads2__img">
+            </div>
+
+            <section class="catalog">
+                <div class="wrapper">
+                    <h2 class="catalog__title">
+                        <img src="images/titleDecor3.png" alt="" class="catalog__title_icon">
+                        ԲԻԶՆԵՍԻ ՀԱՄԱՐ
+                    </h2>
+                    <div class="catalog__wrapper">
+                        <div class="catalog__item">
+
+                        </div>
+                    </div>
+                    <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+                </div>
+            </section>
+        </main>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/index.js"></script>
 </body>
 
