@@ -217,12 +217,12 @@
 
                     &_list {
                         position: absolute;
-                        top: 26px;
-                        left: 0;
+                        top: 30px;
+                        left: -6px;
                         transition: .2s;
                         opacity: 0;
                         visibility: hidden;
-                        width: 100%;
+                        width: 120%;
 
                         &.active {
                             transition: .2s;
@@ -235,7 +235,7 @@
                             align-items: center;
                             gap: 7px;
                             transition: .2s;
-                            padding: 3px;
+                            padding: 6px;
                             background: #032022;
                             width: 100%;
 
@@ -301,12 +301,15 @@
 
         &_list {
             position: absolute;
-            top: 26px;
-            left: 0;
-            transition: .2s;
+            top: 30px;
+            left: -8px;
+            transition: 0.2s;
+            overflow: hidden;
             opacity: 0;
             visibility: hidden;
-            width: 100%;
+            width: 120%;
+            border-radius: 6px;
+            border: 1px solid #ffffff50;
 
             &.active {
                 transition: .2s;
@@ -319,7 +322,7 @@
                 align-items: center;
                 gap: 7px;
                 transition: .2s;
-                padding: 3px;
+                padding: 6px;
                 background: #032022;
                 width: 100%;
 

@@ -237,9 +237,9 @@
                             <div class="header__filter_wrapper">
                                 <div class="header__filter_item">
                                     <div class="header__filter_item_select">
-                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <img src="images/selectArr.png" alt="" class="header__filter_item_select_icon">
                                         <select name="" id="">
-                                            <option value="Մակնիշը" selected>Մակնիշը</option>
+                                            <option value="Մակնիշը" selected disabled>Մակնիշը</option>
                                             <option value="2">option-2</option>
                                             <option value="3">option-3</option>
                                             <option value="4">option-4</option>
@@ -249,9 +249,9 @@
                                 </div>
                                 <div class="header__filter_item">
                                     <div class="header__filter_item_select">
-                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <img src="images/selectArr.png" alt="" class="header__filter_item_select_icon">
                                         <select name="" id="">
-                                            <option value="Մոդելը" selected>Մոդելը</option>
+                                            <option value="Մոդելը" selected disabled>Մոդելը</option>
                                             <option value="2">option-2</option>
                                             <option value="3">option-3</option>
                                             <option value="4">option-4</option>
@@ -259,11 +259,11 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="header__filter_item">
+                                <div class="header__filter_item double">
                                     <div class="header__filter_item_select">
-                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <img src="images/selectArr.png" alt="" class="header__filter_item_select_icon">
                                         <select name="" id="">
-                                            <option value="Տարին սկսած" selected>Տարին սկսած</option>
+                                            <option value="Տարին սկսած" selected disabled>Տարին սկսած</option>
                                             <option value="2">option-2</option>
                                             <option value="3">option-3</option>
                                             <option value="4">option-4</option>
@@ -271,9 +271,9 @@
                                         </select>
                                     </div>
                                     <div class="header__filter_item_select">
-                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <img src="images/selectArr.png" alt="" class="header__filter_item_select_icon">
                                         <select name="" id="">
-                                            <option value="Տարին մինչև" selected>Տարին մինչև</option>
+                                            <option value="Տարին մինչև" selected disabled>Տարին մինչև</option>
                                             <option value="2">option-2</option>
                                             <option value="3">option-3</option>
                                             <option value="4">option-4</option>
@@ -281,11 +281,11 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="header__filter_item">
+                                <div class="header__filter_item double">
                                     <div class="header__filter_item_select">
-                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <img src="images/selectArr.png" alt="" class="header__filter_item_select_icon">
                                         <select name="" id="">
-                                            <option value="Գինը սկսած" selected>Գինը սկսած</option>
+                                            <option value="Գինը սկսած" selected disabled>Գինը սկսած</option>
                                             <option value="2">option-2</option>
                                             <option value="3">option-3</option>
                                             <option value="4">option-4</option>
@@ -293,9 +293,9 @@
                                         </select>
                                     </div>
                                     <div class="header__filter_item_select">
-                                        <img src="" alt="" class="header__filter_item_select_icon">
+                                        <img src="images/selectArr.png" alt="" class="header__filter_item_select_icon">
                                         <select name="" id="">
-                                            <option value="Գինը մինչև" selected>Գինը մինչև</option>
+                                            <option value="Գինը մինչև" selected disabled>Գինը մինչև</option>
                                             <option value="2">option-2</option>
                                             <option value="3">option-3</option>
                                             <option value="4">option-4</option>
@@ -306,21 +306,21 @@
                             </div>
                             <div class="header__filter_bottom">
                                 <div class="header__filter_bottom_wrapper">
-                                    <label class="header__filter_bottom_lab">
-                                        <input type="radio" name="carfil" checked>
-                                        Բոլոր
+                                    <label class="header__filter_bottom_lab" for="carfil1">
+                                        <input type="radio" name="carfil" id="carfil1" checked>
+                                        <span>Բոլոր</span>
                                     </label>
-                                    <label class="header__filter_bottom_lab">
-                                        <input type="radio" name="carfil">
-                                        Չինաստան
+                                    <label class="header__filter_bottom_lab" for="carfil2">
+                                        <input type="radio" name="carfil" id="carfil2">
+                                        <span>Չինաստան</span>
                                     </label>
-                                    <label class="header__filter_bottom_lab">
-                                        <input type="radio" name="carfil">
-                                        Դուբայ
+                                    <label class="header__filter_bottom_lab" for="carfil3">
+                                        <input type="radio" name="carfil" id="carfil3">
+                                        <span>Դուբայ</span>
                                     </label>
-                                    <label class="header__filter_bottom_lab">
-                                        <input type="radio" name="carfil">
-                                        Գերմանիա
+                                    <label class="header__filter_bottom_lab" for="carfil4">
+                                        <input type="radio" name="carfil" id="carfil4">
+                                        <span>Գերմանիա</span>
                                     </label>
                                 </div>
                                 <button type="submit" class="header__filter_bottom_submit">
@@ -329,6 +329,22 @@
                                 </button>
                             </div>
                         </form>
+                    </div>
+                    <div class="header__content">
+                        <div class="header__slider">
+                            <div class="swiper headerSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/sliderHome1.png" alt="" class="header__slider_img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/sliderHome1.png" alt="" class="header__slider_img">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <img src="images/headerImg.png" alt="" class="header__img">
                     </div>
                 </div>
                 <!-- <div class="ads">
@@ -341,10 +357,10 @@
         </header>
 
         <main>
-            <section class="catalog">
+            <section class="catalog top__cars">
                 <div class="wrapper">
-                    <h1 class="catalog__title">
-                        <img src="images/titleDecor1.png" alt="" class="catalog__title_icon">
+                    <h1 class="title">
+                        <img src="images/titleDecor1.png" alt="" class="title__icon">
                         ԹՈՓ ՄԵՔԵՆԱՆԵՐ
                     </h1>
                     <div class="catalog__wrapper">
@@ -353,25 +369,10 @@
                                 <div class="swiper productSwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                            <img src="images/productslide.png" alt="" class="product__slider_item">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="catalog__item_img">
+                                            <img src="images/productslide.png" alt="" class="product__slider_item">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -399,13 +400,35 @@
 
             <section class="catalog">
                 <div class="wrapper">
-                    <h2 class="catalog__title">
-                        <img src="images/titleDecor2.png" alt="" class="catalog__title_icon">
+                    <h2 class="title">
+                        <img src="images/titleDecor2.png" alt="" class="title__icon">
                         ԼՅՈՒՔՍ ՄԵՔԵՆԱՆԵՐ
                     </h2>
                     <div class="catalog__wrapper">
-                        <div class="catalog__item">
-
+                        <div class="catalog__item product">
+                            <div class="product__slider">
+                                <div class="swiper productSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="product__slider_item">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="product__slider_item">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <button type="button" class="product__wishlist">
+                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
+                                </button>
+                            </div>
+                            <div class="product__desc">
+                                <div class="product__desc_header">
+                                    <p class="product__desc_name">Toyota Camry</p>
+                                    <p class="product__desc_date">2024</p>
+                                </div>
+                                <p class="product__desc_price">$39,735</p>
+                            </div>
                         </div>
                     </div>
                     <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
@@ -418,16 +441,53 @@
 
             <section class="catalog">
                 <div class="wrapper">
-                    <h2 class="catalog__title">
-                        <img src="images/titleDecor3.png" alt="" class="catalog__title_icon">
+                    <h2 class="title">
+                        <img src="images/titleDecor3.png" alt="" class="title__icon">
                         ԲԻԶՆԵՍԻ ՀԱՄԱՐ
                     </h2>
                     <div class="catalog__wrapper">
-                        <div class="catalog__item">
-
+                        <div class="catalog__item product">
+                            <div class="product__slider">
+                                <div class="swiper productSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="product__slider_item">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/productslide.png" alt="" class="product__slider_item">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <button type="button" class="product__wishlist">
+                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
+                                </button>
+                            </div>
+                            <div class="product__desc">
+                                <div class="product__desc_header">
+                                    <p class="product__desc_name">Toyota Camry</p>
+                                    <p class="product__desc_date">2024</p>
+                                </div>
+                                <p class="product__desc_price">$39,735</p>
+                            </div>
                         </div>
                     </div>
                     <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="wrapper">
+                    <h2 class="title">
+                        <img src="images/titleDecor3.png" alt="" class="title__icon">
+                        ՄԵՐ ԳՈՐԾԸՆԿԵՐՆԵՐԸ
+                    </h2>
+                    <div class="partners__content">
+                        <img src="images/partners1.png" alt="" class="partners__img">
+                        <img src="images/partners2.png" alt="" class="partners__img">
+                        <img src="images/partners3.png" alt="" class="partners__img">
+                        <img src="images/partners4.png" alt="" class="partners__img">
+                    </div>
                 </div>
             </section>
         </main>
