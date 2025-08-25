@@ -435,22 +435,32 @@ button {
 }
 
 .topAds {
+  display: flex;
+  justify-content: space-between;
+  max-height: 42px;
+  width: 100%;
+  max-width: 1630px;
+  min-width: 1630px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: fixed;
+  top: 164px;
+  z-index: 1100;
+}
+.topAds__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   width: 100%;
   max-width: 234px;
-  position: fixed;
-  top: 164px;
-  z-index: 1100;
 }
-.topAds.left {
+.topAds__item.left {
   left: 146px;
 }
-.topAds.right {
+.topAds__item.right {
   right: 146px;
 }
-.topAds .col2 {
+.topAds__item .col2 {
   grid-column: 1/3;
 }
 
