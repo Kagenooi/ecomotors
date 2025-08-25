@@ -112,48 +112,7 @@
         margin-bottom: 11px;
 
         &_item {
-            overflow: hidden;
             display: flex;
-
-            select {
-                border: 1px solid #FFFFFF80;
-                border-radius: 5px;
-                padding: 12.5px 24px;
-                cursor: pointer;
-                font-family: Montserrat arm;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 14px;
-                line-height: 100%;
-                letter-spacing: 0%;
-                text-align: left;
-                color: #ffffff50;
-                background: #032022;
-                width: 100%;
-            }
-
-            &_select {
-                position: relative;
-                width: 149px !important;
-
-                &_icon {
-                    position: absolute;
-                    right: 10px;
-                    top: 18px;
-                }
-            }
-
-            &.double &_select {
-                width: 158px !important;
-
-                &:first-child select {
-                    border-radius: 5px 0 0 5px;
-                }
-
-                &:last-child select {
-                    border-radius: 0 5px 5px 0;
-                }
-            }
         }
 
         &_wrapper {
@@ -451,5 +410,160 @@
             background: #032022;
             color: #fff;
         }
+    }
+}
+
+
+.select {
+    position: relative;
+    border: 1px solid #FFFFFF80;
+    border-radius: 5px;
+    width: 100%;
+    min-width: 150px;
+    max-width: 150px;
+
+    &__btn {
+        transition: .2s;
+        display: flex;
+        align-items: center;
+        padding: 12px 14px 12px 24px;
+        justify-content: space-between;
+        width: 100%;
+        cursor: pointer;
+        color: #FFFFFF80;
+        font-family: Montserrat arm;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        background: #032022;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1081;
+
+        &:hover {
+            transition: .2s;
+            background: #063539;
+        }
+
+        &.active {
+            transition: .2s;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    &__search {
+        width: 100%;
+        padding: 0px 8px;
+        margin-top: 8px;
+
+        &_inp {
+            border-radius: 3px;
+            width: 100%;
+            background: #D9D9D933;
+            padding: 5px 12px;
+            text-align: center;
+            font-family: Montserrat arm;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #FFFFFF4D;
+
+            &::placeholder {
+                color: #FFFFFF4D;
+            }
+        }
+    }
+
+    &__list {
+        position: relative;
+        padding: 6px 0 11px;
+
+        &:not(:last-child)::after {
+            content: '';
+            display: block;
+            width: calc(100% - 16px);
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #819091;
+            position: absolute;
+            bottom: 0;
+        }
+
+        &_btn {
+            padding: 5px 24px;
+            color: #fff;
+            font-family: Montserrat arm;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: left;
+            width: 100%;
+            transition: .2s;
+
+            &:hover {
+                transition: .2s;
+                background: #4FEC0080;
+            }
+        }
+    }
+
+    &__wrapper {
+        max-height: 190px;
+        overflow-y: scroll;
+        background: #032022;
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            background: #032022;
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #008900;
+            width: 4px;
+        }
+    }
+
+    &__content {
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+        left: -1px;
+        z-index: 1080;
+        position: absolute;
+        top: 30px;
+        max-height: 0px;
+        transition: .3s;
+        width: calc(100% + 2px);
+        overflow: hidden;
+        border: 1px solid #819091;
+        border-top: none;
+        opacity: 0;
+
+        &.active {
+            transition: .2s;
+            opacity: 1;
+        }
+    }
+}
+
+.double .select {
+    max-width: 160px;
+
+    &:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    &:last-child {
+        border-radius: 0 5px 5px 0;
     }
 }
