@@ -16,6 +16,36 @@
         position: relative;
     }
 
+    &__bottom_menu {
+        background: #fff;
+
+        &_list {
+            display: flex;
+            justify-content: center;
+            background: #008900;
+            padding: 12.5px 0;
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+
+            &_link {
+                display: block;
+                padding: 0 38px;
+                font-family: Montserrat arm;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #fff;
+            }
+
+            li:not(:last-child) a {
+                border-right: 2px solid #D9D9D980;
+            }
+        }
+    }
+
     &__menu {
 
         &_burger {
