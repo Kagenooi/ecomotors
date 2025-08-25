@@ -1,5 +1,9 @@
-export function toggleActive(target) {
+export function toggleActive(target, event) {
     document.querySelector(`#${target}`).classList.toggle('active');
+    event?.classList.toggle('active');
+}
+export function closeMenuBtn() {
+    document.querySelector('.navbar__menu_btn').classList.remove('active');
 }
 export function openSelect(target) {
     const panel = target.nextElementSibling;
@@ -21,7 +25,7 @@ export function openSelect(target) {
     }
 }
 
-export function closeSelect() {
+export function close() {
     const modal = document.querySelectorAll('.select'); // или ваш элемент
 
     document.addEventListener('click', (event) => {
@@ -31,6 +35,20 @@ export function closeSelect() {
                 modal[i].querySelector('.select__content').classList.remove('active');
                 modal[i].querySelector('.select__content').style.maxHeight = null;
                 modal[i].querySelector('.select__btn').classList.remove('active');
+            }
+        }
+    });
+}
+
+export function closeMenu() {
+    const menu = document.querySelectorAll('.navbar__menu'); // или ваш элемент
+
+    document.addEventListener('click', (event) => {
+        for (let i = 0; i < menu.length; i++) {
+            if (!menu[i]) return;
+            if (menu[i].querySelector('#burger').classList.contains('active') && !menu[i].contains(event.target)) {
+                menu[i].querySelector('#burger').classList.remove('active');
+                menu[i].querySelector('.navbar__menu_btn').classList.remove('active');
             }
         }
     });

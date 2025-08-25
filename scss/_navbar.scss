@@ -48,6 +48,25 @@
 
     &__menu {
 
+        &_btn {
+
+            &_icon {
+                display: block;
+
+                &.close {
+                    display: none;
+                }
+            }
+
+            &.active &_icon {
+                display: none;
+
+                &.close {
+                    display: block;
+                }
+            }
+        }
+
         &_burger {
             position: absolute;
             top: 99px;

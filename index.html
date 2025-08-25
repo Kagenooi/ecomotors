@@ -21,13 +21,14 @@
             <div class="wrapper">
                 <div class="navbar__container">
                     <div class="navbar__menu">
-                        <button type="button" class="navbar__menu_btn" onclick="toggleActive('burger')">
+                        <button type="button" class="navbar__menu_btn" onclick="toggleActive('burger', this)">
                             <img src="images/burger.png" alt="" class="navbar__menu_btn_icon">
+                            <img src="images/closeBtn.png" alt="" class="navbar__menu_btn_icon close">
                         </button>
                         <div id="burger" class="navbar__menu_burger burger">
                             <div class="burger__header">
                                 <p class="burger__header_title">ՄԵՆՅՈՒ</p>
-                                <button type="button" class="burger__header_close" onclick="toggleActive('burger')">
+                                <button type="button" class="burger__header_close" onclick="toggleActive('burger'); closeMenuBtn()">
                                     <span class="burger__header_close_txt">Փակել</span>
                                     <img src="images/close.png" alt="" class="burger__header_close_icon">
                                 </button>

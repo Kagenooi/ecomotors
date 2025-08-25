@@ -1,0 +1,74 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../ads';
+@import '../crumbs';
+
+
+.header {
+    padding-top: 204px;
+}
+
+.salons {
+    padding: 57px 57px 99px;
+    border-radius: 12px;
+    background: #E9F1EF;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    &__title {
+        font-family: Montserrat arm;
+        font-weight: 900;
+        font-style: Black;
+        font-size: 40px;
+        line-height: 23px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: #008900;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 27px 40px;
+    }
+
+    &__item {
+
+        &_header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 15px;
+
+            &_title {
+                font-family: Montserrat arm;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 18px;
+                line-height: 50px;
+                letter-spacing: 0%;
+            }
+
+            &_link {
+                font-family: Montserrat arm;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 12px;
+                line-height: 50px;
+                letter-spacing: 0%;
+                color: #004DE2CC;
+            }
+        }
+
+        &_pic {
+
+            &_img {
+                border-radius: 10px;
+            }
+        }
+    }
+}

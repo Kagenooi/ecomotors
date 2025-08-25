@@ -1,15 +1,20 @@
 import {
     toggleActive,
     openSelect,
-    closeSelect,
-    chooseOption
+    close,
+    chooseOption,
+    closeMenu,
+    closeMenuBtn
 } from "./module.js";
 
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;
-window.closeSelect = closeSelect;
-closeSelect();
+window.close = close;
+close();
+window.closeMenu = closeMenu;
+closeMenu();
 window.chooseOption = chooseOption;
+window.closeMenuBtn = closeMenuBtn;
 
 
 const productSwiper = new Swiper(".productSwiper", {
