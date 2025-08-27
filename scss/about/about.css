@@ -506,4 +506,137 @@ button {
 
 .header {
   padding-top: 204px;
+}
+
+main {
+  background: #E9F1EF;
+  padding: 40px 0 77px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-family: Montserrat arm;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 40px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #008900;
+}
+.about__logo {
+  margin: 40px auto;
+}
+.about__pr {
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 824px;
+  margin: 0 auto 62px;
+}
+.about__pr strong {
+  font-weight: 700;
+}
+.about__desc {
+  background: #032022;
+  border-radius: 12px;
+  padding: 20px 170px 33px;
+  margin-bottom: 37px;
+}
+.about__desc_title {
+  font-family: Montserrat arm;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 21px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #4FEC00;
+}
+.about__desc_list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 25px;
+}
+.about__desc_list li::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5019607843);
+}
+.about__desc_list li span {
+  font-family: Montserrat arm;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  color: #E9F1EF;
+}
+.about__desc_list li img {
+  margin-left: auto;
+}
+
+.team {
+  padding: 0 57px;
+}
+.team__title {
+  color: #032022;
+  font-family: Montserrat arm;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 21px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 37px;
+}
+.team__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 78px 43px;
+}
+.team__item_img {
+  max-width: 193px;
+  max-height: 185px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team__item_name {
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: SemiBold;
+  font-size: 21px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #032022;
+}
+.team__item_name strong {
+  display: block;
+  margin-bottom: -28px;
+  font-weight: 600;
+}
+.team__item_prof {
+  color: #032022;
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  margin-top: -19px;
 }/*# sourceMappingURL=about.css.map */
