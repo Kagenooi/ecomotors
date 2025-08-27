@@ -1,0 +1,120 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../ads';
+@import '../crumbs';
+
+
+.crumbs {
+    margin-top: 204px;
+}
+
+
+.form {
+    width: 100%;
+    max-width: 1120px;
+    border-radius: 12px;
+    background: #E9F1EF;
+    padding: 53px 20px 57px;
+    margin: 0 auto 25px;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 644px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 89px;
+        font-family: Montserrat arm;
+        font-weight: 900;
+        font-style: Black;
+        font-size: 40px;
+        line-height: 23px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #008900;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 23px;
+        margin-bottom: 30px;
+
+        &_name {
+            margin-bottom: 7px;
+            font-family: Montserrat arm;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 13px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        &_inp {
+            width: 100%;
+            border-radius: 7px;
+            background: #7070702E;
+            padding: 12px 20px;
+            font-family: Montserrat arm;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 13px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #00000080;
+        }
+    }
+
+    &__textarea {
+        margin-bottom: 36px;
+
+        &_name {
+            margin-bottom: 7px;
+            font-family: Montserrat arm;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 13px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        &_el {
+            width: 100%;
+            border-radius: 7px;
+            background: #7070702E;
+            padding: 12px 20px;
+            font-family: Montserrat arm;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 13px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            min-height: 206px;
+            color: #00000080;
+        }
+    }
+
+    &__submit {
+        border-radius: 5px;
+        background: #008900;
+        transition: .2s;
+        padding: 1px 90px;
+        width: fit-content;
+        font-family: Montserrat arm;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        line-height: 50px;
+        letter-spacing: 0%;
+        color: #E9F1EF;
+        margin: 0 auto;
+
+        &:hover {
+            transition: .2s;
+            background: #00c700;
+        }
+    }
+}

@@ -12,7 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -53,6 +54,28 @@ button {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.seeMore {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 27px;
+  padding: 9px 26px;
+  font-family: Montserrat arm;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 0.5019607843);
+  transition: 0.2s;
+}
+.seeMore:hover {
+  background: #032022;
+  transition: 0.2s;
+  color: #fff;
 }
 
 .navbar {

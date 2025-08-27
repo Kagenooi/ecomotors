@@ -527,19 +527,25 @@ button {
   transition: 0.2s;
 }
 
-.header {
-  padding-top: 204px;
+.crumbs {
+  margin-top: 204px;
 }
 
-.salons {
-  padding: 57px 57px 99px;
-  border-radius: 12px;
-  background: #E9F1EF;
+.form {
   width: 100%;
   max-width: 1120px;
+  border-radius: 12px;
+  background: #E9F1EF;
+  padding: 53px 20px 57px;
+  margin: 0 auto 25px;
+}
+.form__wrapper {
+  width: 100%;
+  max-width: 644px;
   margin: 0 auto;
 }
-.salons__title {
+.form__title {
+  margin-bottom: 89px;
   font-family: Montserrat arm;
   font-weight: 900;
   font-style: Black;
@@ -547,38 +553,80 @@ button {
   line-height: 23px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #008900;
-  margin-bottom: 42px;
   text-align: center;
+  color: #008900;
 }
-.salons__wrapper {
+.form__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 27px 40px;
+  gap: 23px;
+  margin-bottom: 30px;
 }
-.salons__item_header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 15px;
+.form__item_name {
+  margin-bottom: 7px;
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
-.salons__item_header_title {
+.form__item_inp {
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(112, 112, 112, 0.1803921569);
+  padding: 12px 20px;
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.form__textarea {
+  margin-bottom: 36px;
+}
+.form__textarea_name {
+  margin-bottom: 7px;
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.form__textarea_el {
+  width: 100%;
+  border-radius: 7px;
+  background: rgba(112, 112, 112, 0.1803921569);
+  padding: 12px 20px;
+  font-family: Montserrat arm;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  min-height: 206px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.form__submit {
+  border-radius: 5px;
+  background: #008900;
+  transition: 0.2s;
+  padding: 1px 90px;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: Montserrat arm;
   font-weight: 700;
   font-style: Bold;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 50px;
   letter-spacing: 0%;
+  color: #E9F1EF;
+  margin: 0 auto;
 }
-.salons__item_header_link {
-  font-family: Montserrat arm;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 12px;
-  line-height: 50px;
-  letter-spacing: 0%;
-  color: rgba(0, 77, 226, 0.8);
-}
-.salons__item_pic_img {
-  border-radius: 10px;
-}/*# sourceMappingURL=salons.css.map */
+.form__submit:hover {
+  transition: 0.2s;
+  background: #00c700;
+}/*# sourceMappingURL=contact.css.map */
