@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="scss/blog/blog.css">
 </head>
 
@@ -208,21 +209,76 @@
         <header class="header">
             <div class="header__wrapper">
                 <div class="header__slider">
-                    <div class="swiper">
+                    <div class="swiper" id="blogSlider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">'
-                                <p class="header__slider_date">Փետրվար 7, 2025</p>
-                                <h1 class="header__slider_title">նոր byd 2025-ի <br> առավելությունները</h1>
-                                <img src="" alt="" class="header__slider_el">
+                            <div class="swiper-slide">
+                                <div class="header__slider_el">
+                                    <p class="header__slider_date">Փետրվար 7, 2025</p>
+                                    <h1 class="header__slider_title">նոր byd 2025-ի <br> առավելությունները</h1>
+                                    <img src="images/market-pc.png" alt="" class="header__slider_el_pic">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="header__slider_el">
+                                    <p class="header__slider_date">Փետրվար 7, 2025</p>
+                                    <h1 class="header__slider_title">նոր byd 2025-ի <br> առավելությունները</h1>
+                                    <img src="images/market-pc.png" alt="" class="header__slider_el_pic">
+                                </div>
                             </div>
                         </div>
+                        <button type="button" class="header__slider_btn next">
+                            <img src="images/arrLeft.svg" alt="" class="header__slider_btn_icon">
+                        </button>
+                        <button type="button" class="header__slider_btn prev">
+                            <img src="images/arrRight.svg" alt="" class="header__slider_btn_icon">
+                        </button>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </header>
 
+        <div class="content">
+            <div class="articles">
+                <div class="articles__item">
+                    <img src="images/blog.png" alt="" class="articles__item_pic">
+                    <div class="articles__item_desc">
+                        <a href="article.html" class="articles__item_desc_info">
+                            <p class="articles__item_desc_date">Փետրվար 9, 2025</p>
+                            <h3 class="articles__item_desc_name">Էլեկտրական մեքենաներն ավելի ու ավելի տարածված են դառնում աշխարհում ...</h3>
+                            <p class="articles__item_desc_pr">Բայց որո՞նք են էլեկտրական մեքենաների առավելություններն ու թերությունները: Ավտո</p>
+                        </a>
+                        <div class="articles__item_desc_footer">
+                            <a href="" class="articles__item_desc_footer_tag">Ավտո լուրեր</a>
+                            <p class="articles__item_desc_footer_see">
+                                <img src="images/see.svg" alt="" class="articles__item_desc_footer_see_icon">
+                                <span class="articles__item_desc_footer_see_txt">38</span>
+                            </p>
+                            <p class="articles__item_desc_footer_comm">
+                                <img src="images/comm.svg" alt="" class="articles__item_desc_footer_comm_icon">
+                                <span class="articles__item_desc_footer_comm_txt">6</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reading">
+                <h2 class="reading__title">ՇԱՏ ԸՆԹԵՐՑՎԱԾ</h2>
+                <a href="" class="reading__item">
+                    <img src="images/blog.png" alt="" class="reading__item_pic">
+                    <div class="reading__item_desc">
+                        <h3 class="reading__item_desc_title">Բացահայտեք 20,000 դոլարից ցածր ․․․</h3>
+                        <p class="reading__item_desc_date">Փետրվար 9 2025</p>
+                    </div>
+                </a>
+            </div>
+
+            <a href="" class="seeMore">Տեսնել ավելին</a>
+        </div>
+
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/blog.js"></script>
 </body>
 
