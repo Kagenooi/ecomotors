@@ -1,0 +1,66 @@
+.header__address {
+    width: 100%;
+    max-width: 347px;
+
+    &_social {
+        background: url('../../images/adresBG.png') no-repeat center;
+        width: 100%;
+        height: 190px;
+        border-radius: 15px;
+        padding: 17px 21px 27px;
+        margin-bottom: 17px;
+
+        &_title {
+            font-family: Montserrat arm;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin-bottom: 16px;
+            color: #4FEC00;
+        }
+
+        &_list {
+            display: grid;
+            gap: 26px;
+
+            &_link {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+
+                &_icon {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &_txt {
+                    color: #fff;
+                    font-family: Montserrat arm;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 13px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+
+    &_list {
+        display: grid;
+        gap: 10px;
+
+        &_link {
+            font-family: Montserrat arm;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 25px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #008900;
+            text-align: right;
+        }
+    }
+}

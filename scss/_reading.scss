@@ -1,0 +1,57 @@
+.reading {
+    width: 100%;
+    max-width: 350px;
+    background: #D9D9D966;
+    padding: 12px 19px 42px;
+
+    &__title {
+        font-family: Montserrat arm;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 9px 0 13px;
+        border-bottom: 1px solid #CCCCCC80;
+
+        &_pic {
+            width: 110px;
+            height: 77px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        &_desc {
+
+            &_title {
+                margin-bottom: 9px;
+                font-family: Montserrat arm;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 15px;
+                color: #008900;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -moz-box-orient: vertical;
+                line-clamp: 2;
+                box-orient: vertical;
+            }
+
+            &_date {
+                font-family: Montserrat arm;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 100%;
+                color: #00000080;
+            }
+        }
+    }
+}

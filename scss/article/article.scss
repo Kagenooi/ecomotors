@@ -1,0 +1,152 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../ads';
+@import '../crumbs';
+@import '../reading';
+@import '../address';
+
+.crumbs {
+    margin-top: 204px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto 70px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 73fr 35fr;
+    gap: 40px;
+}
+
+
+.singleArticle {
+
+    &__title {
+        font-family: Montserrat arm;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 38px;
+        line-height: 51px;
+        margin-bottom: 26px;
+        color: #008900;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+
+        &_icon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        &_txt {
+            color: #00000080;
+            font-family: Montserrat arm;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+        }
+    }
+
+    &__pic {
+        margin-bottom: 34px;
+
+        &_img {
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        &_footer {
+            display: flex;
+            align-items: center;
+
+            &_tag {
+                width: fit-content;
+                padding: 8px 7px;
+                background: #0000001A;
+                transition: .2s;
+                font-family: Montserrat arm;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                margin-right: 30px;
+
+                &:hover {
+                    transition: .2s;
+                    background: #032022;
+                    color: #fff;
+                }
+            }
+
+            &_comm,
+            &_see {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-right: 21px;
+
+                &_txt {
+                    font-family: Montserrat arm;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+
+    &__content {
+        border-bottom: 1px solid #CCCCCC80;
+        margin-bottom: 20px;
+
+        h3 {
+            font-family: Montserrat arm;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        ol {
+            li {
+                font-family: Montserrat arm;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__share {
+        display: flex;
+        gap: 20px;
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 8px 15px;
+            background: #3161FF;
+            border-radius: 10px;
+            transition: .2s;
+
+            &:hover {
+                background: #5079ff;
+            }
+
+            &_txt {
+                color: #fff;
+                font-family: Montserrat arm;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 100%;
+            }
+        }
+    }
+}
