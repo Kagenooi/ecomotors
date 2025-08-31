@@ -472,6 +472,8 @@ button {
 
 .footer {
   background: #052322;
+  max-width: 1120px;
+  padding: 0;
 }
 .footer .info {
   display: flex;

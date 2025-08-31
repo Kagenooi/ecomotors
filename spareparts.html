@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/spareparts/spareparts.css">
+</head>
+
+<body>
+    <div id="adaptive">
+
+        <nav class="navbar">
+            <div class="wrapper">
+                <div class="navbar__ads">
+                    <img src="images/navbarAds.png" alt="" class="navbar__ads_img">
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="navbar__container">
+                    <div class="navbar__menu">
+                        <button type="button" class="navbar__menu_btn" onclick="toggleActive('burger', this)">
+                            <img src="images/burger.png" alt="" class="navbar__menu_btn_icon">
+                            <img src="images/closeBtn.png" alt="" class="navbar__menu_btn_icon close">
+                        </button>
+                        <div id="burger" class="navbar__menu_burger burger">
+                            <div class="burger__header">
+                                <p class="burger__header_title">ՄԵՆՅՈՒ</p>
+                                <button type="button" class="burger__header_close"
+                                    onclick="toggleActive('burger'); closeMenuBtn()">
+                                    <span class="burger__header_close_txt">Փակել</span>
+                                    <img src="images/close.png" alt="" class="burger__header_close_icon">
+                                </button>
+                            </div>
+                            <div class="burger__wrapper">
+                                <div class="burger__menu">
+                                    <ul class="burger__menu_list">
+                                        <li><a href="" class="burger__menu_list_link">Առկա Մեքենաներ</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Մեքենաներ</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Ավտոպահեստամասեր</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Մոտոցիկլետներ</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Առկա Մոտոցիկլներներ</a></li>
+                                        <li>
+                                            <a href="" class="burger__menu_list_link new">
+                                                Տեխզննում և Տեխսպասարկում
+                                                <span class="new__txt">Նոր</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="burger__menu_list_link new">
+                                                Ծառայություններ
+                                                <span class="new__txt">Նոր</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="burger__menu_list">
+                                        <li>
+                                            <a href="" class="burger__menu_list_link new">
+                                                Բիզնեսի համար
+                                                <span class="new__txt">Նոր</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="" class="burger__menu_list_link">Թեժ Առաջարկներ</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Լյուքս մեքենաներ</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Մեր Գործընկերները</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Լիզինգ</a></li>
+                                    </ul>
+                                    <ul class="burger__menu_list">
+                                        <li><a href="" class="burger__menu_list_link">Մեր Մասին</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Մեր Սրահները</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Հաճախ Տրվող Հարցեր</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Բլոգ</a></li>
+                                        <li><a href="" class="burger__menu_list_link">Կապ Մեզ Հետ</a></li>
+                                    </ul>
+                                    <div class="burger__menu_lang">
+                                        <button type="button" class="burger__menu_lang_btn"
+                                            onclick="toggleActive('menuLang')">
+                                            <img src="images/flag.png" alt="" class="burger__menu_lang_btn_flag">
+                                            <span class="burger__menu_lang_btn_txt">Հայ</span>
+                                            <img src="images/arrow.png" alt="" class="burger__menu_lang_btn_icon">
+                                        </button>
+                                        <div class="burger__menu_lang_list" id="menuLang">
+                                            <button type="button" class="burger__menu_lang_list_btn">
+                                                <img src="images/flag.png" alt=""
+                                                    class="burger__menu_lang_list_btn_flag">
+                                                <span class="burger__menu_lang_list_btn_txt">Rus</span>
+                                            </button>
+                                            <button type="button" class="burger__menu_lang_list_btn">
+                                                <img src="images/flag.png" alt=""
+                                                    class="burger__menu_lang_list_btn_flag">
+                                                <span class="burger__menu_lang_list_btn_txt">Eng</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="burger__contacts">
+                                    <img src="images/menuImg.png" alt="" class="burger__contacts_img">
+                                    <div class="burger__contacts_phone">
+                                        <a href="tel:+37495949466"
+                                            class="burger__contacts_phone_link bold">+374-95-94-94-66</a>
+                                        <a href="tel:+37496949466"
+                                            class="burger__contacts_phone_link bold">+374-96-94-94-66</a>
+                                        <a href="mailto:info@ecomotors.am"
+                                            class="burger__contacts_phone_link">info@ecomotors.am</a>
+                                    </div>
+                                    <div class="burger__contacts_social">
+                                        <div class="burger__contacts_social_list">
+                                            <a href="" class="burger__contacts_social_list_link">
+                                                <img src="images/social1.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
+                                            </a>
+                                            <a href="" class="burger__contacts_social_list_link">
+                                                <img src="images/social2.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
+                                            </a>
+                                            <a href="" class="burger__contacts_social_list_link">
+                                                <img src="images/social3.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
+                                            </a>
+                                            <a href="" class="burger__contacts_social_list_link">
+                                                <img src="images/social4.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
+                                            </a>
+                                            <a href="" class="burger__contacts_social_list_link">
+                                                <img src="images/social5.png" alt=""
+                                                    class="burger__contacts_social_list_link_icon">
+                                            </a>
+                                        </div>
+                                        <label for="" class="burger__contacts_subscribe">
+                                            <input type="mail" class="burger__contacts_subscribe_inp"
+                                                placeholder="Էլ. Հասցե">
+                                            <button class="burger__contacts_subscribe_btn">
+                                                <img src="images/subscribe.png" alt=""
+                                                    class="burger__contacts_subscribe_btn_icon">
+                                            </button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="navbar__logo"><img src="images/logo.png" alt="" class="navbar__logo_img"></a>
+                    <div class="navbar__search">
+                        <input type="search" name="" id="" class="navbar__search_inp"
+                            placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
+                        <button type="button" class="navbar__search_btn">
+                            <img src="images/loop.png" alt="" class="navbar__search_btn_icon">
+                        </button>
+                    </div>
+                    <div class="navbar__lang">
+                        <button type="button" class="navbar__lang_btn" onclick="toggleActive('topLang')">
+                            <img src="images/flag.png" alt="" class="navbar__lang_btn_flag">
+                            <span class="navbar__lang_btn_txt">Հայ</span>
+                            <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
+                        </button>
+                        <div class="navbar__lang_list" id="topLang">
+                            <button type="button" class="navbar__lang_list_btn">
+                                <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
+                                <span class="navbar__lang_list_btn_txt">Rus</span>
+                            </button>
+                            <button type="button" class="navbar__lang_list_btn">
+                                <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
+                                <span class="navbar__lang_list_btn_txt">Eng</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__bottom_menu">
+                <ul class="navbar__bottom_menu_list">
+                    <li><a href="" class="navbar__bottom_menu_list_link">Առկա Մեքենաներ</a></li>
+                    <li><a href="" class="navbar__bottom_menu_list_link">Մեքենաներ</a></li>
+                    <li><a href="" class="navbar__bottom_menu_list_link">Ավտոպահեստամասեր</a></li>
+                    <li><a href="" class="navbar__bottom_menu_list_link">Մոտոցիկլետներ</a></li>
+                    <li><a href="" class="navbar__bottom_menu_list_link">Առկա Մոտոցիկլներներ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="topAds">
+            <div class="topAds__item right">
+                <img src="images/ad1.png" alt="" class="topAds__item_img">
+                <img src="images/ad2.png" alt="" class="topAds__item_img">
+                <img src="images/ad3.png" alt="" class="topAds__item_img col2">
+                <img src="images/ad4.png" alt="" class="topAds__item_img col2">
+            </div>
+            <div class="topAds__item left">
+                <img src="images/ad1.png" alt="" class="topAds__item_img">
+                <img src="images/ad2.png" alt="" class="topAds__item_img">
+                <img src="images/ad3.png" alt="" class="topAds__item_img col2">
+                <img src="images/ad4.png" alt="" class="topAds__item_img col2">
+            </div>
+        </div>
+
+        <div class="crumbs">
+            <ul class="crumbs__list">
+                <li><a href="" class="crumbs__list_link">Գլխավոր</a></li>
+                <li>
+                    <a href="" class="crumbs__list_link">
+                        <img src="images/crumbs.svg" alt="" class="crumbs__list_link_icon">
+                        Բլոգ
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        
+
+       
+        <footer class="footer wrapper">
+            <div class="info">
+                <div class="info__logo">
+                    <a href="" class="info__logo_el">
+                        <img src="images/logo.png" alt="" class="info__logo_el_img">
+                    </a>
+                    <p class="info__logo_pr">
+                        Մենք առաջարկում ենք մեքենաների, բեռնատարների և
+                        կոմերցիոն տրանսպորտային միջոցների, մոտոցիկլետների,
+                        հատուկ սարքավորումների և շատ այլ տեսակի տրանսպորտային
+                        միջոցների մեծ տեսականի
+                    </p>
+                </div>
+                <div class="info__contact">
+                    <h3 class="info__contact_title">Կապ</h3>
+                    <ul class="info__contact_list">
+                        <li><a href="tel:+37495949466" class="info__contact_list_link">+374-95-94-94-66</a></li>
+                        <li><a href="tel:+37496949466" class="info__contact_list_link">+374-96-94-94-66</a></li>
+                        <li><a href="mailto:info@ecomotors.am" class="info__contact_list_link">info@ecomotors.am</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info__social">
+                    <h3 class="info__social_title">Սոց Ցանցեր</h3>
+                    <ul class="info__social_list">
+                        <li>
+                            <a href="" class="info__social_list_link">
+                                <img src="images/facebook.svg" alt="" class="info__social_list_link_icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="info__social_list_link">
+                                <img src="images/tiktok.svg" alt="" class="info__social_list_link_icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="info__social_list_link">
+                                <img src="images/youtube.svg" alt="" class="info__social_list_link_icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="info__social_list_link">
+                                <img src="images/instagram.svg" alt="" class="info__social_list_link_icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="info__social_list_link">
+                                <img src="images/linkedin.svg" alt="" class="info__social_list_link_icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="">
+                        <label class="info__social_lab">
+                            <input type="text" name="" class="info__social_lab_inp" placeholder="Էլ. Հասցե">
+                            <img src="images/subscribe.png" alt="" class="info__social_lab_icon">
+                        </label>
+                    </form>
+                </div>
+                <span class="line"></span>
+                <ul class="info__list">
+                    <li><a href="" class="info__list_link">Մեր Մասին</a></li>
+                    <li><a href="" class="info__list_link">Ծառայություններ</a></li>
+                    <li><a href="" class="info__list_link">Կապ մեզ հետ</a></li>
+                    <li><a href="" class="info__list_link">Բլոգ</a></li>
+                    <li><a href="" class="info__list_link">Հաճախ Տրվող Հարցեր</a></li>
+                </ul>
+                <ul class="info__list">
+                    <li><a href="" class="info__list_link">Առկա Մեքենաներ</a></li>
+                    <li><a href="" class="info__list_link">Մեքենաներ</a></li>
+                    <li><a href="" class="info__list_link">Ավտոպահեստամասեր</a></li>
+                    <li><a href="" class="info__list_link">Մոտոցիկլետներ</a></li>
+                    <li><a href="" class="info__list_link">Առկա Մոտոցիկլետներ</a></li>
+                </ul>
+                <ul class="info__list">
+                    <li><a href="" class="info__list_link">Բիզնեսի համար</a></li>
+                    <li><a href="" class="info__list_link">Թեժ Առաջարկներ</a></li>
+                    <li><a href="" class="info__list_link">Լյուքս մեքենաներ</a></li>
+                    <li><a href="" class="info__list_link">Մեր Գործընկերները</a></li>
+                    <li><a href="" class="info__list_link">Սրահներ</a></li>
+                </ul>
+                <div class="info__work">
+                    <h3 class="info__work_title">Աշխատանքային Ժամեր</h3>
+                    <p class="info__work_pr">Երկուշաբթիից շաբաթ 10։00 - 20։00</p>
+                    <p class="info__work_pr">Կիրակի 10։00 - 16։00</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="js/spareparts.js"></script>
+</body>
+
+</html>
