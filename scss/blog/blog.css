@@ -1,3 +1,4 @@
+@import '../../font/styles/font.css';
 * {
   margin: 0;
   padding: 0;
@@ -922,21 +923,16 @@ button {
   border-radius: 3px;
   background: #5a6772;
   color: #fff;
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Regular;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 0%;
   margin-bottom: 14px;
 }
 .header__slider_title {
   font-family: Montserrat arm;
   font-weight: 900;
-  font-style: Black;
   font-size: 40px;
   line-height: 44px;
-  letter-spacing: 0%;
   text-transform: uppercase;
   color: #143A61;
   position: relative;
@@ -997,21 +993,15 @@ button {
   border-radius: 15px;
 }
 .articles__item_desc_date {
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: rgba(0, 0, 0, 0.5019607843);
 }
 .articles__item_desc_name {
-  font-family: Montserrat arm;
   font-weight: 700;
-  font-style: Bold;
   font-size: 19px;
   line-height: 22px;
-  letter-spacing: 0%;
   margin: 13px 0;
   color: #008900;
   overflow: hidden;
@@ -1022,10 +1012,8 @@ button {
 .articles__item_desc_pr {
   font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Regular;
   font-size: 13px;
   line-height: 18px;
-  letter-spacing: 0%;
   overflow: hidden;
   text-overflow: ellipsis;
   line-clamp: 2;
@@ -1040,12 +1028,9 @@ button {
   padding: 8px 7px;
   background: rgba(0, 0, 0, 0.1019607843);
   border-radius: 3px;
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Regular;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 0%;
   width: -moz-fit-content;
   width: fit-content;
   transition: 0.2s;
@@ -1062,12 +1047,9 @@ button {
   margin-right: 21px;
 }
 .articles__item_desc_footer_see_txt, .articles__item_desc_footer_comm_txt {
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Regular;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 .articles__item:hover .articles__item_desc {
   transition: 0.2s;

@@ -5,6 +5,7 @@
 @import '../filter';
 @import '../product';
 @import '../recomended';
+@import '../../font/styles/font.css';
 
 .catalogads {
     width: 100%;
@@ -48,12 +49,9 @@
                 }
 
                 &_txt {
-                    font-family: Montserrat arm;
                     font-weight: 500;
-                    font-style: Medium;
                     font-size: 13px;
                     line-height: 100%;
-                    letter-spacing: 0%;
                     text-align: center;
                     color: #000;
                 }

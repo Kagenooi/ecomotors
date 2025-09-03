@@ -1,3 +1,4 @@
+@import '../../font/styles/font.css';
 * {
   margin: 0;
   padding: 0;
@@ -812,31 +813,49 @@ main {
   max-width: 1120px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  main {
+    padding: 20px 16px;
+  }
+}
 
 .about__title {
-  font-family: Montserrat arm;
   font-weight: 900;
-  font-style: Black;
   font-size: 40px;
   line-height: 23px;
-  letter-spacing: 0%;
   text-transform: uppercase;
   text-align: center;
   color: #008900;
 }
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 20px;
+  }
+}
 .about__logo {
   margin: 40px auto;
 }
+@media (max-width: 768px) {
+  .about__logo {
+    width: 170px;
+    margin: 30px auto;
+  }
+}
 .about__pr {
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Bold;
   font-size: 16px;
   line-height: 28px;
-  letter-spacing: 0%;
   text-align: center;
   max-width: 824px;
   margin: 0 auto 62px;
+}
+@media (max-width: 768px) {
+  .about__pr {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 34px;
+    max-width: 244px;
+  }
 }
 .about__pr strong {
   font-weight: 700;
@@ -847,22 +866,36 @@ main {
   padding: 20px 170px 33px;
   margin-bottom: 37px;
 }
+@media (max-width: 768px) {
+  .about__desc {
+    padding: 10px 20px 60px;
+  }
+}
 .about__desc_title {
-  font-family: Montserrat arm;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 21px;
   line-height: 50px;
-  letter-spacing: 0%;
   text-align: center;
   margin-bottom: 24px;
   color: #4FEC00;
+}
+@media (max-width: 768px) {
+  .about__desc_title {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
 }
 .about__desc_list li {
   display: flex;
   align-items: center;
   position: relative;
   gap: 25px;
+}
+@media (max-width: 768px) {
+  .about__desc_list li {
+    gap: 10px;
+    height: 50px;
+  }
 }
 .about__desc_list li::before {
   content: "";
@@ -872,37 +905,67 @@ main {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5019607843);
 }
+@media (max-width: 768px) {
+  .about__desc_list li::before {
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+  }
+}
 .about__desc_list li span {
-  font-family: Montserrat arm;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 16px;
   line-height: 50px;
-  letter-spacing: 0%;
   color: #E9F1EF;
+}
+@media (max-width: 768px) {
+  .about__desc_list li span {
+    display: block;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-left: 4px;
+  }
 }
 .about__desc_list li img {
   margin-left: auto;
+}
+@media (max-width: 768px) {
+  .about__desc_list li img {
+    width: 12px;
+  }
 }
 
 .team {
   padding: 0 57px;
 }
+@media (max-width: 768px) {
+  .team {
+    padding: 0;
+  }
+}
 .team__title {
   color: #032022;
-  font-family: Montserrat arm;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 21px;
   line-height: 50px;
-  letter-spacing: 0%;
   text-align: center;
   margin-bottom: 37px;
+}
+@media (max-width: 768px) {
+  .team__title {
+    margin-bottom: 20px;
+  }
 }
 .team__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 78px 43px;
+}
+@media (max-width: 768px) {
+  .team__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px 20px;
+  }
 }
 .team__item_img {
   max-width: 193px;
@@ -911,28 +974,51 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 768px) {
+  .team__item_img {
+    width: 134px;
+    height: 141px;
+  }
+}
 .team__item_name {
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: SemiBold;
   font-size: 21px;
   line-height: 50px;
-  letter-spacing: 0%;
   text-transform: uppercase;
   color: #032022;
+}
+@media (max-width: 768px) {
+  .team__item_name {
+    font-size: 13px;
+    margin-top: -10px;
+  }
 }
 .team__item_name strong {
   display: block;
   margin-bottom: -28px;
   font-weight: 600;
 }
+@media (max-width: 768px) {
+  .team__item_name strong {
+    margin-bottom: -30px;
+  }
+}
 .team__item_prof {
   color: #032022;
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Regular;
   font-size: 14px;
   line-height: 50px;
-  letter-spacing: 0%;
   margin-top: -19px;
+}
+@media (max-width: 768px) {
+  .team__item_prof {
+    font-size: 10px;
+    margin-top: -25px;
+  }
+}
+
+@media (max-width: 1296px) {
+  .topAds {
+    display: none;
+  }
 }/*# sourceMappingURL=about.css.map */

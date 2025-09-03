@@ -31,3 +31,11 @@ const recomended = new Swiper("#recomended", {
         prevEl: ".recomended__slider_btn.prev",
     }
 });
+
+
+import { 
+    adaptive
+} from "../adaptiveMode/adaptive.js";
+window.adaptive = adaptive;
+adaptive();
+window.addEventListener('resize', function() {adaptive()});

@@ -4,6 +4,7 @@
 @import '../ads';
 @import '../crumbs';
 @import '../reading';
+@import '../../font/styles/font.css';
 
 
 .crumbs {
@@ -85,22 +86,17 @@
             border-radius: 3px;
             background: #5a6772;
             color: #fff;
-            font-family: Montserrat arm;
             font-weight: 400;
-            font-style: Regular;
             font-size: 12px;
             line-height: 100%;
-            letter-spacing: 0%;
             margin-bottom: 14px;
         }
 
         &_title {
             font-family: Montserrat arm;
             font-weight: 900;
-            font-style: Black;
             font-size: 40px;
             line-height: 44px;
-            letter-spacing: 0%;
             text-transform: uppercase;
             color: #143A61;
             position: relative;
@@ -167,22 +163,16 @@
             border-radius: 15px;
 
             &_date {
-                font-family: Montserrat arm;
                 font-weight: 500;
-                font-style: Medium;
                 font-size: 14px;
                 line-height: 100%;
-                letter-spacing: 0%;
                 color: #00000080;
             }
 
             &_name {
-                font-family: Montserrat arm;
                 font-weight: 700;
-                font-style: Bold;
                 font-size: 19px;
                 line-height: 22px;
-                letter-spacing: 0%;
                 margin: 13px 0;
                 color: #008900;
 
@@ -196,10 +186,8 @@
             &_pr {
                 font-family: Montserrat arm;
                 font-weight: 400;
-                font-style: Regular;
                 font-size: 13px;
                 line-height: 18px;
-                letter-spacing: 0%;
 
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -217,12 +205,9 @@
                     padding: 8px 7px;
                     background: #0000001A;
                     border-radius: 3px;
-                    font-family: Montserrat arm;
                     font-weight: 400;
-                    font-style: Regular;
                     font-size: 12px;
                     line-height: 100%;
-                    letter-spacing: 0%;
                     width: fit-content;
                     transition: .2s;
 
@@ -241,12 +226,9 @@
                     margin-right: 21px;
 
                     &_txt {
-                        font-family: Montserrat arm;
                         font-weight: 400;
-                        font-style: Regular;
                         font-size: 12px;
                         line-height: 100%;
-                        letter-spacing: 0%;
                     }
                 }
             }

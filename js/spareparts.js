@@ -31,3 +31,11 @@ const productSwiper = new Swiper(".productSwiper", {
         el: ".swiper-pagination",
     },
 });
+
+
+import { 
+    adaptive
+} from "../adaptiveMode/adaptive.js";
+window.adaptive = adaptive;
+adaptive();
+window.addEventListener('resize', function() {adaptive()});

@@ -5,6 +5,7 @@
 @import '../crumbs';
 @import '../reading';
 @import '../address';
+@import '../../font/styles/font.css';
 
 .crumbs {
     margin-top: 204px;
@@ -24,9 +25,7 @@
 .singleArticle {
 
     &__title {
-        font-family: Montserrat arm;
         font-weight: 700;
-        font-style: Bold;
         font-size: 38px;
         line-height: 51px;
         margin-bottom: 26px;

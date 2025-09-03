@@ -3,6 +3,7 @@
 @import '../footer';
 @import '../ads';
 @import '../crumbs';
+@import '../../font/styles/font.css';
 
 .header {
     padding-top: 204px;
@@ -15,36 +16,50 @@ main {
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 20px 16px;
+    }
 }
 
 .about {
 
     &__title {
-        font-family: Montserrat arm;
         font-weight: 900;
-        font-style: Black;
         font-size: 40px;
         line-height: 23px;
-        letter-spacing: 0%;
         text-transform: uppercase;
         text-align: center;
         color: #008900;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 
     &__logo {
         margin: 40px auto;
+
+        @media (max-width: 768px) {
+            width: 170px;
+            margin: 30px auto;
+        }
     }
 
     &__pr {
-        font-family: Montserrat arm;
         font-weight: 400;
-        font-style: Bold;
         font-size: 16px;
         line-height: 28px;
-        letter-spacing: 0%;
         text-align: center;
         max-width: 824px;
         margin: 0 auto 62px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            line-height: 19px;
+            margin-bottom: 34px;
+            max-width: 244px;
+        }
 
         strong {
             font-weight: 700;
@@ -57,16 +72,22 @@ main {
         padding: 20px 170px 33px;
         margin-bottom: 37px;
 
+        @media (max-width: 768px) {
+            padding: 10px 20px 60px;
+        }
+
         &_title {
-            font-family: Montserrat arm;
             font-weight: 600;
-            font-style: SemiBold;
             font-size: 21px;
             line-height: 50px;
-            letter-spacing: 0%;
             text-align: center;
             margin-bottom: 24px;
             color: #4FEC00;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
         }
 
         &_list {
@@ -77,6 +98,11 @@ main {
                 position: relative;
                 gap: 25px;
 
+                @media (max-width: 768px) {
+                    gap: 10px;
+                    height: 50px;
+                }
+
                 &::before {
                     content: '';
                     display: block;
@@ -84,20 +110,34 @@ main {
                     height: 8px;
                     border-radius: 50%;
                     background: #FFFFFF80;
+
+                    @media (max-width: 768px) {
+                        width: 5px;
+                        min-width: 5px;
+                        height: 5px;
+                    }
                 }
 
                 span {
-                    font-family: Montserrat arm;
                     font-weight: 600;
-                    font-style: SemiBold;
                     font-size: 16px;
                     line-height: 50px;
-                    letter-spacing: 0%;
                     color: #E9F1EF;
+
+                    @media (max-width: 768px) {
+                        display: block;
+                        font-size: 10px;
+                        line-height: 1.5;
+                        margin-left: 4px;
+                    }
                 }
 
                 img {
                     margin-left: auto;
+
+                    @media (max-width: 768px) {
+                        width: 12px;
+                    }
                 }
             }
         }
@@ -108,22 +148,32 @@ main {
 .team {
     padding: 0 57px;
 
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
     &__title {
         color: #032022;
-        font-family: Montserrat arm;
         font-weight: 600;
-        font-style: SemiBold;
         font-size: 21px;
         line-height: 50px;
-        letter-spacing: 0%;
         text-align: center;
         margin-bottom: 37px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;   
+        }
     }
 
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 78px 43px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px 20px;
+        }
     }
 
     &__item {
@@ -133,34 +183,54 @@ main {
             max-height: 185px;
             border-radius: 5px;
             object-fit: cover;
+
+            @media (max-width: 768px) {
+                width: 134px;
+                height: 141px;
+            }
         }
 
         &_name {
-            font-family: Montserrat arm;
             font-weight: 400;
-            font-style: SemiBold;
             font-size: 21px;
             line-height: 50px;
-            letter-spacing: 0%;
             text-transform: uppercase;
             color: #032022;
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+                margin-top: -10px;
+            }
 
             strong {
                 display: block;
                 margin-bottom: -28px;
                 font-weight: 600;
+
+                @media (max-width: 768px) {
+                    margin-bottom: -30px;
+        }   
             }
         }
 
         &_prof {
             color: #032022;
-            font-family: Montserrat arm;
             font-weight: 400;
-            font-style: Regular;
             font-size: 14px;
             line-height: 50px;
-            letter-spacing: 0%;
             margin-top: -19px;
+
+            @media (max-width: 768px) {
+                font-size: 10px;
+                margin-top: -25px;
+            }
         }
+    }
+}
+
+
+@media (max-width: 1296px) {
+    .topAds {
+        display: none;
     }
 }

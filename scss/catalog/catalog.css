@@ -1,3 +1,4 @@
+@import '../../font/styles/font.css';
 * {
   margin: 0;
   padding: 0;
@@ -1304,12 +1305,9 @@ button {
   filter: invert(100%);
 }
 .header__submenu_list_link_txt {
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 13px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   color: #000;
 }
