@@ -11,7 +11,7 @@
 <body>
     <div id="adaptive">
 
-        <nav class="navbar">
+                <nav class="navbar">
             <div class="wrapper">
                 <div class="navbar__ads">
                     <img src="images/navbarAds.png" alt="" class="navbar__ads_img">
@@ -73,23 +73,32 @@
                                         <li><a href="" class="burger__menu_list_link">Բլոգ</a></li>
                                         <li><a href="" class="burger__menu_list_link">Կապ Մեզ Հետ</a></li>
                                     </ul>
-                                    <div class="burger__menu_lang">
+                                    <div class="burger__menu_lang langs">
                                         <button type="button" class="burger__menu_lang_btn"
-                                            onclick="toggleActive('menuLang')">
+                                            onclick="toggleActive('menuLang', this)">
                                             <img src="images/flag.png" alt="" class="burger__menu_lang_btn_flag">
-                                            <span class="burger__menu_lang_btn_txt">Հայ</span>
+                                            <span class="burger__menu_lang_btn_txt" id="selectedLang2">Հայ</span>
                                             <img src="images/arrow.png" alt="" class="burger__menu_lang_btn_icon">
                                         </button>
                                         <div class="burger__menu_lang_list" id="menuLang">
-                                            <button type="button" class="burger__menu_lang_list_btn">
+                                            <button type="button" class="burger__menu_lang_list_btn"
+                                                id="defaultChecked2"
+                                                onclick="chooseLang('selectedLang2', 'chooseLang4', 'menuLang', 'burger__menu_lang_btn', this)">
                                                 <img src="images/flag.png" alt=""
                                                     class="burger__menu_lang_list_btn_flag">
-                                                <span class="burger__menu_lang_list_btn_txt">Rus</span>
+                                                <span class="burger__menu_lang_list_btn_txt" id="chooseLang4">Հայ</span>
                                             </button>
-                                            <button type="button" class="burger__menu_lang_list_btn">
+                                            <button type="button" class="burger__menu_lang_list_btn"
+                                                onclick="chooseLang('selectedLang2', 'chooseLang5', 'menuLang', 'burger__menu_lang_btn', this)">
                                                 <img src="images/flag.png" alt=""
                                                     class="burger__menu_lang_list_btn_flag">
-                                                <span class="burger__menu_lang_list_btn_txt">Eng</span>
+                                                <span class="burger__menu_lang_list_btn_txt" id="chooseLang5">Rus</span>
+                                            </button>
+                                            <button type="button" class="burger__menu_lang_list_btn"
+                                                onclick="chooseLang('selectedLang2', 'chooseLang6', 'menuLang', 'burger__menu_lang_btn', this)">
+                                                <img src="images/flag.png" alt=""
+                                                    class="burger__menu_lang_list_btn_flag">
+                                                <span class="burger__menu_lang_list_btn_txt" id="chooseLang6">Eng</span>
                                             </button>
                                         </div>
                                     </div>
@@ -148,20 +157,27 @@
                             <img src="images/loop.png" alt="" class="navbar__search_btn_icon">
                         </button>
                     </div>
-                    <div class="navbar__lang">
-                        <button type="button" class="navbar__lang_btn" onclick="toggleActive('topLang')">
+                    <div class="navbar__lang langs">
+                        <button type="button" class="navbar__lang_btn" onclick="toggleActive('topLang', this)">
                             <img src="images/flag.png" alt="" class="navbar__lang_btn_flag">
-                            <span class="navbar__lang_btn_txt">Հայ</span>
+                            <span class="navbar__lang_btn_txt" id="selectedLang">Հայ</span>
                             <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
                         </button>
                         <div class="navbar__lang_list" id="topLang">
-                            <button type="button" class="navbar__lang_list_btn">
+                            <button type="button" class="navbar__lang_list_btn" id="defaultChecked"
+                                onclick="chooseLang('selectedLang', 'chooseLang1', 'topLang', 'navbar__lang_btn', this)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
-                                <span class="navbar__lang_list_btn_txt">Rus</span>
+                                <span class="navbar__lang_list_btn_txt" id="chooseLang1">Հայ</span>
                             </button>
-                            <button type="button" class="navbar__lang_list_btn">
+                            <button type="button" class="navbar__lang_list_btn"
+                                onclick="chooseLang('selectedLang', 'chooseLang2', 'topLang', 'navbar__lang_btn', this)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
-                                <span class="navbar__lang_list_btn_txt">Eng</span>
+                                <span class="navbar__lang_list_btn_txt" id="chooseLang2">Eng</span>
+                            </button>
+                            <button type="button" class="navbar__lang_list_btn"
+                                onclick="chooseLang('selectedLang', 'chooseLang3', 'topLang', 'navbar__lang_btn', this)">
+                                <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
+                                <span class="navbar__lang_list_btn_txt" id="chooseLang3">Rus</span>
                             </button>
                         </div>
                     </div>
@@ -179,6 +195,10 @@
         </nav>
 
         <div class="topAds">
+            <div class="topAds__header">
+                <h2 class="topAds__header_title">Հատուկ Առաջարկներ</h2>
+                <a href="" class="topAds__header_seeAll">Տեսնել բոլորը</a>
+            </div>
             <div class="topAds__item right">
                 <img src="images/ad1.png" alt="" class="topAds__item_img">
                 <img src="images/ad2.png" alt="" class="topAds__item_img">

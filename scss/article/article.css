@@ -78,6 +78,12 @@ button {
   transition: 0.2s;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .seeMore {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+}
 
 .navbar {
   background: #032022;
@@ -855,24 +861,43 @@ button {
   padding: 17px 21px 27px;
   margin-bottom: 17px;
 }
+@media (max-width: 768px) {
+  .header__address_social {
+    height: 183px;
+    padding: 20px 14px 25px;
+  }
+}
 .header__address_social_title {
-  font-family: Montserrat arm;
   font-weight: 700;
-  font-style: Bold;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   margin-bottom: 16px;
   color: #4FEC00;
+}
+@media (max-width: 768px) {
+  .header__address_social_title {
+    margin-bottom: 25px;
+    font-size: 12px;
+  }
 }
 .header__address_social_list {
   display: grid;
   gap: 26px;
 }
+@media (max-width: 768px) {
+  .header__address_social_list {
+    gap: 21px;
+  }
+}
 .header__address_social_list_link {
   display: flex;
   align-items: center;
   gap: 18px;
+}
+@media (max-width: 768px) {
+  .header__address_social_list_link {
+    gap: 6px;
+  }
 }
 .header__address_social_list_link_icon {
   width: 20px;
@@ -880,24 +905,23 @@ button {
 }
 .header__address_social_list_link_txt {
   color: #fff;
-  font-family: Montserrat arm;
   font-weight: 400;
-  font-style: Regular;
   font-size: 13px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 .header__address_list {
   display: grid;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .header__address_list {
+    display: none;
+  }
+}
 .header__address_list_link {
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 25px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #008900;
   text-align: right;
 }

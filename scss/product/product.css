@@ -78,6 +78,12 @@ button {
   transition: 0.2s;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .seeMore {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+}
 
 .navbar {
   background: #032022;

@@ -4,6 +4,7 @@
 @import '../ads';
 @import '../crumbs';
 @import '../address';
+@import '../../adaptiveMode/adaptive';
 
 
 .crumbs {
@@ -20,31 +21,45 @@
         margin: 0 auto;
         display: flex;
         gap: 38px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 0 16px;
+            margin-top: 38px;
+        }
     }
 
     &__desc {
         max-width: 733px;
         padding-top: 27px;
 
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+
         &_title {
-            font-family: Montserrat arm;
             font-weight: 900;
-            font-style: Black;
             font-size: 31px;
             line-height: 23px;
-            letter-spacing: 0%;
             text-transform: uppercase;
             margin-bottom: 19px;
             color: #008900;
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
         }
 
         &_pr {
-            font-family: Montserrat arm;
             font-weight: 400;
-            font-style: Regular;
             font-size: 16px;
             line-height: 28px;
-            letter-spacing: 0%;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                line-height: 17px;
+            }
 
             strong {
                 font-weight: 600;
@@ -59,29 +74,50 @@
     max-width: 1120px;
     margin: -20px auto 37px;
 
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
 
     &__wrapper {
         display: flex;
         gap: 25px;
+
+        @media (max-width: 768px) {
+            gap: 0px;
+            flex-direction: column;
+            padding: 0 16px;
+        }
     }
 
     &__pic {
         width: 100%;
         max-width: 515px;
 
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
         &_title {
-            font-family: Montserrat arm;
             font-weight: 700;
-            font-style: Bold;
             font-size: 18px;
             line-height: 50px;
-            letter-spacing: 0%;
             margin-bottom: 2px;
+
+            @media (max-width: 768px) {
+                font-size: 11px;
+                margin-bottom: -9px;
+            }
         }
 
         &_img {
             width: 100%;
             border-radius: 10px;
+
+            @media (max-width: 768px) {
+                height: 191px;
+                object-fit: cover;
+            }
         }
     }
 
@@ -89,15 +125,25 @@
         width: 100%;
         max-width: 580px;
 
+        &_frame {
+            border-radius: 12px;
+
+            @media (max-width: 768px) {
+                width: 284px;
+                height: 194px;
+            }
+        }
+
         &_link {
-            font-family: Montserrat arm;
             font-weight: 700;
-            font-style: Bold;
             font-size: 12px;
             line-height: 50px;
-            letter-spacing: 0%;
             color: #004DE2CC;
             transition: .2s;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
 
             &:hover {
                 color: #004DE2;
@@ -117,5 +163,48 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 39px 37px;
         margin-bottom: 37px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 14px 7px;   
+            padding: 0 14px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+            height: 91px;   
+        }
+    }
+}
+
+
+@media (max-width: 1296px) {
+    .topAds {
+        order: 4;
+    }
+
+    .crumbs {
+        order: 1;
+    }
+
+    .header {
+        order: 2;
+    }
+
+    .address {
+        order: 3;
+    }
+
+    .gallery {
+        order: 5;
+    }
+
+    .footer {
+        order: 6;
     }
 }
