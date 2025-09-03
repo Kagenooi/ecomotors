@@ -1,0 +1,23 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../ads';
+@import '../filter';
+@import '../product';
+@import '../crumbs';
+@import '../recomended';
+
+.catalogads {
+    width: 100%;
+    max-width: 1120px;
+    margin: 66px auto 106px;
+}
+
+.crumbs {
+    margin-top: 204px;
+}
+
+
+.header {
+    margin-top: -12px;
+}
