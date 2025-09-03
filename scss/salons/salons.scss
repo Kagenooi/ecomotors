@@ -3,6 +3,7 @@
 @import '../footer';
 @import '../ads';
 @import '../crumbs';
+@import '../../adaptiveMode/adaptive';
 
 
 .header {
@@ -17,23 +18,45 @@
     max-width: 1120px;
     margin: 0 auto;
 
+    @media (max-width: 1296px) {
+        padding: 32px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 32px 17px;
+    }
+
     &__title {
-        font-family: Montserrat arm;
         font-weight: 900;
-        font-style: Black;
         font-size: 40px;
         line-height: 23px;
-        letter-spacing: 0%;
         text-transform: uppercase;
         color: #008900;
         margin-bottom: 42px;
         text-align: center;
+
+        @media (max-width: 1296px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
     }
 
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 27px 40px;
+
+        @media (max-width: 1296px) {
+            gap: 20px 40px;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
     }
 
     &__item {
@@ -45,30 +68,56 @@
             gap: 15px;
 
             &_title {
-                font-family: Montserrat arm;
                 font-weight: 700;
-                font-style: Bold;
                 font-size: 18px;
                 line-height: 50px;
-                letter-spacing: 0%;
+
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                }
             }
 
             &_link {
-                font-family: Montserrat arm;
                 font-weight: 700;
-                font-style: Bold;
                 font-size: 12px;
                 line-height: 50px;
-                letter-spacing: 0%;
                 color: #004DE2CC;
+
+                @media (max-width: 768px) {
+                    font-size: 10px;
+                }
             }
         }
 
         &_pic {
 
             &_img {
+                width: 100%;
+                height: 248px;
+                object-fit: cover;
                 border-radius: 10px;
+
+                @media (max-width: 768px) {
+                    height: 191px;
+                }
             }
         }
+    }
+}
+
+
+
+@media (max-width: 1296px) {
+    .header {
+        order: 1;
+    }
+    .salons {
+        order: 2;
+    }
+    .topAds {
+        order: 3;
+    }
+    .footer {
+        order: 4;
     }
 }
