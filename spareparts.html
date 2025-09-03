@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="scss/spareparts/spareparts.css">
 </head>
 
@@ -206,9 +207,149 @@
         </div>
 
 
-        
+        <header class="header wrapper">
+            <div class="header__filter">
+                <form action="">
+                    <div class="header__filter_content">
+                        <div class="header__filter_wrapper">
+                            <div class="header__filter_item">
+                                <div class="header__filter_item_select select">
+                                    <button type="button" class="select__btn" onclick="openSelect(this)">
+                                        <span class="select__btn_txt">Մակնիշը</span>
+                                        <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                    </button>
+                                    <div class="select__content">
+                                        <div class="select__wrapper">
+                                            <div class="select__scroll">
+                                                <div class="select__search">
+                                                    <input type="search" class="select__search_inp"
+                                                        placeholder="Search Mark">
+                                                    <img src="" alt="" class="select__search_icon">
+                                                </div>
+                                                <div class="select__list">
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button1</button>
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button2</button>
+                                                </div>
+                                                <div class="select__list">
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button1</button>
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button2</button>
+                                                </div>
+                                                <div class="select__list">
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button1</button>
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button2</button>
+                                                </div>
+                                                <div class="select__list">
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button1</button>
+                                                    <button type="button" class="select__list_btn"
+                                                        onclick="chooseOption(this)">Button2</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__filter_choose">
+                            <label for="arka" class="header__filter_choose_lab">
+                                <input type="radio" name="choose" id="arka" class="header__filter_choose_lab_inp"
+                                    checked>
+                                <span class="header__filter_choose_lab_txt">Առկա</span>
+                            </label>
+                            <label for="patver" class="header__filter_choose_lab">
+                                <input type="radio" name="choose" id="patver" class="header__filter_choose_lab_inp">
+                                <span class="header__filter_choose_lab_txt">Պատվերով</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="header__filter_bottom">
+                        <div class="header__filter_bottom_wrapper">
+                            <label class="header__filter_bottom_vinlab">
+                                <input type="text" name="" placeholder="Փնտրիր ապրանք VIN կոդով"
+                                    class="header__filter_bottom_vinlab_inp">
+                            </label>
+                        </div>
+                        <button type="submit" class="header__filter_bottom_submit">
+                            <img src="images/loop2.png" alt="" class="header__filter_bottom_submit_icon">
+                            <span class="header__filter_bottom_submit_txt">Որոնել</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </header>
 
-       
+        <div class="spareads wrapper">
+            <div class="spareads__item left">
+                <div class="spareads__item_desc">
+                    <div>
+                        <img src="images/adsLogo.svg" alt="" class="spareads__item_desc_logo">
+                        <h2 class="spareads__item_desc_title">ստացեք 10% զեղչ</h2>
+                        <p class="spareads__item_desc_pr">Միայն DONGFENG մեքենաների պահեստամասերի համար։</p>
+                    </div>
+                    <a href="" class="spareads__item_desc_link white">Տեսնել զեղչը</a>
+                </div>
+                <img src="images/adsBg1.png" alt="" class="spareads__item_img">
+            </div>
+            <div class="spareads__item right">
+                <div class="spareads__item_desc">
+                    <div>
+                        <img src="images/adsLogo.svg" alt="" class="spareads__item_desc_logo">
+                        <h2 class="spareads__item_desc_title">հատուկ առաջարկ <br><span>բիզնեսի համար</span></h2>
+                    </div>
+                    <a href="" class="spareads__item_desc_link blue">Գնել Հիմա</a>
+                </div>
+                <img src="images/adsBg2.png" alt="" class="spareads__item_img">
+            </div>
+        </div>
+
+        <section class="catalog wrapper">
+            <h2 class="catalog__title">Բոլորը</h2>
+            <div class="catalog__wrapper">
+                <div class="catalog__item product">
+                    <div class="product__slider">
+                        <div class="swiper productSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/productslide.png" alt="" class="product__slider_item">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/productslide.png" alt="" class="product__slider_item">
+                                </div>
+                            </div>
+                            <button type="button" class="product__slider_btn prev">
+                                <img src="images/prev.svg" alt="" class="product__slider_btn_icon">
+                            </button>
+                            <button type="button" class="product__slider_btn next">
+                                <img src="images/next.svg" alt="" class="product__slider_btn_icon">
+                            </button>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <button type="button" class="product__wishlist">
+                            <img src="images/like.png" alt="" class="product__wishlist_icon">
+                        </button>
+                    </div>
+                    <a href="product.html" class="product__desc">
+                        <div class="product__desc_header">
+                            <p class="product__desc_name">Toyota Camry</p>
+                        </div>
+                        <p class="product__desc_pr">20 կՎտ էլեկտրական BLDC շարժիչի համար...</p>
+                        <div class="product__desc_footer">
+                            <p class="product__desc_price">$39,735</p>
+                            <p class="product__desc_address">Մելքումով 88</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="" class="seeMore">Տեսնել ավելին</a>
+        </section>
+
+        <img src="images/spareads.png" alt="" class="spareadswr">
         <footer class="footer wrapper">
             <div class="info">
                 <div class="info__logo">
@@ -298,6 +439,7 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/spareparts.js"></script>
 </body>
 

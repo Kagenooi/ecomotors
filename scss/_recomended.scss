@@ -1,0 +1,94 @@
+.recomended {
+    padding: 60px 15px;
+
+    &__title {
+        font-family: Montserrat arm;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        color: #032022;
+        margin-bottom: 27px;
+    }
+
+    &__slider {
+        position: relative;
+        margin-top: -50px;
+        
+        .swiper {
+            padding-top: 50px;
+        }
+
+        &_btn {
+            position: absolute;
+            top: 0;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #D9D9D926;
+            transition: .2s;
+
+            &:hover {
+                transition: .2s;
+                background: #032022;
+            }
+
+            &_icon {
+                transition: .2s;
+            }
+
+            &:hover &_icon {
+                transition: .2s;
+                filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+            }
+
+            &.next {
+                right: 0;
+            }
+
+            &.prev {
+                right: 40px;
+            }
+        }
+
+        &_item {
+            width: 100%;
+            max-width: 360px;
+
+            &_img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 2px;
+            }
+
+            &_desc {
+                &_header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &_name,
+                    &_date {
+                        font-family: Montserrat arm;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 23px;
+                        color: #032022;
+                    }
+                }
+
+                &_price {
+                    font-family: Montserrat arm;
+                    font-weight: 600;
+                    font-size: 21px;
+                    line-height: 23px;
+                    color: #032022;
+                }
+            }
+        }
+    }
+}

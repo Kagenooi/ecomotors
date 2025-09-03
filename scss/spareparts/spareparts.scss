@@ -3,3 +3,153 @@
 @import '../footer';
 @import '../ads';
 @import '../crumbs';
+@import '../filter';
+@import '../product';
+
+
+.crumbs {
+    margin-top: 204px;
+}
+
+.header {
+    width: 100%;
+
+    &__filter {
+        &_bottom {
+            margin-top: -10px;
+        }
+    }
+}
+
+
+.spareads {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+
+    &__item {
+        position: relative;
+
+        &_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1020;
+        }
+
+        &.left &_desc {
+            max-width: 350px !important;
+        }
+
+        &_desc {
+            position: relative;
+            z-index: 1030;
+            max-width: 300px;
+            padding: 10px 20px 18px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_logo {
+                width: 135px;
+            }
+
+            &_title {
+                font-family: Montserrat arm;
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 100%;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                color: #000;
+
+                span {
+                    font-weight: 400;
+                    font-size: 27px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                    color: #000;
+                }
+
+                &.blue {
+                    color: #00204F;
+
+                    span {
+                        color: #00204F;
+                    }
+                }
+            }
+
+            &_pr {
+                font-family: Montserrat arm;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                max-width: 190px;
+            }
+
+            &_link {
+                border-radius: 50px;
+                padding: 8px 24px;
+                width: 100%;
+                max-width: 122px;
+                text-align: center;
+                font-family: Montserrat arm;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+                transition: .2s;
+
+                &.white {
+                    background: #fff;
+                    color: #032022;
+
+                    &:hover {
+                        transition: .2s;
+                        color: #fff;
+                        background: #032022;
+                    }
+                }
+
+                &.blue {
+                    background: #00204F;
+                    color: #fff;
+
+                    &:hover {
+                        transition: .2s;
+                        background: #fff;
+                        color: #032022;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.catalog {
+    margin: 70px auto 50px;
+
+    &__title {
+        font-family: Montserrat arm;
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 18px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding: 50px 0;
+    }
+}
+
+.spareadswr {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto 122px;
+    border-radius: 10px;
+}

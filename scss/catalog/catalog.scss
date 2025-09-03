@@ -1,0 +1,184 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../ads';
+@import '../filter';
+@import '../product';
+@import '../recomended';
+
+.catalogads {
+    width: 100%;
+    max-width: 1120px;
+    margin: 66px auto 106px;
+}
+
+.header {
+    margin-top: 214px;
+
+    &__submenu {
+        margin: 10px 0;
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            &_link {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 0 18px;
+                border-radius: 5px;
+                border: 1px solid #00000026;
+                height: 100%;
+                transition: .2s;
+
+                &:hover {
+                    transition: .2s;
+                    background: #032022;
+                }
+
+                &_icon {
+                    max-height: 42px;
+                    max-width: 42px;
+                }
+
+                &:hover &_icon {
+                    filter: invert(100%);
+                }
+
+                &_txt {
+                    font-family: Montserrat arm;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 13px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    color: #000;
+                }
+
+                &:hover &_txt {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__subfilter {
+        margin-top: 21px;
+        border-radius: 12px;
+        background: #E9F1EF;
+        padding: 20px 57px;
+
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 27px 60px;
+        }
+
+        &_lab {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            cursor: pointer;
+            transition: .2s;
+
+            &_check {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 11px;
+                height: 11px;
+                border-radius: 2px;
+                border: 1px solid #000;
+            }
+
+            &_txt {
+                font-family: Montserrat arm;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                color: #032022;
+            }
+
+            &:hover {
+                transition: .2s;
+                transform: scale(1.1);
+            }
+
+            &_inp {
+                display: none;
+            }
+
+            &_inp:checked+&_check {
+                background: #008900;
+                border: 1px solid #008900;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 7px;
+                    height: 5px;
+                    background: url('../../images/checked.svg') no-repeat center;
+                }
+            }
+        }
+    }
+
+    &__filter {
+
+        &_choose {
+
+            &_lab {
+
+                &_txt {
+                    color: #00000059 !important;
+                    background: #F2F2F7 !important;
+                }
+
+                &_inp:checked+&_txt {
+                    border: 1px solid #0089004F !important;
+                    color: #000 !important;
+                    background: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+
+.catalog {
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 37px 0 30px;
+        height: 107px;
+    }
+
+    &__labs {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: Montserrat arm;
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 100%;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 56px;
+        gap: 40px;
+    }
+
+    .product {
+        max-width: 347px;
+    }
+}

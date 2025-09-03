@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="scss/homepage/index.css">
+    <link rel="stylesheet" href="scss/catalog/catalog.css">
 </head>
 
 <body>
@@ -528,169 +528,166 @@
                             </div>
                         </form>
                     </div>
-                    <div class="header__content">
-                        <div class="header__slider">
-                            <div class="swiper headerSwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="images/sliderHome1.png" alt="" class="header__slider_img">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/sliderHome1.png" alt="" class="header__slider_img">
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
+                    <div class="header__subfilter">
+                        <form action="">
+                            <div class="header__subfilter_wrapper">
+                                <label for="subfilter1" class="header__subfilter_lab">
+                                    <input type="checkbox" id="subfilter1" name="" class="header__subfilter_lab_inp">
+                                    <span class="header__subfilter_lab_check"></span>
+                                    <span class="header__subfilter_lab_txt">Բոլորը</span>
+                                </label>
+                                <label for="subfilter2" class="header__subfilter_lab">
+                                    <input type="checkbox" id="subfilter2" name="" class="header__subfilter_lab_inp">
+                                    <span class="header__subfilter_lab_check"></span>
+                                    <span class="header__subfilter_lab_txt">Մելքումով 88</span>
+                                </label>
+                                <label for="subfilter3" class="header__subfilter_lab">
+                                    <input type="checkbox" id="subfilter3" name="" class="header__subfilter_lab_inp">
+                                    <span class="header__subfilter_lab_check"></span>
+                                    <span class="header__subfilter_lab_txt">Երևան-Սևան մայրուղի թիվ 14</span>
+                                </label>
+                                <label for="subfilter4" class="header__subfilter_lab">
+                                    <input type="checkbox" id="subfilter4" name="" class="header__subfilter_lab_inp">
+                                    <span class="header__subfilter_lab_check"></span>
+                                    <span class="header__subfilter_lab_txt">Արմավիրի մարզ գ․ Փարաքար Գևորգ Չաուշի
+                                        2</span>
+                                </label>
+                                <label for="subfilter5" class="header__subfilter_lab">
+                                    <input type="checkbox" id="subfilter5" name="" class="header__subfilter_lab_inp">
+                                    <span class="header__subfilter_lab_check"></span>
+                                    <span class="header__subfilter_lab_txt">Ավտոշուկա Աջափնյակ Լուկաշինի 3-րդ
+                                        փողոց</span>
+                                </label>
+                                <label for="subfilter6" class="header__subfilter_lab">
+                                    <input type="checkbox" id="subfilter6" name="" class="header__subfilter_lab_inp">
+                                    <span class="header__subfilter_lab_check"></span>
+                                    <span class="header__subfilter_lab_txt">Նորք Մարաշ Դավիթ Բեկի 97/21</span>
+                                </label>
                             </div>
-                        </div>
-                        <img src="images/headerImg.png" alt="" class="header__img">
+                        </form>
                     </div>
                 </div>
             </div>
         </header>
 
-        <main>
-            <section class="catalog top__cars">
-                <div class="wrapper">
-                    <h1 class="title">
-                        <img src="images/titleDecor1.png" alt="" class="title__icon">
-                        ԹՈՓ ՄԵՔԵՆԱՆԵՐ
-                    </h1>
-                    <div class="catalog__wrapper">
-                        <div class="catalog__item product">
-                            <div class="product__slider">
-                                <div class="swiper productSwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="product__slider_item">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="product__slider_item">
-                                        </div>
-                                    </div>
-                                    <button type="button" class="product__slider_btn prev">
-                                        <img src="images/prev.svg" alt="" class="product__slider_btn_icon">
-                                    </button>
-                                    <button type="button" class="product__slider_btn next">
-                                        <img src="images/next.svg" alt="" class="product__slider_btn_icon">
-                                    </button>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                                <button type="button" class="product__wishlist">
-                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
-                                </button>
-                            </div>
-                            <div class="product__desc">
-                                <div class="product__desc_header">
-                                    <p class="product__desc_name">Toyota Camry</p>
-                                    <p class="product__desc_date">2024</p>
-                                </div>
-                                <div class="product__desc_footer">
-                                    <p class="product__desc_price">$39,735</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+        <section class="catalog wrapper">
+            <div class="catalog__header">
+                <h1 class="catalog__title">ԱՌԿԱ ՄԵՔԵՆԱՆԵՐ</h1>
+                <div class="catalog__labs">
+                    <label for="arka" class="header__filter_choose_lab">
+                        <input type="radio" name="choose" id="arka" class="header__filter_choose_lab_inp" checked>
+                        <span class="header__filter_choose_lab_txt">Առկա</span>
+                    </label>
+                    <label for="patver" class="header__filter_choose_lab">
+                        <input type="radio" name="choose" id="patver" class="header__filter_choose_lab_inp">
+                        <span class="header__filter_choose_lab_txt">Պատվերով</span>
+                    </label>
                 </div>
-            </section>
-
-            <div class="ads2 wrapper">
-                <img src="images/navbarAds.png" alt="" class="ads2__img">
             </div>
-
-            <section class="catalog">
-                <div class="wrapper">
-                    <h2 class="title">
-                        <img src="images/titleDecor2.png" alt="" class="title__icon">
-                        ԼՅՈՒՔՍ ՄԵՔԵՆԱՆԵՐ
-                    </h2>
-                    <div class="catalog__wrapper">
-                        <div class="catalog__item product">
-                            <div class="product__slider">
-                                <div class="swiper productSwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="product__slider_item">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="product__slider_item">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
+            <div class="catalog__wrapper">
+                <div class="catalog__item product">
+                    <div class="product__slider">
+                        <div class="swiper productSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/productslide.png" alt="" class="product__slider_item">
                                 </div>
-                                <button type="button" class="product__wishlist">
-                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
-                                </button>
-                            </div>
-                            <div class="product__desc">
-                                <div class="product__desc_header">
-                                    <p class="product__desc_name">Toyota Camry</p>
-                                    <p class="product__desc_date">2024</p>
+                                <div class="swiper-slide">
+                                    <img src="images/productslide.png" alt="" class="product__slider_item">
                                 </div>
-                                <p class="product__desc_price">$39,735</p>
                             </div>
+                            <button type="button" class="product__slider_btn prev">
+                                <img src="images/prev.svg" alt="" class="product__slider_btn_icon">
+                            </button>
+                            <button type="button" class="product__slider_btn next">
+                                <img src="images/next.svg" alt="" class="product__slider_btn_icon">
+                            </button>
+                            <div class="swiper-pagination"></div>
                         </div>
+                        <button type="button" class="product__wishlist">
+                            <img src="images/like.png" alt="" class="product__wishlist_icon">
+                        </button>
                     </div>
-                    <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+                    <a href="" class="product__desc">
+                        <div class="product__desc_header">
+                            <p class="product__desc_name">Toyota Camry</p>
+                            <p class="product__desc_date">2024</p>
+                        </div>
+                        <div class="product__desc_footer">
+                            <p class="product__desc_price">$39,735</p>
+                            <p class="product__desc_address">Ավտոշուկա Աջափնյակ</p>
+                        </div>
+                    </a>
                 </div>
-            </section>
-
-            <div class="ads2 wrapper">
-                <img src="images/ads2.png" alt="" class="ads2__img">
             </div>
+            <a href="" class="seeMore">Տեսնել ավելին</a>
+        </section>
 
-            <section class="catalog">
-                <div class="wrapper">
-                    <h2 class="title">
-                        <img src="images/titleDecor3.png" alt="" class="title__icon">
-                        ԲԻԶՆԵՍԻ ՀԱՄԱՐ
-                    </h2>
-                    <div class="catalog__wrapper">
-                        <div class="catalog__item product">
-                            <div class="product__slider">
-                                <div class="swiper productSwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="product__slider_item">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="images/productslide.png" alt="" class="product__slider_item">
-                                        </div>
+        <section class="recomended wrapper">
+            <h2 class="recomended__title">Առաջարկվող</h2>
+            <div class="recomended__slider">
+                <div class="swiper" id="recomended">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="recomended__slider_item">
+                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                <div class="recomended__slider_item_desc">
+                                    <div class="recomended__slider_item_desc_header">
+                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
+                                        <p class="recomended__slider_item_desc_header_date">2023</p>
                                     </div>
-                                    <div class="swiper-pagination"></div>
+                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
                                 </div>
-                                <button type="button" class="product__wishlist">
-                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
-                                </button>
-                            </div>
-                            <div class="product__desc">
-                                <div class="product__desc_header">
-                                    <p class="product__desc_name">Toyota Camry</p>
-                                    <p class="product__desc_date">2024</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="recomended__slider_item">
+                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                <div class="recomended__slider_item_desc">
+                                    <div class="recomended__slider_item_desc_header">
+                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
+                                        <p class="recomended__slider_item_desc_header_date">2023</p>
+                                    </div>
+                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
                                 </div>
-                                <p class="product__desc_price">$39,735</p>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="recomended__slider_item">
+                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                <div class="recomended__slider_item_desc">
+                                    <div class="recomended__slider_item_desc_header">
+                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
+                                        <p class="recomended__slider_item_desc_header_date">2023</p>
+                                    </div>
+                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="recomended__slider_item">
+                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                <div class="recomended__slider_item_desc">
+                                    <div class="recomended__slider_item_desc_header">
+                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
+                                        <p class="recomended__slider_item_desc_header_date">2023</p>
+                                    </div>
+                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <a href="" class="catalog__seeMore">Տեսնել ավելին</a>
+                    <button type="button" class="recomended__slider_btn prev">
+                        <img src="images/chevLeft.svg" alt="" class="recomended__slider_btn_icon">
+                    </button>
+                    <button type="button" class="recomended__slider_btn next">
+                        <img src="images/chevRight.svg" alt="" class="recomended__slider_btn_icon">
+                    </button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="partners">
-                <div class="wrapper">
-                    <h2 class="title">
-                        <img src="images/titleDecor3.png" alt="" class="title__icon">
-                        ՄԵՐ ԳՈՐԾԸՆԿԵՐՆԵՐԸ
-                    </h2>
-                    <div class="partners__content">
-                        <img src="images/partners1.png" alt="" class="partners__img">
-                        <img src="images/partners2.png" alt="" class="partners__img">
-                        <img src="images/partners3.png" alt="" class="partners__img">
-                        <img src="images/partners4.png" alt="" class="partners__img">
-                    </div>
-                </div>
-            </section>
-        </main>
+        <img src="images/catalogads.png" alt="" class="catalogads">
 
         <footer class="footer wrapper">
             <div class="info">
@@ -782,7 +779,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/catalog.js"></script>
 </body>
 
 </html>

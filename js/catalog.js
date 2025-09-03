@@ -27,11 +27,14 @@ const productSwiper = new Swiper(".productSwiper", {
         el: ".swiper-pagination",
     },
 });
-const headerSwiper = new Swiper(".headerSwiper", {
+
+
+const recomended = new Swiper("#recomended", {
     loop: true,
-    autoplay: true,
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".recomended__slider_btn.next",
+        prevEl: ".recomended__slider_btn.prev",
+    }
 });
