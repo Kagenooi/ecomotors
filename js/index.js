@@ -4,7 +4,8 @@ import {
     close,
     chooseOption,
     closeMenu,
-    closeMenuBtn
+    closeMenuBtn,
+    chooseLang
 } from "./module.js";
 
 window.toggleActive = toggleActive;
@@ -14,6 +15,7 @@ close();
 window.closeMenu = closeMenu;
 closeMenu();
 window.chooseOption = chooseOption;
+window.chooseLang = chooseLang;
 window.closeMenuBtn = closeMenuBtn;
 
 

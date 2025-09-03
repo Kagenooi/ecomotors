@@ -172,12 +172,12 @@ button {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.navbar__menu .burger__header_close_txt {
   font-family: Montserrat arm;
   font-weight: 300;
-  font-style: Light;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: rgba(255, 255, 255, 0.5019607843);
 }
 .navbar__menu .burger__wrapper {
@@ -286,6 +286,13 @@ button {
   display: flex;
   align-items: center;
   gap: 7px;
+  border-radius: 5px 5px 0;
+  padding: 13px 16px;
+  border: 1px solid #032022;
+  border-bottom: none;
+}
+.navbar__menu .burger__menu_lang_btn.active {
+  border-color: rgba(255, 255, 255, 0.5019607843);
 }
 .navbar__menu .burger__menu_lang_btn_flag {
   width: 22px;
@@ -295,10 +302,8 @@ button {
 .navbar__menu .burger__menu_lang_btn_txt {
   font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__menu .burger__menu_lang_btn_icon {
@@ -309,30 +314,40 @@ button {
 }
 .navbar__menu .burger__menu_lang_list {
   position: absolute;
-  top: 30px;
-  left: -6px;
+  top: 46px;
+  left: 0px;
   transition: 0.2s;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  width: 120%;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #032022;
+  padding-bottom: 11px;
+  border-top: none;
+  background: #032022;
 }
 .navbar__menu .burger__menu_lang_list.active {
   transition: 0.2s;
   opacity: 1;
   visibility: visible;
+  border-color: rgba(255, 255, 255, 0.5019607843);
 }
 .navbar__menu .burger__menu_lang_list_btn {
   display: flex;
   align-items: center;
   gap: 7px;
   transition: 0.2s;
-  padding: 6px;
+  padding: 3px 3px 3px 16px;
   background: #032022;
   width: 100%;
 }
 .navbar__menu .burger__menu_lang_list_btn:hover {
   transition: 0.2s;
-  background: #123c3f;
+  background: #008900;
+}
+.navbar__menu .burger__menu_lang_list_btn.active {
+  display: none;
 }
 .navbar__menu .burger__menu_lang_list_btn_flag {
   width: 22px;
@@ -357,6 +372,13 @@ button {
   display: flex;
   align-items: center;
   gap: 7px;
+  border-radius: 5px 5px 0;
+  padding: 13px 16px;
+  border: 1px solid #032022;
+  border-bottom: none;
+}
+.navbar__lang_btn.active {
+  border-color: rgba(255, 255, 255, 0.5019607843);
 }
 .navbar__lang_btn_flag {
   width: 22px;
@@ -380,33 +402,40 @@ button {
 }
 .navbar__lang_list {
   position: absolute;
-  top: 30px;
-  left: -8px;
+  top: 46px;
+  left: 0px;
   transition: 0.2s;
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  width: 120%;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.3137254902);
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #032022;
+  padding-bottom: 11px;
+  border-top: none;
+  background: #032022;
 }
 .navbar__lang_list.active {
   transition: 0.2s;
   opacity: 1;
   visibility: visible;
+  border-color: rgba(255, 255, 255, 0.5019607843);
 }
 .navbar__lang_list_btn {
   display: flex;
   align-items: center;
   gap: 7px;
   transition: 0.2s;
-  padding: 6px;
+  padding: 3px 3px 3px 16px;
   background: #032022;
   width: 100%;
 }
 .navbar__lang_list_btn:hover {
   transition: 0.2s;
-  background: #123c3f;
+  background: #008900;
+}
+.navbar__lang_list_btn.active {
+  display: none;
 }
 .navbar__lang_list_btn_flag {
   width: 22px;

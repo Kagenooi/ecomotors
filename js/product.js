@@ -4,15 +4,20 @@ import {
     close,
     chooseOption,
     closeMenu,
-    closeMenuBtn
+    closeMenuBtn,
+    chooseLang
 } from "./module.js";
 
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;
 window.close = close;
 close();
-window.closeMenu = closeMenu;
 closeMenu();
+window.closeLang = closeLang;
+closeLang();
+window.chooseLang = chooseLang;
+document.querySelector('#defaultChecked').click();
+document.querySelector('#defaultChecked2').click();
 window.chooseOption = chooseOption;
 window.closeMenuBtn = closeMenuBtn;
 

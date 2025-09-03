@@ -110,13 +110,14 @@
                     display: flex;
                     align-items: center;
                     gap: 12px;
-                    font-family: Montserrat arm;
-                    font-weight: 300;
-                    font-style: Light;
-                    font-size: 12px;
-                    line-height: 100%;
-                    letter-spacing: 0%;
-                    color: #FFFFFF80;
+
+                    &_txt {
+                        font-family: Montserrat arm;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 100%;
+                        color: #FFFFFF80;
+                    }
                 }
             }
 
@@ -239,6 +240,14 @@
                         display: flex;
                         align-items: center;
                         gap: 7px;
+                        border-radius: 5px 5px 0;
+                        padding: 13px 16px;
+                        border: 1px solid #032022;
+                        border-bottom: none;
+
+                        &.active {
+                            border-color: #FFFFFF80;
+                        }
 
                         &_flag {
                             width: 22px;
@@ -249,10 +258,8 @@
                         &_txt {
                             font-family: Montserrat arm;
                             font-weight: 500;
-                            font-style: Medium;
                             font-size: 14px;
                             line-height: 100%;
-                            letter-spacing: 0%;
                             color: #fff;
                         }
 
@@ -266,17 +273,24 @@
 
                     &_list {
                         position: absolute;
-                        top: 30px;
-                        left: -6px;
-                        transition: .2s;
+                        top: 46px;
+                        left: 0px;
+                        transition: 0.2s;
+                        overflow: hidden;
                         opacity: 0;
                         visibility: hidden;
-                        width: 120%;
+                        width: 100%;
+                        border-radius: 0 0 5px 5px;
+                        border: 1px solid #032022;
+                        padding-bottom: 11px;
+                        border-top: none;
+                        background: #032022;
 
                         &.active {
                             transition: .2s;
                             opacity: 1;
                             visibility: visible;
+                            border-color: #FFFFFF80;
                         }
 
                         &_btn {
@@ -284,13 +298,17 @@
                             align-items: center;
                             gap: 7px;
                             transition: .2s;
-                            padding: 6px;
+                            padding: 3px 3px 3px 16px;
                             background: #032022;
                             width: 100%;
 
                             &:hover {
                                 transition: .2s;
-                                background: #123c3f;
+                                background: #008900;
+                            }
+
+                            &.active {
+                                display: none;
                             }
 
                             &_flag {
@@ -323,6 +341,14 @@
             display: flex;
             align-items: center;
             gap: 7px;
+            border-radius: 5px 5px 0;
+            padding: 13px 16px;
+            border: 1px solid #032022;
+            border-bottom: none;
+
+            &.active {
+                border-color: #FFFFFF80;
+            }
 
             &_flag {
                 width: 22px;
@@ -350,20 +376,24 @@
 
         &_list {
             position: absolute;
-            top: 30px;
-            left: -8px;
+            top: 46px;
+            left: 0px;
             transition: 0.2s;
             overflow: hidden;
             opacity: 0;
             visibility: hidden;
-            width: 120%;
-            border-radius: 6px;
-            border: 1px solid #ffffff50;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+            border: 1px solid #032022;
+            padding-bottom: 11px;
+            border-top: none;
+            background: #032022;
 
             &.active {
                 transition: .2s;
                 opacity: 1;
                 visibility: visible;
+                border-color: #FFFFFF80;
             }
 
             &_btn {
@@ -371,13 +401,17 @@
                 align-items: center;
                 gap: 7px;
                 transition: .2s;
-                padding: 6px;
+                padding: 3px 3px 3px 16px;
                 background: #032022;
                 width: 100%;
 
                 &:hover {
                     transition: .2s;
-                    background: #123c3f;
+                    background: #008900;
+                }
+
+                &.active {
+                    display: none;
                 }
 
                 &_flag {

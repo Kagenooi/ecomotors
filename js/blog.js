@@ -1,14 +1,19 @@
 import {
     toggleActive,
     closeMenu,
-    closeMenuBtn
+    closeMenuBtn,
+    closeLang,
+    chooseLang
 } from "./module.js";
 
 window.toggleActive = toggleActive;
-window.closeMenu = closeMenu;
-closeMenu();
 window.closeMenuBtn = closeMenuBtn;
-
+closeMenu();
+window.closeLang = closeLang;
+closeLang();
+window.chooseLang = chooseLang;
+document.querySelector('#defaultChecked').click();
+document.querySelector('#defaultChecked2').click();
 
 
 const blogSlider = new Swiper("#blogSlider", {
