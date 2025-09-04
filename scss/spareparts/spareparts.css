@@ -1123,6 +1123,11 @@ button {
   border-radius: 15px 15px 6px 6px;
   transition: 0.2s;
 }
+@media (max-width: 768px) {
+  .product {
+    max-width: 145px;
+  }
+}
 .product:hover {
   transition: 0.2s;
   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2509803922);
