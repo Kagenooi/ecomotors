@@ -31,12 +31,9 @@
             &_link {
                 display: block;
                 padding: 0 38px;
-                font-family: Montserrat arm;
                 font-weight: 500;
-                font-style: Medium;
                 font-size: 14px;
                 line-height: 100%;
-                letter-spacing: 0%;
                 color: #fff;
             }
 
@@ -98,12 +95,9 @@
                 &_title {
                     text-transform: uppercase;
                     color: #4FEC00;
-                    font-family: Montserrat arm;
                     font-weight: 600;
-                    font-style: SemiBold;
                     font-size: 19px;
                     line-height: 100%;
-                    letter-spacing: 0%;
                 }
 
                 &_close {
@@ -112,7 +106,6 @@
                     gap: 12px;
 
                     &_txt {
-                        font-family: Montserrat arm;
                         font-weight: 300;
                         font-size: 12px;
                         line-height: 100%;
@@ -157,11 +150,8 @@
                     &_link {
                         display: block;
                         margin-bottom: 6px;
-                        font-family: Montserrat arm;
-                        font-style: 400;
                         font-size: 14px;
                         line-height: 100%;
-                        letter-spacing: 0%;
                         color: #fff;
 
                         &.bold {
@@ -214,12 +204,9 @@
                         display: flex;
                         align-items: center;
                         gap: 14px;
-                        font-family: Montserrat arm;
                         font-weight: 500;
-                        font-style: Medium;
                         font-size: 14px;
                         line-height: 100%;
-                        letter-spacing: 0%;
                         color: #fff;
 
                         .new__txt {
@@ -256,7 +243,6 @@
                         }
 
                         &_txt {
-                            font-family: Montserrat arm;
                             font-weight: 500;
                             font-size: 14px;
                             line-height: 100%;
@@ -318,12 +304,9 @@
                             }
 
                             &_txt {
-                                font-family: Montserrat arm;
                                 font-weight: 500;
-                                font-style: Medium;
                                 font-size: 14px;
                                 line-height: 100%;
-                                letter-spacing: 0%;
                                 color: #fff;
                             }
                         }
@@ -357,12 +340,9 @@
             }
 
             &_txt {
-                font-family: Montserrat arm;
                 font-weight: 500;
-                font-style: Medium;
                 font-size: 14px;
                 line-height: 100%;
-                letter-spacing: 0%;
                 color: #fff;
             }
 
@@ -421,12 +401,9 @@
                 }
 
                 &_txt {
-                    font-family: Montserrat arm;
                     font-weight: 500;
-                    font-style: Medium;
                     font-size: 14px;
                     line-height: 100%;
-                    letter-spacing: 0%;
                     color: #fff;
                 }
             }
@@ -452,11 +429,9 @@
             border-radius: 58px;
             height: 47px;
             padding: 15px 43px;
-            font-family: Montserrat arm;
             font-weight: 300;
             font-size: 14px;
             line-height: 100%;
-            letter-spacing: 0%;
             color: #032022;
 
             &::placeholder {

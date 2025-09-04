@@ -65,12 +65,9 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.5019607843);
   border-radius: 27px;
   padding: 9px 26px;
-  font-family: Montserrat arm;
   font-weight: 300;
-  font-style: Light;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: rgba(0, 0, 0, 0.5019607843);
   transition: 0.2s;
 }
@@ -118,12 +115,9 @@ button {
 .navbar__bottom_menu_list_link {
   display: block;
   padding: 0 38px;
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__bottom_menu_list li:not(:last-child) a {
@@ -168,12 +162,9 @@ button {
 .navbar__menu .burger__header_title {
   text-transform: uppercase;
   color: #4FEC00;
-  font-family: Montserrat arm;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 19px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 .navbar__menu .burger__header_close {
   display: flex;
@@ -181,7 +172,6 @@ button {
   gap: 12px;
 }
 .navbar__menu .burger__header_close_txt {
-  font-family: Montserrat arm;
   font-weight: 300;
   font-size: 12px;
   line-height: 100%;
@@ -217,11 +207,8 @@ button {
 .navbar__menu .burger__contacts_phone_link {
   display: block;
   margin-bottom: 6px;
-  font-family: Montserrat arm;
-  font-style: 400;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__menu .burger__contacts_phone_link.bold {
@@ -269,12 +256,9 @@ button {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__menu .burger__menu_list_link .new__txt {
@@ -307,7 +291,6 @@ button {
   border-radius: 50%;
 }
 .navbar__menu .burger__menu_lang_btn_txt {
-  font-family: Montserrat arm;
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
@@ -362,12 +345,9 @@ button {
   border-radius: 50%;
 }
 .navbar__menu .burger__menu_lang_list_btn_txt {
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__lang {
@@ -393,12 +373,9 @@ button {
   border-radius: 50%;
 }
 .navbar__lang_btn_txt {
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__lang_btn_icon {
@@ -450,12 +427,9 @@ button {
   border-radius: 50%;
 }
 .navbar__lang_list_btn_txt {
-  font-family: Montserrat arm;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 .navbar__logo {
@@ -475,11 +449,9 @@ button {
   border-radius: 58px;
   height: 47px;
   padding: 15px 43px;
-  font-family: Montserrat arm;
   font-weight: 300;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #032022;
 }
 .navbar__search_inp::-moz-placeholder {
@@ -533,7 +505,6 @@ button {
   width: 100%;
 }
 .footer .info__logo_pr {
-  font-family: Montserrat arm;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -547,7 +518,6 @@ button {
 }
 .footer .info__contact_title, .footer .info__social_title {
   margin-bottom: 13px;
-  font-family: Montserrat arm;
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
@@ -558,7 +528,6 @@ button {
   gap: 7px;
 }
 .footer .info__contact_list_link {
-  font-family: Montserrat arm;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -587,7 +556,6 @@ button {
   padding: 8px 34px 8px 14px;
   border-radius: 5px;
   background: rgba(217, 217, 217, 0.2509803922);
-  font-family: Montserrat arm;
   font-weight: 400;
   font-size: 11px;
   line-height: 100%;
@@ -598,7 +566,6 @@ button {
   gap: 11px;
 }
 .footer .info__list_link {
-  font-family: Montserrat arm;
   font-weight: 400;
   font-size: 13px;
   line-height: 100%;
@@ -614,14 +581,12 @@ button {
   margin-top: 23px;
 }
 .footer .info__work_title {
-  font-family: Montserrat arm;
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   color: #4FEC00;
 }
 .footer .info__work_pr {
-  font-family: Montserrat arm;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -781,12 +746,9 @@ button {
 .crumbs__list_link {
   display: flex;
   gap: 5px;
-  font-family: Montserrat arm;
   font-weight: 700;
-  font-style: Bold;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: rgba(3, 32, 34, 0.5019607843);
   transition: 0.2s;
 }
