@@ -20,6 +20,20 @@
         z-index: 1080;
         top: 7px;
         right: 13px;
+        width: 32px;
+        height: 32px;
+
+        &_icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 17px;
+            height: 17px;
+            top: 6px;
+            right: 6px;
+        }
     }
 
     &__slider {
@@ -38,6 +52,10 @@
             background: #47536140;
             transition: .2s;
             z-index: 1020;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
 
             &:hover {
                 transition: .2s;
@@ -58,11 +76,19 @@
             height: 162px;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
+
+            @media (max-width: 768px) {
+                height: 86px;
+            }
         }
     }
 
     &__desc {
         padding: 11px 13px;
+
+        @media (max-width: 768px) {
+            padding: 4px 5px 4px 7px;
+        }
 
         &_header {
             display: flex;
@@ -76,23 +102,34 @@
             font-size: 15px;
             line-height: 17px;
 
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
             overflow: hidden;
-            text-overflow: ellipsis;
-            -moz-box-orient: vertical;
-            line-clamp: 2;
-            box-orient: vertical;
+
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
         }
 
         &_name {
             font-weight: 600;
             font-size: 18px;
             line-height: 100%;
+
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
         }
 
         &_date {
             font-weight: 300;
             font-size: 16px;
             line-height: 100%;
+
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
         }
 
         &_footer {
@@ -107,6 +144,10 @@
             font-size: 18px;
             line-height: 100%;
             color: #008900;
+
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
         }
 
         &_address {
@@ -114,10 +155,19 @@
             font-size: 14px;
             line-height: 100%;
             color: #032022;
+
+            @media (max-width: 768px) {
+                font-size: 9px;
+            }
         }
     }
 
     .swiper-pagination {
+
+        @media (max-width: 768px) {
+            bottom: 0;
+        }
+
         &-bullet {
             width: 32px;
             height: 2px;
@@ -126,6 +176,11 @@
             opacity: 1 !important;
             transform: scale(1) !important;
             margin: 0 2px !important;
+
+            @media (max-width: 768px) {
+                height: 1px;
+                width: 16px;
+            }
 
             &-active {
                 background: #526270;

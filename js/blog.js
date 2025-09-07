@@ -21,7 +21,7 @@ const blogSlider = new Swiper("#blogSlider", {
         nextEl: ".header__slider_btn.next",
         prevEl: ".header__slider_btn.prev",
     },
-    autoplay: true,
+    // autoplay: true,
     loop: true,
     pagination: {
         el: ".swiper-pagination",

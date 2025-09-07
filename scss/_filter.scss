@@ -4,12 +4,29 @@
     padding: 30px 58px 15px;
     margin-bottom: 11px;
 
+    @media (max-width: 768px) {
+        padding: 13px 11px;
+        margin-bottom: 5px;
+    }
+
     * {
         color: #fff;
     }
 
     &_item {
         display: flex;
+
+        @media (max-width: 768px) {
+            min-width: 127px;
+        }
+
+        &.double {
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 13px;
+            }
+        }
     }
 
     &_content {
@@ -17,6 +34,10 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 15px;
+
+        @media (max-width: 768px) {
+            gap: 13px;
+        }
     }
 
     &_choose {
@@ -71,6 +92,11 @@
         justify-content: space-between;
         gap: 15px;
         margin-bottom: 31px;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 13px;
+        }
     }
 
     &_bottom {
@@ -79,10 +105,21 @@
         align-items: center;
         gap: 15px;
 
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
         &_wrapper {
             display: flex;
             align-items: center;
             gap: 25px;
+
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 17px 13px;
+            }
         }
 
         &_vinlab {
@@ -180,6 +217,9 @@
             border-radius: 7px;
             transition: .2s;
 
+            @media (max-width: 768px) {
+                max-width: 100%;   
+            }
             &:hover {
                 background: #00c700;
             }
@@ -196,6 +236,11 @@
     min-width: 150px;
     max-width: 150px;
 
+    @media (max-width: 768px) {
+        min-width: 127px;
+        max-width: 127px;
+    }
+
     &__btn {
         transition: .2s;
         display: flex;
@@ -204,15 +249,27 @@
         justify-content: space-between;
         width: 100%;
         cursor: pointer;
-        color: #FFFFFF80;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        text-align: center;
+
         background: #032022;
         border-radius: 5px;
         position: relative;
         z-index: 1081;
+
+        @media (max-width: 768px) {
+            padding: 13px 10px 13px 18px;
+        }
+
+        &_txt {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: #FFFFFF80;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
 
         &:hover {
             transition: .2s;
@@ -304,7 +361,6 @@
         border-radius: 0 0 5px 5px;
         overflow: hidden;
         left: -1px;
-        z-index: 1080;
         position: absolute;
         top: 30px;
         max-height: 0px;
@@ -314,10 +370,12 @@
         border: 1px solid #819091;
         border-top: none;
         opacity: 0;
+        z-index: 1070;
 
         &.active {
             transition: .2s;
             opacity: 1;
+            z-index: 1090;
         }
     }
 }
@@ -325,11 +383,23 @@
 .double .select {
     max-width: 160px;
 
+    @media (max-width: 768px) {
+        max-width: 127px;
+    }
+
     &:first-child {
         border-radius: 5px 0 0 5px;
+
+        @media (max-width: 768px) {
+            border-radius: 5px;
+        }
     }
 
     &:last-child {
         border-radius: 0 5px 5px 0;
+
+        @media (max-width: 768px) {
+            border-radius: 5px;
+        }
     }
 }

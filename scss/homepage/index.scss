@@ -5,11 +5,14 @@
 @import '../filter';
 @import '../product';
 @import '../../font/styles/font.css';
-
+@import '../submenu';
 
 .header {
     padding-top: 204px;
 
+    @media (max-width: 768px) {
+        padding-top: 133px;
+    }
     &__wrapper {
         display: flex;
         gap: 7px;
@@ -19,62 +22,7 @@
         position: relative;
     }
 
-    &__submenu {
-        margin: 10px 0;
 
-        &_list {
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-
-            @media (max-width: 768px) {
-                min-width: 305px;
-                max-width: 305px;
-                overflow-y: scroll;
-
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-            }
-            
-            &_link {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                padding: 0 18px;
-                border-radius: 5px;
-                border: 1px solid #00000026;
-                height: 100%;
-                transition: .2s;
-
-                &:hover {
-                    transition: .2s;
-                    background: #032022;
-                }
-
-                &_icon {
-                    max-height: 42px;
-                    max-width: 42px;
-                }
-
-                &:hover &_icon {
-                    filter: invert(100%);
-                }
-
-                &_txt {
-                    font-weight: 500;
-                    font-size: 13px;
-                    line-height: 100%;
-                    text-align: center;
-                    color: #000;
-                }
-
-                &:hover &_txt {
-                    color: #fff;
-                }
-            }
-        }
-    }
 
     &__content {
         display: flex;
@@ -200,6 +148,7 @@
     @media (max-width: 768px) {
         padding: 22px 0;
     }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -269,5 +218,14 @@
         &__img {
             width: 100%;
         }
+    }
+}
+
+.ads3 {
+    img {
+        width: 100%;
+        height: 100%;
+        height: 46px;
+        object-fit: cover;
     }
 }

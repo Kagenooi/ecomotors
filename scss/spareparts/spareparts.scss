@@ -15,6 +15,70 @@
     width: 100%;
 
     &__filter {
+
+        @media (max-width: 768px) {
+            padding: 38px 23px;
+
+            &_content {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            &_wrapper {
+                gap: 8px;
+                width: 242px;
+                margin-bottom: 0;
+            }
+
+            &_choose {
+                margin: 0;
+                max-width: 242px;
+                overflow: hidden;
+                height: 38px;
+                margin-bottom: 20px;
+
+                &_lab {
+
+                    &:first-child &_txt {
+                        right: 0;
+                        width: 115px;
+                    }
+
+                    &:last-child &_txt {
+                        right: 12px;
+                        text-align: right;
+                        padding: 8px 22px;
+                    }
+
+                    &_inp:checked+&_txt {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+
+            &_bottom {
+                margin-top: 0 !important;
+                gap: 20px;
+
+                &_wrapper {
+                    max-width: 242px;
+                }
+
+                &_vinlab_inp {
+                    max-width: 242px;
+                }
+            }
+
+            &_item {
+                min-width: 242px;
+
+                .select {
+                    min-width: 100%;
+                }
+            }
+        }
+
         &_bottom {
             margin-top: -10px;
         }
@@ -27,18 +91,68 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 
-    &__item {
-        position: relative;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        max-width: 290px;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-        &_img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1020;
+    &__item {
+        display: flex;
+        max-height: 179px;
+        border-radius: 5px;
+
+        @media (max-width: 768px) {
+            max-width: 290px;
+            max-height: 142px;
         }
 
         &.left &_desc {
-            max-width: 350px !important;
+            min-width: 350px !important;
+
+            @media (max-width: 768px) {
+                min-width: 202px !important;
+            }
+        }
+
+        &.left {
+            background: linear-gradient(84.36deg, #008900 0%, #4FEC00 97.62%);
+
+            >img {
+                max-height: 199px;
+                min-height: 199px;
+                margin-left: -132px;
+
+                @media (max-width: 768px) {
+                    max-height: 125px;
+                    min-height: 125px;
+                    margin-left: -100px;
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        &.right {
+            background: #4FC8F1;
+
+            >img {
+                min-width: 250px;
+                max-width: 250px;
+                min-height: 179px;
+                max-height: 179px;
+                object-fit: cover;
+                border-radius: 0 5px 5px 0;
+                margin-left: auto;
+
+                @media (max-width: 768px) {
+                    min-width: 134px;
+                    max-width: 134px;
+                    max-height: 142px;
+                    min-height: 142px;
+                }
+            }
         }
 
         &_desc {
@@ -51,25 +165,45 @@
             flex-direction: column;
             justify-content: space-between;
 
+            @media (max-width: 768px) {
+                padding: 12px 4px 18px 8px;
+                height: 142px;
+            }
+
             &_logo {
                 width: 135px;
+
+                @media (max-width: 768px) {
+                    width: 96px;
+                }
             }
 
             &_title {
                 font-weight: 700;
-                font-size: 27px;
-                line-height: 100%;
+                font-size: 23px;
+                line-height: 25px;
                 text-transform: uppercase;
                 margin-bottom: 8px;
                 color: #000;
 
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 15px;
+                    margin-bottom: 6px;
+                }
+
                 span {
                     font-weight: 400;
-                    font-size: 27px;
-                    line-height: 100%;
+                    font-size: 23px;
+                    line-height: 25px;
                     text-transform: uppercase;
                     margin-bottom: 8px;
                     color: #000;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 15px;
+                    }
                 }
 
                 &.blue {
@@ -86,6 +220,11 @@
                 font-size: 11px;
                 line-height: 13px;
                 max-width: 190px;
+
+                @media (max-width: 768px) {
+                    font-size: 8px;
+                    line-height: 10px;
+                }
             }
 
             &_link {
@@ -129,10 +268,18 @@
 .catalog {
     margin: 70px auto 50px;
 
+    @media (max-width: 768px) {
+        margin: 30px auto;
+    }
+
     &__title {
         font-weight: 600;
         font-size: 29px;
         line-height: 18px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
     }
 
     &__wrapper {
@@ -140,6 +287,18 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
         padding: 50px 0;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7px;
+        }
+    }
+}
+
+.product__desc_pr,
+.product__desc_address {
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
@@ -148,4 +307,46 @@
     max-width: 1120px;
     margin: 0 auto 122px;
     border-radius: 10px;
+
+    @media (max-width: 768px) {
+        border-radius: 0;
+    }
+}
+
+
+@media (max-width: 1296px) {
+
+    #adaptive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topAds {
+        display: none;
+    }
+
+    .crumbs {
+        order: 1;
+    }
+
+    .header {
+        order: 2;
+    }
+
+    .catalog {
+        order: 4;
+    }
+
+    .spareads {
+        order: 3;
+    }
+
+    .footer {
+        order: 7;
+    }
+
+    .spareadswr {
+        order: 5;
+        margin: 0 auto 48px;
+    }
 }

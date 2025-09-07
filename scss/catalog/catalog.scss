@@ -5,6 +5,7 @@
 @import '../filter';
 @import '../product';
 @import '../recomended';
+@import '../submenu';
 @import '../../font/styles/font.css';
 
 .catalogads {
@@ -172,6 +173,15 @@
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 56px;
         gap: 40px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7px;
+
+            .product__desc_footer {
+                flex-wrap: wrap;
+            }
+        }
     }
 
     .product {

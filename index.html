@@ -26,6 +26,9 @@
                             <img src="images/closeBtn.png" alt="" class="navbar__menu_btn_icon close">
                         </button>
                         <div id="burger" class="navbar__menu_burger burger">
+                            <a href="" class="burger__logo">
+                                <img src="images/logoWhite.svg" alt="" class="burger__logo_img">
+                            </a>
                             <div class="burger__header">
                                 <p class="burger__header_title">ՄԵՆՅՈՒ</p>
                                 <button type="button" class="burger__header_close"
@@ -152,9 +155,8 @@
                     </div>
                     <a href="" class="navbar__logo"><img src="images/logo.png" alt="" class="navbar__logo_img"></a>
                     <div class="navbar__search">
-                        <input type="search" name="" id="" class="navbar__search_inp"
-                            placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
-                        <button type="button" class="navbar__search_btn">
+                        <input type="search" name="" id="search" class="navbar__search_inp" placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
+                        <button type="button" class="navbar__search_btn" onclick="toggleSearch('search')">
                             <img src="images/loop.png" alt="" class="navbar__search_btn_icon">
                         </button>
                     </div>
@@ -264,7 +266,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="header__filter">
+                    <div class="header__filter">
                         <form action="">
                             <div class="header__filter_wrapper">
                                 <div class="header__filter_item">
@@ -547,7 +549,7 @@
                                 </button>
                             </div>
                         </form>
-                    </div> -->
+                    </div>
                     <div class="header__content">
                         <div class="header__slider">
                             <div class="swiper headerSwiper">
@@ -614,7 +616,7 @@
                 </div>
             </section>
 
-            <div class="ads2 wrapper">
+            <div class="ads2 ads3 wrapper">
                 <img src="images/navbarAds.png" alt="" class="ads2__img">
             </div>
 

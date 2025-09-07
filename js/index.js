@@ -5,9 +5,11 @@ import {
     chooseOption,
     closeMenu,
     closeMenuBtn,
-    chooseLang
+    chooseLang,
+    toggleSearch
 } from "./module.js";
 
+window.toggleSearch = toggleSearch;
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;
 window.close = close;

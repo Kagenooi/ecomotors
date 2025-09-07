@@ -19,6 +19,17 @@
     display: grid;
     grid-template-columns: 73fr 35fr;
     gap: 40px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 70px;
+
+        .seeMore {
+            display: none;
+        }
+    }
 }
 
 
@@ -30,6 +41,17 @@
         line-height: 51px;
         margin-bottom: 26px;
         color: #008900;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 19px;
+        }
     }
 
     &__date {
@@ -55,15 +77,29 @@
     &__pic {
         margin-bottom: 34px;
 
+        @media (max-width: 768px) {
+            margin-bottom: 36px;
+        }
+
         &_img {
             margin-bottom: 20px;
             width: 100%;
             border-radius: 15px;
+            object-fit: cover;
+
+            @media (max-width: 768px) {
+                margin-bottom: 12px;
+                height: 142px;
+            }
         }
 
         &_footer {
             display: flex;
             align-items: center;
+
+            @media (max-width: 768px) {
+                justify-content: space-between;
+            }
 
             &_tag {
                 width: fit-content;
@@ -95,6 +131,12 @@
                     line-height: 100%;
                 }
             }
+
+            &_see {
+                @media (max-width: 768px) {
+                    margin-left: auto;
+                }
+            }
         }
     }
 
@@ -106,6 +148,21 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 18px;
+
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+
+            @media (max-width: 768px) {
+                font-size: 11px;
+                line-height: 18px;
+            }
         }
 
         ol {
@@ -113,6 +170,11 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 24px;
+
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                    line-height: 18px;
+                }
             }
         }
     }
@@ -141,5 +203,29 @@
                 line-height: 100%;
             }
         }
+    }
+}
+
+
+@media (max-width: 1296px) {
+    #adaptive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topAds {
+        order: 3;
+    }
+
+    .crumbs {
+        order: 1;
+    }
+
+    .content {
+        order: 2;
+    }
+
+    .footer {
+        order: 4;
     }
 }

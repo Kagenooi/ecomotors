@@ -4,12 +4,36 @@
     background: #D9D9D966;
     padding: 12px 19px 42px;
 
+    @media (max-width: 768px) {
+        padding: 55px 0px 18px 13px;
+        position: relative;
+        min-width: 305px;
+    }
+
     &__title {
         font-weight: 700;
         font-size: 14px;
         line-height: 100%;
         text-transform: uppercase;
         margin-bottom: 5px;
+
+        @media (max-width: 768px) {
+            position: absolute;
+            top: 18px;
+            left: 13px;
+        }
+    }
+
+    &__wrapper {
+        @media (max-width: 768px) {
+            display: flex;
+            max-width: 287px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
     }
 
     &__item {
@@ -20,8 +44,17 @@
         padding: 9px 0 13px;
         border-bottom: 1px solid #CCCCCC80;
 
+        @media (max-width: 768px) {
+            padding: 0;
+            padding-right: 27px;
+            min-width: 275px;
+            border-bottom: none;
+            gap: 10px;
+        }
+
         &_pic {
             width: 110px;
+            min-width: 110px;
             height: 77px;
             object-fit: cover;
             border-radius: 5px;
@@ -37,10 +70,16 @@
                 color: #008900;
 
                 overflow: hidden;
-                text-overflow: ellipsis;
-                -moz-box-orient: vertical;
-                line-clamp: 2;
-                box-orient: vertical;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                    line-height: 12px;
+                    margin-bottom: 5px;
+                }
             }
 
             &_date {
@@ -48,6 +87,10 @@
                 font-size: 13px;
                 line-height: 100%;
                 color: #00000080;
+
+                @media (max-width: 768px) {
+                    font-size: 10px;
+                }
             }
         }
     }

@@ -100,3 +100,8 @@ export function chooseOption(element) {
     }
     return null; // если не найден
 }
+
+
+export function toggleSearch(inp) {
+    document.querySelector(`#${inp}`).classList.toggle('active');
+}
