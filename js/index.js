@@ -6,12 +6,15 @@ import {
     closeMenu,
     closeMenuBtn,
     chooseLang,
+    closeLang,
     toggleSearch
 } from "./module.js";
 
 window.toggleSearch = toggleSearch;
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;
+window.closeLang = closeLang;
+closeLang();
 window.close = close;
 close();
 window.closeMenu = closeMenu;

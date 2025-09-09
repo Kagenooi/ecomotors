@@ -5,7 +5,8 @@ import {
     chooseOption,
     closeMenu,
     closeMenuBtn,
-    chooseLang
+    chooseLang,
+    closeLang
 } from "./module.js";
 
 window.toggleActive = toggleActive;

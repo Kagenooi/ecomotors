@@ -406,11 +406,8 @@ button {
   border-radius: 3px;
   background: #FFD600;
   color: #032022;
-}
-@media (max-width: 768px) {
-  .navbar__menu .burger__menu_list_link .new__txt {
-    font-size: 10px;
-  }
+  font-size: 10px;
+  line-height: 100%;
 }
 .navbar__menu .burger__menu_lang {
   position: relative;
@@ -722,13 +719,12 @@ button {
 .footer .info__logo_pr {
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 1.3;
 }
 @media (max-width: 768px) {
   .footer .info__logo_pr {
     margin: 20px 0 25px;
     font-size: 8px;
-    line-height: 1.2;
   }
 }
 .footer .info .line {
@@ -1359,6 +1355,7 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
+  margin-bottom: 25px;
 }
 @media (max-width: 768px) {
   .singleArticle__content h3 {
@@ -1369,6 +1366,7 @@ button {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin: 20px 0;
 }
 @media (max-width: 768px) {
   .singleArticle__content p {
@@ -1380,6 +1378,8 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  display: block;
+  margin: 10px 0;
 }
 @media (max-width: 768px) {
   .singleArticle__content ol li {

@@ -127,7 +127,10 @@
         max-width: 580px;
 
         &_frame {
+            width: 580px;
+            height: 421px;
             border-radius: 12px;
+            overflow: hidden;
 
             @media (max-width: 768px) {
                 width: 284px;
@@ -167,7 +170,7 @@
 
         @media (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 14px 7px;   
+            grid-gap: 14px 7px;
             padding: 0 14px;
         }
     }
@@ -176,9 +179,10 @@
         width: 100%;
         border-radius: 12px;
         object-fit: cover;
+        height: 230px;
 
         @media (max-width: 768px) {
-            height: 91px;   
+            height: 91px;
         }
     }
 }

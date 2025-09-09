@@ -220,13 +220,8 @@
         &_pic {
             width: 100%;
             max-width: 290px;
-            height: 232px;
-            object-fit: cover;
+            height: fit-content;
             border-radius: 15px;
-
-            @media (max-width: 768px) {
-                height: 142px;
-            }
         }
 
         &_desc {
@@ -234,8 +229,10 @@
             flex-direction: column;
             justify-content: space-between;
             transition: .2s;
+            gap: 15px;
             padding: 11px 14px 16px;
-            height: 232px;
+            height: fit-content;
+            min-height: 232px;
             border-radius: 15px;
 
             @media (max-width: 768px) {

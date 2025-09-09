@@ -337,10 +337,8 @@
                             border-radius: 3px;
                             background: #FFD600;
                             color: #032022;
-
-                            @media (max-width: 768px) {
-                                font-size: 10px;
-                            }
+                            font-size: 10px;
+                            line-height: 100%;
                         }
                     }
                 }
