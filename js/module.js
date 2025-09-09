@@ -3,17 +3,42 @@ export function toggleActive(target, event) {
     event?.classList.toggle('active');
 }
 
-export function chooseLang(event, target, modal, btn, thisBtn) {
-    document.querySelector(`#${event}`).innerHTML = document.querySelector(`#${target}`).innerHTML;
-    let allLangs = document.querySelectorAll(`#${modal} button`);
-    for (let i = 0; i < allLangs.length; i++) {
-        const element = allLangs[i];
-        element.classList.remove('active');
-    }
-    thisBtn.classList.add('active');
-    document.querySelector(`#${modal}`).classList.remove('active');
-    document.querySelector(`.${btn}`).classList.remove('active');
+export function chooseLang(evt, displayId, sourceId, modalId, btnClass, thisBtn) {
+    // Не переходим по ссылке
+    if (evt && typeof evt.preventDefault === 'function') evt.preventDefault();
+
+    // Ограничиваем поиск текущим виджетом
+    const root = thisBtn.closest('.langs') || document;
+
+    // Элементы внутри текущего блока
+    const buttonEl = root.querySelector(`.${btnClass}`) || document.querySelector(`.${btnClass}`);
+    const displayEl = root.querySelector(`#${displayId}`) || document.getElementById(displayId);
+    const sourceEl = root.querySelector(`#${sourceId}`) || document.getElementById(sourceId);
+
+    if (!buttonEl || !displayEl) return; // на всякий случай
+
+    // Текущее значение (что показано на кнопке)
+    const beforeLangValue =
+        (buttonEl.value ?? '').trim() ||
+        (displayEl.textContent ?? '').trim();
+
+    // Новое значение: сначала пробуем атрибут value у пункта,
+    // если его нет — берём текст внутри элемента-источника (#sourceId) или самой ссылки
+    let nowLangValue =
+        (thisBtn.getAttribute('value') || '').trim() ||
+        (sourceEl?.textContent || thisBtn.textContent || '').trim();
+
+    if (!nowLangValue) return;
+
+    // Применяем новое значение
+    buttonEl.value = nowLangValue;
+    displayEl.textContent = nowLangValue;
+
+    // Меняем местами значения у пункта списка
+    thisBtn.setAttribute('value', beforeLangValue);
+    if (sourceEl) sourceEl.textContent = beforeLangValue;
 }
+
 
 export function closeMenuBtn() {
     document.querySelector('.navbar__menu_btn').classList.remove('active');
@@ -70,8 +95,6 @@ export function closeMenu() {
 export function closeLang() {
     const langs = document.querySelectorAll('.langs'); // или ваш элемент
 
-    console.log(langs);
-    
     document.addEventListener('click', (event) => {
         for (let i = 0; i < langs.length; i++) {
             if (!langs[i]) return;

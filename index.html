@@ -78,32 +78,25 @@
                                         <li><a href="" class="burger__menu_list_link">Կապ Մեզ Հետ</a></li>
                                     </ul>
                                     <div class="burger__menu_lang langs">
-                                        <button type="button" class="burger__menu_lang_btn"
+                                        <button type="button" class="burger__menu_lang_btn" value="Հայ"
                                             onclick="toggleActive('menuLang', this)">
                                             <img src="images/flag.png" alt="" class="burger__menu_lang_btn_flag">
                                             <span class="burger__menu_lang_btn_txt" id="selectedLang2">Հայ</span>
                                             <img src="images/arrow.png" alt="" class="burger__menu_lang_btn_icon">
                                         </button>
                                         <div class="burger__menu_lang_list" id="menuLang">
-                                            <button type="button" class="burger__menu_lang_list_btn"
-                                                id="defaultChecked2"
-                                                onclick="chooseLang('selectedLang2', 'chooseLang4', 'menuLang', 'burger__menu_lang_btn', this)">
-                                                <img src="images/flag.png" alt=""
-                                                    class="burger__menu_lang_list_btn_flag">
-                                                <span class="burger__menu_lang_list_btn_txt" id="chooseLang4">Հայ</span>
-                                            </button>
-                                            <button type="button" class="burger__menu_lang_list_btn"
-                                                onclick="chooseLang('selectedLang2', 'chooseLang5', 'menuLang', 'burger__menu_lang_btn', this)">
+                                            <a href="" class="burger__menu_lang_list_btn  lang__btn"
+                                                onclick="chooseLang(event, 'selectedLang2', 'chooseLang5', 'menuLang', 'burger__menu_lang_btn', this)">
                                                 <img src="images/flag.png" alt=""
                                                     class="burger__menu_lang_list_btn_flag">
                                                 <span class="burger__menu_lang_list_btn_txt" id="chooseLang5">Rus</span>
-                                            </button>
-                                            <button type="button" class="burger__menu_lang_list_btn"
-                                                onclick="chooseLang('selectedLang2', 'chooseLang6', 'menuLang', 'burger__menu_lang_btn', this)">
+                                            </a>
+                                            <a href="" class="burger__menu_lang_list_btn  lang__btn"
+                                                onclick="chooseLang(event, 'selectedLang2', 'chooseLang6', 'menuLang', 'burger__menu_lang_btn', this)">
                                                 <img src="images/flag.png" alt=""
                                                     class="burger__menu_lang_list_btn_flag">
                                                 <span class="burger__menu_lang_list_btn_txt" id="chooseLang6">Eng</span>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -155,33 +148,29 @@
                     </div>
                     <a href="" class="navbar__logo"><img src="images/logo.png" alt="" class="navbar__logo_img"></a>
                     <div class="navbar__search">
-                        <input type="search" name="" id="search" class="navbar__search_inp" placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
+                        <input type="search" name="" id="search" class="navbar__search_inp"
+                            placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
                         <button type="button" class="navbar__search_btn" onclick="toggleSearch('search')">
                             <img src="images/loop.png" alt="" class="navbar__search_btn_icon">
                         </button>
                     </div>
                     <div class="navbar__lang langs">
-                        <button type="button" class="navbar__lang_btn" onclick="toggleActive('topLang', this)">
+                        <button type="button" class="navbar__lang_btn" value="Հայ" onclick="toggleActive('topLang', this)">
                             <img src="images/flag.png" alt="" class="navbar__lang_btn_flag">
                             <span class="navbar__lang_btn_txt" id="selectedLang">Հայ</span>
                             <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
                         </button>
                         <div class="navbar__lang_list" id="topLang">
-                            <button type="button" class="navbar__lang_list_btn" id="defaultChecked"
-                                onclick="chooseLang('selectedLang', 'chooseLang1', 'topLang', 'navbar__lang_btn', this)">
-                                <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
-                                <span class="navbar__lang_list_btn_txt" id="chooseLang1">Հայ</span>
-                            </button>
-                            <button type="button" class="navbar__lang_list_btn"
-                                onclick="chooseLang('selectedLang', 'chooseLang2', 'topLang', 'navbar__lang_btn', this)">
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Eng"
+                                onclick="chooseLang(event, 'selectedLang', 'chooseLang2', 'topLang', 'navbar__lang_btn', this)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang2">Eng</span>
-                            </button>
-                            <button type="button" class="navbar__lang_list_btn"
-                                onclick="chooseLang('selectedLang', 'chooseLang3', 'topLang', 'navbar__lang_btn', this)">
+                            </a>
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Rus"
+                                onclick="chooseLang(event, 'selectedLang', 'chooseLang3', 'topLang', 'navbar__lang_btn', this)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang3">Rus</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

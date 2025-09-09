@@ -23,7 +23,6 @@ window.chooseOption = chooseOption;
 window.chooseLang = chooseLang;
 window.closeMenuBtn = closeMenuBtn;
 
-
 const productSwiper = new Swiper(".productSwiper", {
     loop: true,
     navigation: {
@@ -44,9 +43,9 @@ const headerSwiper = new Swiper(".headerSwiper", {
 });
 
 
-import { 
+import {
     adaptive
 } from "../adaptiveMode/adaptive.js";
 window.adaptive = adaptive;
 adaptive();
-window.addEventListener('resize', function() {adaptive()});
+window.addEventListener('resize', function () { adaptive() });
