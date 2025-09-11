@@ -342,7 +342,7 @@
     }
 }
 
-@media (max-width: 1296px) {
+@media (max-width: 1296px) and (min-width: 769px) {
     #adaptive {
         display: flex;
         flex-direction: column;

@@ -7,9 +7,12 @@ import {
     closeMenuBtn,
     chooseLang,
     closeLang,
-    toggleSearch
+    toggleSearch,
+    filterSelect
 } from "./module.js";
 
+window.filterSelect = filterSelect;
+filterSelect();
 window.toggleSearch = toggleSearch;
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;
@@ -25,6 +28,7 @@ window.closeMenuBtn = closeMenuBtn;
 
 const productSwiper = new Swiper(".productSwiper", {
     loop: true,
+    autoplay: true,
     navigation: {
         nextEl: ".product__slider_btn.next",
         prevEl: ".product__slider_btn.prev",
@@ -32,6 +36,11 @@ const productSwiper = new Swiper(".productSwiper", {
     pagination: {
         el: ".swiper-pagination",
     },
+    breakpoints: {
+        768: {
+            autoplay: false
+        }
+    }
 });
 const headerSwiper = new Swiper(".headerSwiper", {
     loop: true,
@@ -42,6 +51,14 @@ const headerSwiper = new Swiper(".headerSwiper", {
     },
 });
 
+if (document.body.clientWidth > 768) {
+    const partners = new Swiper("#partners", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+    });
+}
 
 import {
     adaptive

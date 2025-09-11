@@ -12,10 +12,18 @@
     width: 100%;
     max-width: 1120px;
     margin: 66px auto 106px;
+
+    @media (max-width: 768px) {
+        margin: 10px 0;
+    }
 }
 
 .header {
     margin-top: 214px;
+
+    @media (max-width: 768px) {
+        margin-top: 144px;
+    }
 
     &__submenu {
         margin: 10px 0;
@@ -68,7 +76,7 @@
         margin-top: 21px;
         border-radius: 12px;
         background: #E9F1EF;
-        padding: 20px 57px;
+        padding: 20px 30px 20px 57px;
 
         &_wrapper {
             display: flex;
@@ -81,7 +89,6 @@
             gap: 14px;
             align-items: center;
             cursor: pointer;
-            transition: .2s;
 
             &_check {
                 display: flex;
@@ -98,11 +105,12 @@
                 font-size: 14px;
                 line-height: 100%;
                 color: #032022;
+                transition: .2s;
             }
 
-            &:hover {
+            &:hover &_txt {
                 transition: .2s;
-                transform: scale(1.1);
+                color: #008900;
             }
 
             &_inp {
@@ -130,9 +138,21 @@
 
             &_lab {
 
+                @media (max-width: 768px) {
+
+                    &:first-child {
+                        right: 0;
+                    }
+
+                    &:last-child {
+                        margin-left: -25px;
+                    }
+                }
+
                 &_txt {
                     color: #00000059 !important;
                     background: #F2F2F7 !important;
+                    padding-left: 25px;
                 }
 
                 &_inp:checked+&_txt {
@@ -145,8 +165,17 @@
     }
 }
 
+.footer {
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+}
 
 .catalog {
+
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
 
     &__header {
         display: flex;
@@ -155,17 +184,33 @@
         gap: 15px;
         padding: 37px 0 30px;
         height: 107px;
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            height: fit-content;
+            align-items: flex-start;
+            gap: 40px;
+        }
     }
 
     &__labs {
         display: flex;
         align-items: center;
+        height: 42px;
+
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
     }
 
     &__title {
         font-weight: 500;
         font-size: 33px;
         line-height: 100%;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
     }
 
     &__wrapper {
@@ -177,7 +222,8 @@
         @media (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
             gap: 7px;
-
+            margin-bottom: 22px;
+            
             .product__desc_footer {
                 flex-wrap: wrap;
             }
@@ -186,5 +232,9 @@
 
     .product {
         max-width: 347px;
+
+        @media (max-width: 768px) {
+            max-width: 143px;
+        }
     }
 }

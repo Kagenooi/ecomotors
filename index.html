@@ -22,7 +22,8 @@
                 <div class="navbar__container">
                     <div class="navbar__menu">
                         <button type="button" class="navbar__menu_btn" onclick="toggleActive('burger', this)">
-                            <img src="images/burger.png" alt="" class="navbar__menu_btn_icon">
+                            <img src="images/burger.svg" alt="" class="navbar__menu_btn_icon">
+                            <img src="images/burgerHover.svg" alt="" class="navbar__menu_btn_icon hover">
                             <img src="images/closeBtn.png" alt="" class="navbar__menu_btn_icon close">
                         </button>
                         <div id="burger" class="navbar__menu_burger burger">
@@ -155,7 +156,8 @@
                         </button>
                     </div>
                     <div class="navbar__lang langs">
-                        <button type="button" class="navbar__lang_btn" value="Հայ" onclick="toggleActive('topLang', this)">
+                        <button type="button" class="navbar__lang_btn" value="Հայ"
+                            onclick="toggleActive('topLang', this)">
                             <img src="images/flag.png" alt="" class="navbar__lang_btn_flag">
                             <span class="navbar__lang_btn_txt" id="selectedLang">Հայ</span>
                             <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
@@ -204,7 +206,6 @@
                 <img src="images/ad4.png" alt="" class="topAds__item_img col2">
             </div>
         </div>
-
 
         <header class="header">
             <div class="header__wrapper">
@@ -559,6 +560,19 @@
             </div>
         </header>
 
+        <div class="mobileads">
+            <div class="mobileads__header">
+                <h2 class="mobileads__header_title">Հատուկ Առաջարկներ</h2>
+                <a href="" class="mobileads__header_seeAll">Տեսնել բոլորը</a>
+            </div>
+            <div class="mobileads__wrapper">
+                <img src="images/mobAds1.png" alt="" class="mobileads__img">
+                <img src="images/mobAds2.png" alt="" class="mobileads__img">
+                <img src="images/mobAds3.png" alt="" class="mobileads__img">
+                <img src="images/mobAds4.png" alt="" class="mobileads__img">
+            </div>
+        </div>
+
         <main>
             <section class="catalog top__cars">
                 <div class="wrapper">
@@ -611,7 +625,10 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <button type="button" class="product__wishlist">
-                                    <img src="images/like.png" alt="" class="product__wishlist_icon">
+                                    <!-- if product__wishlist have a active class, product__wishlist_icon is 
+                                    display none and hover effect is activated -->
+                                    <img src="images/like.svg" alt="" class="product__wishlist_icon">
+                                    <img src="images/likeHover.svg" alt="" class="product__wishlist_icon hover">
                                 </button>
                             </div>
                             <div class="product__desc">
@@ -718,10 +735,34 @@
                         ՄԵՐ ԳՈՐԾԸՆԿԵՐՆԵՐԸ
                     </h2>
                     <div class="partners__content">
-                        <img src="images/partners1.png" alt="" class="partners__img">
-                        <img src="images/partners2.png" alt="" class="partners__img">
-                        <img src="images/partners3.png" alt="" class="partners__img">
-                        <img src="images/partners4.png" alt="" class="partners__img">
+                        <div class="swiper" id="partners">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/partners1.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners2.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners3.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners4.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners1.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners2.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners3.png" alt="" class="partners__img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/partners4.png" alt="" class="partners__img">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

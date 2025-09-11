@@ -46,13 +46,18 @@
 
         &_lab {
             cursor: pointer;
+            position: relative;
 
             &_inp {
                 display: none;
             }
 
-            &:first-child &_txt {
+            &:first-child {
                 right: -25px;
+            }
+
+            &:last-child {
+                right: 0;
             }
 
             &_txt {
@@ -78,11 +83,11 @@
             }
 
             &_inp:checked+&_txt {
+                padding: 12px;
+                z-index: 1020;
                 transition: .2s;
                 background: #fff;
                 color: #032022;
-                padding: 12px;
-                z-index: 1020;
             }
         }
     }

@@ -1,6 +1,8 @@
 .header__address {
     width: 100%;
     max-width: 347px;
+    position: relative;
+    z-index: 1020;
 
     &_social {
         background: url('../../images/adresBG.png') no-repeat center;
@@ -45,6 +47,11 @@
                 &_icon {
                     width: 20px;
                     height: 20px;
+                    display: block;
+
+                    &.hover {
+                        display: none;
+                    }
                 }
 
                 &_txt {
@@ -52,6 +59,19 @@
                     font-weight: 400;
                     font-size: 13px;
                     line-height: 100%;
+                    transition: .2s;
+                }
+
+                &:hover &_txt {
+                    transition: .2s;
+                    color: #4FEC00;
+                }
+                &:hover &_icon {
+                    display: none;
+
+                    &.hover {
+                        display: block;
+                    }
                 }
             }
         }
@@ -70,6 +90,12 @@
             line-height: 100%;
             color: #008900;
             text-align: right;
+            transition: .2s;
+
+            &:hover {
+                transition: .2s;
+                color: #032022;
+            }
         }
     }
 }

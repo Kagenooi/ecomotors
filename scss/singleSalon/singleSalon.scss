@@ -82,6 +82,8 @@
     &__wrapper {
         display: flex;
         gap: 25px;
+        position: relative;
+        z-index: 1010;
 
         @media (max-width: 768px) {
             gap: 0px;
@@ -114,10 +116,11 @@
         &_img {
             width: 100%;
             border-radius: 10px;
+            height: 421px;
+            object-fit: cover;
 
             @media (max-width: 768px) {
                 height: 191px;
-                object-fit: cover;
             }
         }
     }
@@ -188,7 +191,7 @@
 }
 
 
-@media (max-width: 1296px) {
+@media (max-width: 1296px) and (min-width: 769px) {
     .topAds {
         order: 4;
     }

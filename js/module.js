@@ -128,3 +128,44 @@ export function chooseOption(element) {
 export function toggleSearch(inp) {
     document.querySelector(`#${inp}`).classList.toggle('active');
 }
+
+
+export function filterSelect() {
+    const select = document.querySelectorAll('.select')
+
+    select.forEach(element => {
+        let selectBtn = element.querySelector('.select__btn');
+        selectBtn.addEventListener('click', function () {
+            console.log();
+            let selectList = this.nextElementSibling.querySelectorAll('.select__list');
+            let options = [];
+
+            for (let i = 0; i < selectList.length; i++) {
+                let btns = selectList[i].querySelectorAll('.select__list_btn');
+                for (let x = 0; x < btns.length; x++) {
+                    options.push(btns[x]);
+                }
+            }
+
+            let search = element.querySelector('input');
+            search.addEventListener('input', function () {
+                // здесь должна быть фильтрация, фильтрует среди элементов внутри options по тексту
+                const q = this.value.trim().toLowerCase();
+
+                for (let i = 0; i < options.length; i++) {
+                    const btn = options[i];
+                    const text = (btn.textContent || '').trim().toLowerCase();
+                    btn.style.display = text.includes(q) ? '' : 'none';
+                }
+
+                // прячем целые списки, если в них нет видимых кнопок
+                for (let i = 0; i < selectList.length; i++) {
+                    const list = selectList[i];
+                    const btns = list.querySelectorAll('.select__list_btn');
+                    const anyVisible = Array.from(btns).some(b => b.style.display !== 'none');
+                    list.style.display = anyVisible ? '' : 'none';
+                }
+            })
+        })
+    });
+}

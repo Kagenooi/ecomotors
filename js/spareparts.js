@@ -6,8 +6,12 @@ import {
     closeMenu,
     closeMenuBtn,
     chooseLang,
-    closeLang
+    closeLang,
+    filterSelect
 } from "./module.js";
+
+window.filterSelect = filterSelect;
+filterSelect();
 
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;

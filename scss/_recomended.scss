@@ -1,20 +1,56 @@
 .recomended {
     padding: 60px 15px;
 
+    @media (max-width: 768px) {
+        padding: 20px 15px;
+    }
+
     &__title {
         font-weight: 700;
         font-size: 19px;
         line-height: 23px;
         color: #032022;
         margin-bottom: 27px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
     }
 
     &__slider {
         position: relative;
         margin-top: -50px;
-        
+
+        @media (max-width: 768px) {
+            margin-top: 0;
+        }
+
         .swiper {
             padding-top: 50px;
+
+            @media (max-width: 768px) {
+                padding-top: 0;
+            }
+
+            &-slide {
+                @media (max-width: 768px) {
+                    min-width: 215px;
+                    max-width: 215px;
+                }
+            }
+
+            &-wrapper {
+                @media (max-width: 768px) {
+                    display: flex;
+                    overflow-y: scroll;
+                    gap: 20px;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+            }
         }
 
         &_btn {
@@ -28,6 +64,10 @@
             justify-content: center;
             background: #D9D9D926;
             transition: .2s;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
 
             &:hover {
                 transition: .2s;
@@ -56,12 +96,22 @@
             width: 100%;
             max-width: 360px;
 
+            @media (max-width: 768px) {
+                max-width: 215px;
+                min-width: 215px;
+            }
+
             &_img {
                 width: 100%;
                 height: 200px;
                 object-fit: cover;
                 border-radius: 12px;
                 margin-bottom: 2px;
+
+                @media (max-width: 768px) {
+                    height: 119px;
+                    margin-bottom: 5px;
+                }
             }
 
             &_desc {
@@ -76,6 +126,10 @@
                         font-size: 13px;
                         line-height: 23px;
                         color: #032022;
+
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                        }
                     }
                 }
 
@@ -84,6 +138,10 @@
                     font-size: 21px;
                     line-height: 23px;
                     color: #032022;
+
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
                 }
             }
         }
