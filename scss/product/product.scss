@@ -488,6 +488,10 @@
 
 
 @media (max-width: 1296px) and (min-width: 768px) {
+    #adaptive {
+        display: flex;
+        flex-direction: column;
+    }
     .topAds {
         order: 2;
     }

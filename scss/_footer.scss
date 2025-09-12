@@ -38,6 +38,18 @@
 
                 &_img {
                     width: 100%;
+
+                    &.mobile {
+                        display: none;
+                    }
+
+                    @media (max-width: 768px) {
+                        display: none;
+
+                        &.mobile {
+                            display: block;
+                        }
+                    }
                 }
             }
 
