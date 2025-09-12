@@ -32,7 +32,7 @@ const productSwiper = new Swiper(".productSwiper", {
     },
     pagination: {
         el: ".swiper-pagination",
-    },
+    }
 });
 
 

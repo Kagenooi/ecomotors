@@ -2122,12 +2122,52 @@ button {
 
 .container {
   display: grid;
+  align-items: flex-start;
   grid-template-columns: 81fr 30fr;
   gap: 20px;
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.container .similar__title {
+  margin-bottom: 20px;
+  color: #032022;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+.container .similar__wrapper {
+  display: grid;
+  gap: 46px;
+  width: 100%;
+  max-width: 300px;
+}
+.container .similar__el {
+  width: 100%;
+}
+.container .similar__el_img {
+  width: 100%;
+  border-radius: 12px;
+}
+.container .similar__el_name {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  margin-top: 7px;
+}
+.container .similar__el_price {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 23px;
+  color: #032022;
+}
+.container .similar__el_link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  margin-top: 2px;
+  color: #008900;
 }
 .container .characters {
   display: grid;
@@ -2160,21 +2200,51 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 11px 0 11px 14px;
+  width: 100%;
 }
 .container .characters__faq_el_btn_txt {
   font-weight: 400;
   font-size: 11px;
   line-height: 23px;
   color: #032022;
+  transition: 0.2s;
+}
+.container .characters__faq_el_btn_txt.active {
+  font-weight: 600;
+  transition: 0.2s;
 }
 .container .characters__faq_el_btn_icon {
   width: 16px;
   height: 16px;
   transition: 0.2s;
 }
-.container .characters__faq_el_btn.active .container .characters__faq_el_btn_icon {
+.container .characters__faq_el_btn_icon.active {
   transition: 0.2s;
   transform: rotateZ(180deg);
+}
+.container .characters__faq_el_content {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+}
+.container .characters__faq_el_list {
+  display: grid;
+  gap: 3px;
+  padding: 3px 20px;
+}
+.container .characters__faq_el_list_el {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.container .characters__faq_el_list_el_icon {
+  width: 10px;
+}
+.container .characters__faq_el_list_el_txt {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 23px;
+  color: #032022;
 }
 .container .characters__item {
   padding: 11px 16px;

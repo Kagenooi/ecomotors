@@ -81,3 +81,16 @@ import {
 window.adaptive = adaptive;
 adaptive();
 window.addEventListener('resize', function () { adaptive() });
+
+
+function openFaq(btn) {
+    let faq = btn.nextElementSibling;
+    if (faq.style.maxHeight) {
+        faq.style.maxHeight = null;
+    } else {
+        faq.style.maxHeight = faq.style.maxHeight + faq.scrollHeight + 'px';
+    }
+    btn.querySelector('.characters__faq_el_btn_txt').classList.toggle('active');
+    btn.querySelector('.characters__faq_el_btn_icon').classList.toggle('active');
+}
+window.openFaq = openFaq;

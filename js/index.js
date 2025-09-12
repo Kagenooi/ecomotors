@@ -28,7 +28,6 @@ window.closeMenuBtn = closeMenuBtn;
 
 const productSwiper = new Swiper(".productSwiper", {
     loop: true,
-    autoplay: true,
     navigation: {
         nextEl: ".product__slider_btn.next",
         prevEl: ".product__slider_btn.prev",
