@@ -133,6 +133,10 @@ button {
   }
 }
 
+.ads2__img img {
+  width: 100%;
+}
+
 .navbar {
   background: #032022;
   width: 100%;
