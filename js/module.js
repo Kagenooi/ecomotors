@@ -3,6 +3,10 @@ export function toggleActive(target, event) {
     event?.classList.toggle('active');
 }
 
+export function chooseLang(evt) {
+    if (evt && typeof evt.preventDefault === 'function') evt.preventDefault();
+}
+
 
 export function closeMenuBtn() {
     document.querySelector('.navbar__menu_btn').classList.remove('active');

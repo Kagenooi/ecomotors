@@ -3,11 +3,13 @@ import {
     closeMenu,
     closeMenuBtn,
     closeLang,
+    chooseLang
 } from "./module.js";
 
 closeMenu();
 window.closeLang = closeLang;
 closeLang();
+window.chooseLang = chooseLang;
 
 window.closeMenuBtn = closeMenuBtn;
 window.toggleActive = toggleActive; 
