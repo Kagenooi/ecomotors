@@ -855,7 +855,7 @@ button {
   .footer .info__contact {
     order: 4;
     padding: 16px 0 31px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5019607843);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 .footer .info__contact_list {
@@ -926,7 +926,7 @@ button {
     order: 3;
     padding: 23px 0;
     position: relative;
-    border-top: 1px solid rgba(255, 255, 255, 0.5019607843);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 .footer .info__list_link {

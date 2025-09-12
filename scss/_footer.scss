@@ -94,7 +94,7 @@
             @media (max-width: 768px) {
                 order: 4;
                 padding: 16px 0 31px;
-                border-top: 1px solid #FFFFFF80;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
             }
 
             &_list {
@@ -170,7 +170,7 @@
                 order: 3;
                 padding: 23px 0;
                 position: relative;
-                border-top: 1px solid #FFFFFF80;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
             }
 
             &_link {
