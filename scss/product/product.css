@@ -2152,6 +2152,30 @@ button {
   line-height: 23px;
   color: #032022;
 }
+.container .characters__faq_el {
+  position: relative;
+}
+.container .characters__faq_el_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0 11px 14px;
+}
+.container .characters__faq_el_btn_txt {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 23px;
+  color: #032022;
+}
+.container .characters__faq_el_btn_icon {
+  width: 16px;
+  height: 16px;
+  transition: 0.2s;
+}
+.container .characters__faq_el_btn.active .container .characters__faq_el_btn_icon {
+  transition: 0.2s;
+  transform: rotateZ(180deg);
+}
 .container .characters__item {
   padding: 11px 16px;
 }

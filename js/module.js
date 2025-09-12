@@ -6,7 +6,6 @@ export function toggleActive(target, event) {
 export function chooseLang(evt) {
     // if (evt && typeof evt.preventDefault === 'function') evt.preventDefault();
     console.log(true);
-    
 }
 
 
@@ -82,6 +81,8 @@ export function closeLang() {
 
 export function chooseOption(element) {
     let parent = element.parentElement;
+    parent.parentElement.querySelector('.hidden').value = element.value
+
     while (parent) {
         if (parent.classList.contains('select')) {
             parent.querySelector('.select__btn_txt').innerHTML = element.innerHTML;
@@ -106,7 +107,6 @@ export function filterSelect() {
     select.forEach(element => {
         let selectBtn = element.querySelector('.select__btn');
         selectBtn.addEventListener('click', function () {
-            console.log();
             let selectList = this.nextElementSibling.querySelectorAll('.select__list');
             let options = [];
 
