@@ -544,13 +544,13 @@
                     <div class="header__subfilter">
                         <form action="">
                             <div class="header__subfilter_mob">
-                                <p class="header__subfilter_mob_title"></p>
-                                <div class="header__subfilter_mob_choose" id="subfilterChoose"></div>
-                                <button type="button" class="header__subfilter_mob_btn">
-                                    <img src="" alt="" class="header__subfilter_mob_btn_icon">
+                                <p class="header__subfilter_mob_title">Ընտրել սրահը՝</p>
+                                <button type="button" class="header__subfilter_mob_btn" onclick="toggleSubfilter('subfilter')">
+                                    <img src="images/filter.svg" alt="" class="header__subfilter_mob_btn_icon">
+                                    <span class="header__subfilter_mob_btn_txt">Ֆիլտր</span>
                                 </button>
                             </div>
-                            <div class="header__subfilter_wrapper">
+                            <div class="header__subfilter_wrapper" id="subfilter">
                                 <label for="subfilter1" class="header__subfilter_lab">
                                     <input type="checkbox" id="subfilter1" name="" class="header__subfilter_lab_inp">
                                     <span class="header__subfilter_lab_check"></span>

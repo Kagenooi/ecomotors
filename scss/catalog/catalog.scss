@@ -78,10 +78,48 @@
         background: #E9F1EF;
         padding: 20px 30px 20px 57px;
 
+        @media (max-width: 768px) {
+            padding: 16px;
+        }
+
         &_wrapper {
             display: flex;
             flex-wrap: wrap;
             grid-gap: 27px 60px;
+
+            @media (max-width: 768px) {
+                gap: 20px;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                max-height: 0;
+                overflow: hidden;
+                transition: .3s;
+            }
+        }
+
+        &_mob {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_btn {
+                    display: flex;
+                    align-items: center;
+                    padding: 9px 22px;
+                    gap: 9px;
+                    background: #fff;
+                    border-radius: 32px;
+                }
+
+                &_title {
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 100%;
+                }
+            }
         }
 
         &_lab {
@@ -90,12 +128,19 @@
             align-items: center;
             cursor: pointer;
 
+            &:first-child {
+                @media (max-width: 768px) {
+                    margin-top: 15px;
+                }
+            }
             &_check {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 11px;
+                min-width: 11px;
                 height: 11px;
+                min-height: 11px;
                 border-radius: 2px;
                 border: 1px solid #000;
             }
@@ -190,6 +235,7 @@
             height: fit-content;
             align-items: flex-start;
             gap: 40px;
+            padding: 20px 0 30px;
         }
     }
 
@@ -223,7 +269,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 7px;
             margin-bottom: 22px;
-            
+
             .product__desc_footer {
                 flex-wrap: wrap;
             }
@@ -236,5 +282,12 @@
         @media (max-width: 768px) {
             max-width: 143px;
         }
+    }
+}
+
+
+.topAds {
+    @media (max-width: 1296px) {
+        display: none;
     }
 }

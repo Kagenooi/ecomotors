@@ -263,3 +263,14 @@ window.addEventListener('resize', function () { adaptive() });
     window.addEventListener('load', toggle);
     toggle();
 })();
+
+
+function toggleSubfilter(sub) {
+    let filter = document.querySelector(`#${sub}`);
+    if (filter.style.maxHeight) {
+        filter.style.maxHeight = null;
+    } else {
+        filter.style.maxHeight = filter.style.maxHeight + filter.scrollHeight + 'px';
+    }
+}
+window.toggleSubfilter = toggleSubfilter;

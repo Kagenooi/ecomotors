@@ -1790,6 +1790,7 @@ button {
 @media (max-width: 768px) {
   .recomended {
     padding: 20px 15px;
+    max-width: 325px;
   }
 }
 .recomended__title {
@@ -1803,6 +1804,18 @@ button {
   .recomended__title {
     font-size: 14px;
     margin-bottom: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .recomended .swiper {
+    min-width: 305px;
+  }
+  .recomended .swiper-slide {
+    width: 218px;
+    margin-right: 0 !important;
+  }
+  .recomended .swiper-slide:last-child {
+    margin-right: 15px !important;
   }
 }
 .recomended__slider {
@@ -2043,10 +2056,48 @@ button {
   background: #E9F1EF;
   padding: 20px 30px 20px 57px;
 }
+@media (max-width: 768px) {
+  .header__subfilter {
+    padding: 16px;
+  }
+}
 .header__subfilter_wrapper {
   display: flex;
   flex-wrap: wrap;
   grid-gap: 27px 60px;
+}
+@media (max-width: 768px) {
+  .header__subfilter_wrapper {
+    gap: 20px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+}
+.header__subfilter_mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__subfilter_mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__subfilter_mob_btn {
+    display: flex;
+    align-items: center;
+    padding: 9px 22px;
+    gap: 9px;
+    background: #fff;
+    border-radius: 32px;
+  }
+  .header__subfilter_mob_title {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+  }
 }
 .header__subfilter_lab {
   display: flex;
@@ -2054,12 +2105,19 @@ button {
   align-items: center;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .header__subfilter_lab:first-child {
+    margin-top: 15px;
+  }
+}
 .header__subfilter_lab_check {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 11px;
+  min-width: 11px;
   height: 11px;
+  min-height: 11px;
   border-radius: 2px;
   border: 1px solid #000;
 }
@@ -2133,6 +2191,7 @@ button {
     height: fit-content;
     align-items: flex-start;
     gap: 40px;
+    padding: 20px 0 30px;
   }
 }
 .catalog__labs {
@@ -2177,5 +2236,11 @@ button {
 @media (max-width: 768px) {
   .catalog .product {
     max-width: 143px;
+  }
+}
+
+@media (max-width: 1296px) {
+  .topAds {
+    display: none;
   }
 }/*# sourceMappingURL=catalog.css.map */

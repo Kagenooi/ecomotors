@@ -3,6 +3,7 @@
 
     @media (max-width: 768px) {
         padding: 20px 15px;
+        max-width: 325px;
     }
 
     &__title {
@@ -15,6 +16,21 @@
         @media (max-width: 768px) {
             font-size: 14px;
             margin-bottom: 22px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .swiper {
+            min-width: 305px;
+
+            &-slide {
+                width: 218px;
+                margin-right: 0 !important;
+
+                &:last-child {
+                    margin-right: 15px !important;
+                }
+            }
         }
     }
 
