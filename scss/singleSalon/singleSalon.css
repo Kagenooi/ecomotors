@@ -137,6 +137,36 @@ button {
   width: 100%;
 }
 
+.fixedBtns {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 1090;
+}
+.fixedBtns__btn {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.fixedBtns__btn.invisible {
+  position: relative;
+  transition: 0.2s;
+  right: -150px;
+}
+.fixedBtns__btn.is-visible {
+  right: 0px !important;
+  transition: 0.2s;
+}
+.fixedBtns__btn:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 17.6px 0px rgba(204, 255, 0, 0.3607843137);
+}
+.fixedBtns__btn_icon {
+  width: 100%;
+  height: 100%;
+}
+
 .navbar {
   background: #032022;
   width: 100%;
