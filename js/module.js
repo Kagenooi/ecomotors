@@ -4,7 +4,9 @@ export function toggleActive(target, event) {
 }
 
 export function chooseLang(evt) {
-    if (evt && typeof evt.preventDefault === 'function') evt.preventDefault();
+    // if (evt && typeof evt.preventDefault === 'function') evt.preventDefault();
+    console.log(true);
+    
 }
 
 
