@@ -2142,8 +2142,39 @@ button {
   border-radius: 12px;
   background: #E9F1EF;
 }
+.container .characters__faq {
+  padding: 14px 16px;
+}
+.container .characters__faq_title {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  color: #032022;
+}
 .container .characters__item {
   padding: 11px 16px;
+}
+.container .characters__item_el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0 11px 14px;
+}
+.container .characters__item_el:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 137, 0, 0.1882352941);
+}
+.container .characters__item_el_name {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 23px;
+  color: #032022;
+}
+.container .characters__item_el_val {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: #032022;
 }
 .container .recomended {
   grid-column: 1/3;
