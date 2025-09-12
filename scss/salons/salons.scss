@@ -9,8 +9,16 @@
 
 .header {
     padding-top: 204px;
+ 
+    @media (max-width: 768px) {
+        padding: 0;
+    }
 }
-
+.wrapper {
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
 .salons {
     padding: 57px 57px 99px;
     border-radius: 12px;
