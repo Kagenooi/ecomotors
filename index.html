@@ -163,13 +163,11 @@
                             <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
                         </button>
                         <div class="navbar__lang_list" id="topLang">
-                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Eng"
-                                onclick="chooseLang(event)">
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Eng" onclick="chooseLang(event)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang2">Eng</span>
                             </a>
-                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Rus"
-                                onclick="chooseLang(event)">
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Rus" onclick="chooseLang(event)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang3">Rus</span>
                             </a>
@@ -678,7 +676,11 @@
             </section>
 
             <div class="ads2 ads3 wrapper">
-                <img src="images/navbarAds.png" alt="" class="ads2__img">
+                <picture class="ads2__img">
+                    <!-- Мобильная версия (до 768px) -->
+                    <source media="(max-width: 768px)" srcset="images/mobileAdsHome.png" type="image/webp" />
+                    <img src="images/navbarAds.png" alt="" class="">
+                </picture>
             </div>
 
             <section class="catalog">
