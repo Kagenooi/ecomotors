@@ -3,13 +3,15 @@ import {
     closeMenu,
     closeMenuBtn,
     chooseLang,
-    closeLang
+    closeLang,
+    toggleSearch
 } from "./module.js";
 
 window.toggleActive = toggleActive; 
 closeMenu();
 window.closeLang = closeLang;
 closeLang();
+window.toggleSearch = toggleSearch;
 window.chooseLang = chooseLang;
 window.closeMenuBtn = closeMenuBtn;
 

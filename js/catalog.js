@@ -7,7 +7,8 @@ import {
     closeMenuBtn,
     chooseLang,
     filterSelect,
-    closeLang
+    closeLang,
+    toggleSearch
 } from "./module.js";
 
 window.filterSelect = filterSelect;
@@ -16,6 +17,7 @@ filterSelect();
 window.toggleActive = toggleActive;
 window.openSelect = openSelect;
 window.close = close;
+window.toggleSearch = toggleSearch;
 close();
 closeMenu();
 window.closeLang = closeLang;

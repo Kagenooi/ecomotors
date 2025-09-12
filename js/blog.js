@@ -3,7 +3,8 @@ import {
     closeMenu,
     closeMenuBtn,
     closeLang,
-    chooseLang
+    chooseLang,
+    toggleSearch
 } from "./module.js";
 
 window.toggleActive = toggleActive;
@@ -12,6 +13,7 @@ closeMenu();
 window.closeLang = closeLang;
 closeLang();
 window.chooseLang = chooseLang;
+window.toggleSearch = toggleSearch;
 
 
 const blogSlider = new Swiper("#blogSlider", {
