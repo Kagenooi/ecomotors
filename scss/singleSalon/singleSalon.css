@@ -279,6 +279,13 @@ button {
   visibility: visible;
   transform: translateY(0px);
 }
+.navbar__menu .burger * {
+  transition: 0.2s;
+}
+.navbar__menu .burger *:hover {
+  transition: 0.2s;
+  color: #4FEC00;
+}
 .navbar__menu .burger__logo {
   display: none;
 }

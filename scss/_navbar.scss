@@ -162,6 +162,14 @@
 
         .burger {
 
+            * {
+                transition: .2s;
+
+                &:hover {
+                    transition: .2s;
+                    color: #4FEC00;
+                }
+            }
             &__logo {
                 display: none;
 
