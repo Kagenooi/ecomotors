@@ -265,6 +265,31 @@
                         align-items: center;
                         justify-content: space-between;
                         margin-bottom: 27px;
+
+                        &_link {
+                            width: 18px;
+                            height: 18px;
+
+                            &_icon {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+
+                                &.hover {
+                                    display: none;
+                                }
+                            }
+
+
+                            &:hover .burger__contacts_social_list_link_icon {
+                                display: none;
+
+                                &.hover {
+                                    display: block;
+                                }
+                            }
+                        }
                     }
                 }
 
