@@ -22,10 +22,14 @@
                 <div class="navbar__container">
                     <div class="navbar__menu">
                         <button type="button" class="navbar__menu_btn" onclick="toggleActive('burger', this)">
-                            <img src="images/burger.png" alt="" class="navbar__menu_btn_icon">
+                            <img src="images/burger.svg" alt="" class="navbar__menu_btn_icon">
+                            <img src="images/burgerHover.svg" alt="" class="navbar__menu_btn_icon hover">
                             <img src="images/closeBtn.png" alt="" class="navbar__menu_btn_icon close">
                         </button>
                         <div id="burger" class="navbar__menu_burger burger">
+                            <a href="" class="burger__logo">
+                                <img src="images/logoWhite.svg" alt="" class="burger__logo_img">
+                            </a>
                             <div class="burger__header">
                                 <p class="burger__header_title">ՄԵՆՅՈՒ</p>
                                 <button type="button" class="burger__header_close"
@@ -75,32 +79,25 @@
                                         <li><a href="" class="burger__menu_list_link">Կապ Մեզ Հետ</a></li>
                                     </ul>
                                     <div class="burger__menu_lang langs">
-                                        <button type="button" class="burger__menu_lang_btn"
+                                        <button type="button" class="burger__menu_lang_btn" value="Հայ"
                                             onclick="toggleActive('menuLang', this)">
                                             <img src="images/flag.png" alt="" class="burger__menu_lang_btn_flag">
                                             <span class="burger__menu_lang_btn_txt" id="selectedLang2">Հայ</span>
                                             <img src="images/arrow.png" alt="" class="burger__menu_lang_btn_icon">
                                         </button>
                                         <div class="burger__menu_lang_list" id="menuLang">
-                                            <button type="button" class="burger__menu_lang_list_btn"
-                                                id="defaultChecked2"
-                                                onclick="chooseLang('selectedLang2', 'chooseLang4', 'menuLang', 'burger__menu_lang_btn', this)">
-                                                <img src="images/flag.png" alt=""
-                                                    class="burger__menu_lang_list_btn_flag">
-                                                <span class="burger__menu_lang_list_btn_txt" id="chooseLang4">Հայ</span>
-                                            </button>
-                                            <button type="button" class="burger__menu_lang_list_btn"
-                                                onclick="chooseLang('selectedLang2', 'chooseLang5', 'menuLang', 'burger__menu_lang_btn', this)">
+                                            <a href="" class="burger__menu_lang_list_btn  lang__btn"
+                                                onclick="chooseLang(event, 'selectedLang2', 'chooseLang5', 'menuLang', 'burger__menu_lang_btn', this)">
                                                 <img src="images/flag.png" alt=""
                                                     class="burger__menu_lang_list_btn_flag">
                                                 <span class="burger__menu_lang_list_btn_txt" id="chooseLang5">Rus</span>
-                                            </button>
-                                            <button type="button" class="burger__menu_lang_list_btn"
-                                                onclick="chooseLang('selectedLang2', 'chooseLang6', 'menuLang', 'burger__menu_lang_btn', this)">
+                                            </a>
+                                            <a href="" class="burger__menu_lang_list_btn  lang__btn"
+                                                onclick="chooseLang(event, 'selectedLang2', 'chooseLang6', 'menuLang', 'burger__menu_lang_btn', this)">
                                                 <img src="images/flag.png" alt=""
                                                     class="burger__menu_lang_list_btn_flag">
                                                 <span class="burger__menu_lang_list_btn_txt" id="chooseLang6">Eng</span>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,34 +149,30 @@
                     </div>
                     <a href="" class="navbar__logo"><img src="images/logo.png" alt="" class="navbar__logo_img"></a>
                     <div class="navbar__search">
-                        <input type="search" name="" id="" class="navbar__search_inp"
+                        <input type="search" name="" id="search" class="navbar__search_inp"
                             placeholder="Փնտրել՝ մեքենաներ, պահեստամասեր, դետալներ,,,">
-                        <button type="button" class="navbar__search_btn">
+                        <button type="button" class="navbar__search_btn" onclick="toggleSearch('search')">
                             <img src="images/loop.png" alt="" class="navbar__search_btn_icon">
                         </button>
                     </div>
                     <div class="navbar__lang langs">
-                        <button type="button" class="navbar__lang_btn" onclick="toggleActive('topLang', this)">
+                        <button type="button" class="navbar__lang_btn" value="Հայ"
+                            onclick="toggleActive('topLang', this)">
                             <img src="images/flag.png" alt="" class="navbar__lang_btn_flag">
                             <span class="navbar__lang_btn_txt" id="selectedLang">Հայ</span>
                             <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
                         </button>
                         <div class="navbar__lang_list" id="topLang">
-                            <button type="button" class="navbar__lang_list_btn" id="defaultChecked"
-                                onclick="chooseLang('selectedLang', 'chooseLang1', 'topLang', 'navbar__lang_btn', this)">
-                                <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
-                                <span class="navbar__lang_list_btn_txt" id="chooseLang1">Հայ</span>
-                            </button>
-                            <button type="button" class="navbar__lang_list_btn"
-                                onclick="chooseLang('selectedLang', 'chooseLang2', 'topLang', 'navbar__lang_btn', this)">
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Eng"
+                                onclick="chooseLang(event, 'selectedLang', 'chooseLang2', 'topLang', 'navbar__lang_btn', this)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang2">Eng</span>
-                            </button>
-                            <button type="button" class="navbar__lang_list_btn"
-                                onclick="chooseLang('selectedLang', 'chooseLang3', 'topLang', 'navbar__lang_btn', this)">
+                            </a>
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Rus"
+                                onclick="chooseLang(event, 'selectedLang', 'chooseLang3', 'topLang', 'navbar__lang_btn', this)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang3">Rus</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -194,6 +187,7 @@
                 </ul>
             </div>
         </nav>
+
 
         <div class="topAds">
             <div class="topAds__header">
@@ -229,24 +223,28 @@
         <header class="header wrapper">
             <div class="header__wrapper">
                 <div class="header__name">
-                    <h1 class="header__name_title"></h1>
+                    <h1 class="header__name_title">Aion LX Plus 80D Thousand Miles Edition</h1>
                     <div class="header__name_bot">
-                        <p class="header__name_bot_articule"></p>
-                        <p class="header__name_bot_type"></p>
+                        <p class="header__name_bot_articule">№ 1124203463</p>
+                        <p class="header__name_bot_type">Ամենագնաց</p>
                     </div>
                 </div>
                 <div class="header__price">
                     <p class="header__price_sum">54.000$</p>
-                    <div class="header__price_select">
+                    <div class="header__price_select currency">
                         <input type="hidden" name="" id="currency">
-                        <button type="button" class="header__price_select_btn">
+                        <button type="button" class="header__price_select_btn"
+                            onclick="currencyToggle('currencySelect')">
                             <span class="header__price_select_btn_txt">USD</span>
                             <img src="images/chevLeft.svg" alt="" class="header__price_select_btn_icon">
                         </button>
-                        <div class="header__price_select_btns">
-                            <button type="button" value="AMD" class="header__price_select_btns_btn">AMD</button>
-                            <button type="button" value="USD" class="header__price_select_btns_btn">USD</button>
-                            <button type="button" value="RUB" class="header__price_select_btns_btn">RUB</button>
+                        <div class="header__price_select_btns" id="currencySelect">
+                            <button type="button" value="AMD" class="header__price_select_btns_btn"
+                                onclick="chooseCurrency(this, 'currency')">AMD</button>
+                            <button type="button" value="USD" class="header__price_select_btns_btn"
+                                onclick="chooseCurrency(this, 'currency')">USD</button>
+                            <button type="button" value="RUB" class="header__price_select_btns_btn"
+                                onclick="chooseCurrency(this, 'currency')">RUB</button>
                         </div>
                     </div>
                 </div>
@@ -255,76 +253,286 @@
 
         <div class="singleproduct wrapper">
             <div class="singleproduct__gallery">
-                
+                <div class="swiper" id="gallery2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                    </div>
+                    <button type="button" class="singleproduct__gallery_btn prev">
+                        <img src="images/prodPrev.svg" alt="" class="singleproduct__gallery_btn_icon">
+                    </button>
+                    <button type="button" class="singleproduct__gallery_btn next">
+                        <img src="images/prodNext.svg" alt="" class="singleproduct__gallery_btn_icon">
+                    </button>
+                </div>
+                <div thumbsSlider="" class="swiper" id="gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/prodGallery.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="singleproduct__soc">
-                
+                <a href="" class="singleproduct__soc_el blue">
+                    <img src="images/soc1.svg" alt="" class="singleproduct__soc_icon">
+                    <div class="singleproduct__soc_desc">
+                        <h4 class="singleproduct__soc_desc_title">Մենեջերը միշտ կապի մեջ է</h4>
+                        <p class="singleproduct__soc_desc_pr">Մանրամասների համար</p>
+                    </div>
+                </a>
+                <a href="" class="singleproduct__soc_el green">
+                    <img src="images/soc2.svg" alt="" class="singleproduct__soc_icon">
+                    <div class="singleproduct__soc_desc">
+                        <h4 class="singleproduct__soc_desc_title">+374 95 94 94 66 </h4>
+                        <p class="singleproduct__soc_desc_pr">Մանրամասների համար</p>
+                    </div>
+                </a>
+                <a href="" class="singleproduct__soc_el">
+                    <img src="images/soc3.svg" alt="" class="singleproduct__soc_icon">
+                    <div class="singleproduct__soc_desc">
+                        <p class="singleproduct__soc_desc_pr">Մեքենան գտնվում է՝</p>
+                        <h4 class="singleproduct__soc_desc_title">Հայաստան, Երևան, Մելքումով 88՝</h4>
+                    </div>
+                </a>
+                <a href="" class="singleproduct__soc_el">
+                    <img src="images/soc4.svg" alt="" class="singleproduct__soc_icon">
+                    <div class="singleproduct__soc_desc">
+                        <h4 class="singleproduct__soc_desc_title">Գրանցվել Տեստ-Դրայվի</h4>
+                        <p class="singleproduct__soc_desc_pr">Կապնվիր հիմա՛</p>
+                    </div>
+                </a>
+                <a href="" class="singleproduct__soc_el">
+                    <img src="images/soc5.svg" alt="" class="singleproduct__soc_icon">
+                    <div class="singleproduct__soc_desc">
+                        <h4 class="singleproduct__soc_desc_title">Պահեստամասեր և դետալներ</h4>
+                        <p class="singleproduct__soc_desc_pr">Տես ավելին</p>
+                    </div>
+                </a>
+                <a href="" class="singleproduct__soc_el align-start">
+                    <img src="images/soc7.svg" alt="" class="singleproduct__soc_icon">
+                    <div class="singleproduct__soc_desc">
+                        <h4 class="singleproduct__soc_desc_title">Գնել Վարկով</h4>
+                        <p class="singleproduct__soc_desc_pr">Օնլայն վարկ AMERIABANK</p>
+                        <img src="images/banking.png" alt="" class="singleproduct__soc_desc_img">
+                        <button type="button" class="singleproduct__soc_desc_btn">Դիմել Հիմա</button>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <section class="recomended wrapper">
-            <h2 class="recomended__title">Առաջարկվող</h2>
-            <div class="recomended__slider">
-                <div class="swiper" id="recomended">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="" class="recomended__slider_item">
-                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
-                                <div class="recomended__slider_item_desc">
-                                    <div class="recomended__slider_item_desc_header">
-                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
-                                        <p class="recomended__slider_item_desc_header_date">2023</p>
-                                    </div>
-                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class="recomended__slider_item">
-                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
-                                <div class="recomended__slider_item_desc">
-                                    <div class="recomended__slider_item_desc_header">
-                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
-                                        <p class="recomended__slider_item_desc_header_date">2023</p>
-                                    </div>
-                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class="recomended__slider_item">
-                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
-                                <div class="recomended__slider_item_desc">
-                                    <div class="recomended__slider_item_desc_header">
-                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
-                                        <p class="recomended__slider_item_desc_header_date">2023</p>
-                                    </div>
-                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class="recomended__slider_item">
-                                <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
-                                <div class="recomended__slider_item_desc">
-                                    <div class="recomended__slider_item_desc_header">
-                                        <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d</p>
-                                        <p class="recomended__slider_item_desc_header_date">2023</p>
-                                    </div>
-                                    <p class="recomended__slider_item_desc_price">42,000 $</p>
-                                </div>
-                            </a>
+        <div class="container">
+            <div class="characters">
+                <h2 class="characters__title">Հիմնական Բնութագիր</h2>
+                <div class="characters__item">
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                </div>
+                <div class="characters__item">
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                    <div class="characters__item_el">
+                        <p class="characters__item_el_name">Երկիր</p>
+                        <p class="characters__item_el_val">Դուբայ</p>
+                    </div>
+                </div>
+                <div class="characters__faq">
+                    <h3 class="characters__faq_title">Բնութագիր</h3>
+                    <div class="characters__faq_el">
+                        <button type="button" class="characters__faq_el_btn">
+                            <span class="characters__faq_el_btn_txt">Կոմֆրրտ</span>
+                            <img src="" alt="" class="characters__faq_el_btn_icon">
+                        </button>
+                        <div class="characters__faq_el_content">
+                            <!-- <p class="characters__faq_el_pr"></p> -->
+                            <ul class="characters__faq_el_list">
+                                <li class="characters__faq_el_list_el">
+                                    <img src="" alt="" class="characters__faq_el_list_el_icon">
+                                    <span class="characters__faq_el_list_el_txt">Սկավառակ</span>
+                                </li>
+                                <li class="characters__faq_el_list_el">
+                                    <img src="" alt="" class="characters__faq_el_list_el_icon">
+                                    <span class="characters__faq_el_list_el_txt">Պահեստային անիվ</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <button type="button" class="recomended__slider_btn prev">
-                        <img src="images/chevLeft.svg" alt="" class="recomended__slider_btn_icon">
-                    </button>
-                    <button type="button" class="recomended__slider_btn next">
-                        <img src="images/chevRight.svg" alt="" class="recomended__slider_btn_icon">
-                    </button>
                 </div>
             </div>
-        </section>
+
+            <section class="similar">
+                <h3 class="similar__title">Նմանատիպ մեքենաներ</h3>
+                <div class="similar__wrapper">
+                    <a href="" class="similar__el">
+                        <img src="" alt="" class="similar__el_img">
+                        <p class="similar__el_name">Mercedes-Benz GLE 400 d</p>
+                        <p class="similar__el_price">35,000 - 42,000 $</p>
+                        <a href="" class="similar__el_link">Ցույց տալ 31 առաջարկները</a>
+                    </a>
+                    <a href="" class="similar__el">
+                        <img src="" alt="" class="similar__el_img">
+                        <p class="similar__el_name">Mercedes-Benz GLE 400 d</p>
+                        <p class="similar__el_price">35,000 - 42,000 $</p>
+                        <a href="" class="similar__el_link">Ցույց տալ 31 առաջարկները</a>
+                    </a>
+                    <a href="" class="similar__el">
+                        <img src="" alt="" class="similar__el_img">
+                        <p class="similar__el_name">Mercedes-Benz GLE 400 d</p>
+                        <p class="similar__el_price">35,000 - 42,000 $</p>
+                        <a href="" class="similar__el_link">Ցույց տալ 31 առաջարկները</a>
+                    </a>
+                </div>
+            </section>
+
+            <section class="recomended wrapper">
+                <h2 class="recomended__title">Առաջարկվող</h2>
+                <div class="recomended__slider">
+                    <div class="swiper" id="recomended">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="recomended__slider_item">
+                                    <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                    <div class="recomended__slider_item_desc">
+                                        <div class="recomended__slider_item_desc_header">
+                                            <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d
+                                            </p>
+                                            <p class="recomended__slider_item_desc_header_date">2023</p>
+                                        </div>
+                                        <p class="recomended__slider_item_desc_price">42,000 $</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="recomended__slider_item">
+                                    <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                    <div class="recomended__slider_item_desc">
+                                        <div class="recomended__slider_item_desc_header">
+                                            <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d
+                                            </p>
+                                            <p class="recomended__slider_item_desc_header_date">2023</p>
+                                        </div>
+                                        <p class="recomended__slider_item_desc_price">42,000 $</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="recomended__slider_item">
+                                    <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                    <div class="recomended__slider_item_desc">
+                                        <div class="recomended__slider_item_desc_header">
+                                            <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d
+                                            </p>
+                                            <p class="recomended__slider_item_desc_header_date">2023</p>
+                                        </div>
+                                        <p class="recomended__slider_item_desc_price">42,000 $</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="recomended__slider_item">
+                                    <img src="images/productslide.png" alt="" class="recomended__slider_item_img">
+                                    <div class="recomended__slider_item_desc">
+                                        <div class="recomended__slider_item_desc_header">
+                                            <p class="recomended__slider_item_desc_header_name">Mercedes-Benz GLE 400 d
+                                            </p>
+                                            <p class="recomended__slider_item_desc_header_date">2023</p>
+                                        </div>
+                                        <p class="recomended__slider_item_desc_price">42,000 $</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button type="button" class="recomended__slider_btn prev">
+                            <img src="images/chevLeft.svg" alt="" class="recomended__slider_btn_icon">
+                        </button>
+                        <button type="button" class="recomended__slider_btn next">
+                            <img src="images/chevRight.svg" alt="" class="recomended__slider_btn_icon">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <img src="images/catalogads.png" alt="" class="catalogads">
 

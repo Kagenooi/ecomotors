@@ -17,8 +17,6 @@ closeMenu();
 window.closeLang = closeLang;
 closeLang();
 window.chooseLang = chooseLang;
-document.querySelector('#defaultChecked').click();
-document.querySelector('#defaultChecked2').click();
 window.chooseOption = chooseOption;
 window.closeMenuBtn = closeMenuBtn;
 
@@ -33,10 +31,53 @@ const recomended = new Swiper("#recomended", {
     }
 });
 
+const swiper = new Swiper("#gallery", {
+    spaceBetween: 8,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+const swiper2 = new Swiper("#gallery2", {
+    spaceBetween: 8,
+    loop: true,
+    navigation: {
+        nextEl: ".singleproduct__gallery_btn.next",
+        prevEl: ".singleproduct__gallery_btn.prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
 
-import { 
+function currencyToggle(select) {
+    let content = document.querySelector(`#${select}`);
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.style.maxHeight + content.scrollHeight + 'px';
+    }
+}
+window.currencyToggle = currencyToggle;
+
+
+const select = document.querySelector('.currency');
+document.addEventListener('click', (event) => {
+    if (!select) return;
+    if (!select.contains(event.target)) {
+        select.querySelector('#currencySelect').style.maxHeight = null;
+    }
+});
+
+function chooseCurrency(btn, hiddenInp) {
+    document.querySelector(`#${hiddenInp}`).value = btn.value;
+    document.querySelector('.header__price_select_btn_txt').innerHTML = btn.value;
+    document.querySelector('#currencySelect').style.maxHeight = null;
+}
+window.chooseCurrency = chooseCurrency;
+
+import {
     adaptive
 } from "../adaptiveMode/adaptive.js";
 window.adaptive = adaptive;
 adaptive();
-window.addEventListener('resize', function() {adaptive()});
+window.addEventListener('resize', function () { adaptive() });
