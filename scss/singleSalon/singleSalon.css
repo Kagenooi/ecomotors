@@ -122,6 +122,11 @@ button {
   }
 }
 
+@media (max-width: 1296px) {
+  .topAds {
+    z-index: 1020 !important;
+  }
+}
 @media (max-width: 768px) {
   .topAds {
     display: none !important;

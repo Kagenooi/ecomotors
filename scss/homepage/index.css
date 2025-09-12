@@ -122,6 +122,11 @@ button {
   }
 }
 
+@media (max-width: 1296px) {
+  .topAds {
+    z-index: 1020 !important;
+  }
+}
 @media (max-width: 768px) {
   .topAds {
     display: none !important;
@@ -1865,7 +1870,6 @@ button {
 @media (max-width: 768px) {
   .partners__content {
     padding: 20px;
-    height: 256px;
     margin-top: 28px;
   }
 }

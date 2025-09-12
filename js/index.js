@@ -50,14 +50,17 @@ const headerSwiper = new Swiper(".headerSwiper", {
     },
 });
 
-if (document.body.clientWidth > 768) {
-    const partners = new Swiper("#partners", {
-        loop: true,
-        autoplay: true,
-        slidesPerView: 4,
-        spaceBetween: 30,
-    });
-}
+const partners = new Swiper("#partners", {
+    loop: true,
+    autoplay: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+        }
+    }
+});
 
 import {
     adaptive

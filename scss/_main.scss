@@ -126,6 +126,10 @@ button {
 
 .topAds {
 
+    @media (max-width: 1296px) {
+        z-index: 1020 !important;
+    }
+
     @media (max-width: 768px) {
         display: none !important;
     }
