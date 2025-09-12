@@ -841,8 +841,7 @@ button {
 }
 @media (max-width: 768px) {
   .footer .info .line {
-    order: 2;
-    margin: 0;
+    display: none;
   }
 }
 .footer .info__contact_title, .footer .info__social_title {
@@ -855,7 +854,8 @@ button {
 @media (max-width: 768px) {
   .footer .info__contact {
     order: 4;
-    margin: 16px 0 31px;
+    padding: 16px 0 31px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5019607843);
   }
 }
 .footer .info__contact_list {
@@ -926,15 +926,7 @@ button {
     order: 3;
     padding: 23px 0;
     position: relative;
-  }
-  .footer .info__list::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.5019607843);
-    position: absolute;
-    bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5019607843);
   }
 }
 .footer .info__list_link {
