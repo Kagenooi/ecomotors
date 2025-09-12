@@ -143,11 +143,24 @@ button {
   bottom: 40px;
   z-index: 1090;
 }
+@media (max-width: 768px) {
+  .fixedBtns {
+    right: 16px;
+    bottom: 16px;
+  }
+}
 .fixedBtns__btn {
   width: 67px;
   height: 67px;
   border-radius: 50%;
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .fixedBtns__btn {
+    width: 36px;
+    height: 36px;
+    margin-top: 11px;
+  }
 }
 .fixedBtns__btn.invisible {
   position: relative;
