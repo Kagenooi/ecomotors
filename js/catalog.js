@@ -5,7 +5,6 @@ import {
     chooseOption,
     closeMenu,
     closeMenuBtn,
-    chooseLang,
     filterSelect,
     closeLang
 } from "./module.js";
@@ -20,7 +19,6 @@ close();
 closeMenu();
 window.closeLang = closeLang;
 closeLang();
-window.chooseLang = chooseLang;
 window.chooseOption = chooseOption;
 window.closeMenuBtn = closeMenuBtn;
 

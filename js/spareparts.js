@@ -5,7 +5,6 @@ import {
     chooseOption,
     closeMenu,
     closeMenuBtn,
-    chooseLang,
     closeLang,
     filterSelect
 } from "./module.js";
@@ -20,9 +19,6 @@ close();
 closeMenu();
 window.closeLang = closeLang;
 closeLang();
-window.chooseLang = chooseLang;
-document.querySelector('#defaultChecked').click();
-document.querySelector('#defaultChecked2').click();
 window.chooseOption = chooseOption;
 window.closeMenuBtn = closeMenuBtn;
 

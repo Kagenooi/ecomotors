@@ -5,7 +5,6 @@ import {
     chooseOption,
     closeMenu,
     closeMenuBtn,
-    chooseLang,
     closeLang,
     toggleSearch,
     filterSelect
@@ -23,7 +22,6 @@ close();
 window.closeMenu = closeMenu;
 closeMenu();
 window.chooseOption = chooseOption;
-window.chooseLang = chooseLang;
 window.closeMenuBtn = closeMenuBtn;
 
 const productSwiper = new Swiper(".productSwiper", {

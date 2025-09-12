@@ -3,15 +3,11 @@ import {
     closeMenu,
     closeMenuBtn,
     closeLang,
-    chooseLang
 } from "./module.js";
 
 closeMenu();
 window.closeLang = closeLang;
 closeLang();
-window.chooseLang = chooseLang;
-document.querySelector('#defaultChecked').click();
-document.querySelector('#defaultChecked2').click();
 
 window.closeMenuBtn = closeMenuBtn;
 window.toggleActive = toggleActive; 
