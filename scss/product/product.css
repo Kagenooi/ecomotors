@@ -2171,6 +2171,8 @@ button {
 }
 .container .characters {
   display: grid;
+  height: -moz-fit-content;
+  height: fit-content;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 14px;
   width: 100%;
