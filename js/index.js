@@ -26,26 +26,6 @@ window.chooseOption = chooseOption;
 window.chooseLang = chooseLang;
 window.closeMenuBtn = closeMenuBtn;
 
-document.addEventListener("DOMContentLoaded", function () {
-    const lazyImages = document.querySelectorAll("img");
-
-    lazyImages.forEach(element => {
-       element.classList.add('lazy');
-    });
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove("lazy");
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    lazyImages.forEach(img => observer.observe(img));
-});
-
 const productSwiper = new Swiper(".productSwiper", {
     loop: true,
     navigation: {
