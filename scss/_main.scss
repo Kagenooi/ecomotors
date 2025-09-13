@@ -125,7 +125,13 @@ button {
 
 
 .topAds {
+    margin-top: 40px !important;
 
+    &__header {
+        * {
+            font-size: 18px !important;
+        }
+    }
     @media (max-width: 1296px) {
         z-index: 1020 !important;
     }
