@@ -118,10 +118,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 7px;
-            min-height: 36px;
+            min-height: 44px;
 
             @media (max-width: 768px) {
-                min-height: 20px;
+                min-height: 28px;
             }
         }
 
@@ -144,7 +144,7 @@
         &_name {
             font-weight: 600;
             font-size: 18px;
-            line-height: 1;
+            line-height: 22px;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
@@ -152,6 +152,7 @@
 
             @media (max-width: 768px) {
                 font-size: 10px;
+                line-height: 14px;
             }
         }
 
