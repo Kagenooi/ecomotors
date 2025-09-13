@@ -1489,6 +1489,9 @@ button {
   line-height: 100%;
   color: rgba(255, 255, 255, 0.5019607843);
   text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
 }
 @media (max-width: 768px) {
   .select__btn_txt {

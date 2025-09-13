@@ -223,8 +223,9 @@
             transition: .2s;
 
             @media (max-width: 768px) {
-                max-width: 100%;   
+                max-width: 100%;
             }
+
             &:hover {
                 background: #00c700;
             }
@@ -270,6 +271,9 @@
             line-height: 100%;
             color: #FFFFFF80;
             text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
 
             @media (max-width: 768px) {
                 font-size: 12px;
@@ -380,6 +384,7 @@
         @media (max-width: 768px) {
             min-width: 127px;
         }
+
         &.active {
             transition: .2s;
             opacity: 1;
