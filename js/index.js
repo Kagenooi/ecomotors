@@ -1,4 +1,9 @@
 import {
+    initLazyLoadNoCss
+} from "../adaptiveMode/adaptive.js";
+const lazy = initLazyLoadNoCss({ enableBackground: false, observeMutations: true });
+
+import {
     toggleActive,
     openSelect,
     close,
