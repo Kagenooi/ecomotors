@@ -1492,13 +1492,13 @@ button {
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-block;
-  max-width: 80px;
+  max-width: 90px;
   overflow: hidden;
 }
 @media (max-width: 768px) {
   .select__btn_txt {
     font-size: 12px;
-    max-width: 60px;
+    max-width: 70px;
   }
 }
 .select__btn:hover {
