@@ -117,7 +117,7 @@ export function filterSelect() {
                 }
             }
 
-            let search = element.querySelector('input');
+            let search = element.querySelector('.select__search_inp');
             search.addEventListener('input', function () {
                 // здесь должна быть фильтрация, фильтрует среди элементов внутри options по тексту
                 const q = this.value.trim().toLowerCase();
