@@ -2146,7 +2146,7 @@ button {
 .header__subfilter_lab_txt {
   font-weight: 400;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 1.2;
   color: #032022;
   transition: 0.2s;
 }
