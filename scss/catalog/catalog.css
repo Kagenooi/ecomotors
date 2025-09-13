@@ -2118,7 +2118,7 @@ button {
   .header__subfilter_mob_title {
     font-weight: 500;
     font-size: 10px;
-    line-height: 100%;
+    line-height: 1.2;
   }
 }
 .header__subfilter_lab {
