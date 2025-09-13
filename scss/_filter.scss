@@ -275,6 +275,7 @@
             text-overflow: ellipsis;
             display: inline-block;
             max-width: 80px;
+            overflow: hidden;
 
             @media (max-width: 768px) {
                 font-size: 12px;
