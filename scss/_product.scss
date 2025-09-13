@@ -108,10 +108,15 @@
     }
 
     &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 11px 13px;
+        min-height: 80px;
 
         @media (max-width: 768px) {
             padding: 4px 5px 4px 7px;
+            min-height: 38px;
         }
 
         &_header {
@@ -140,6 +145,10 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 100%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
 
             @media (max-width: 768px) {
                 font-size: 10px;
@@ -179,13 +188,16 @@
             font-size: 14px;
             line-height: 100%;
             color: #032022;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
 
             @media (max-width: 768px) {
                 font-size: 9px;
                 width: 80px;
                 line-height: 1.2;
                 white-space: nowrap;
-                overflow: hidden;
                 text-overflow: ellipsis;
                 display: inline-block;
             }

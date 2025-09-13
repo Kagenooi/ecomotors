@@ -1673,11 +1673,16 @@ button {
   }
 }
 .product__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 11px 13px;
+  min-height: 80px;
 }
 @media (max-width: 768px) {
   .product__desc {
     padding: 4px 5px 4px 7px;
+    min-height: 38px;
   }
 }
 .product__desc_header {
@@ -1704,6 +1709,10 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .product__desc_name {
@@ -1742,6 +1751,10 @@ button {
   font-size: 14px;
   line-height: 100%;
   color: #032022;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .product__desc_address {
@@ -1749,7 +1762,6 @@ button {
     width: 80px;
     line-height: 1.2;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
   }
