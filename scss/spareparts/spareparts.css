@@ -1756,7 +1756,7 @@ button {
 .product__desc_name {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
