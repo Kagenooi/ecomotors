@@ -116,7 +116,7 @@ export function filterSelect() {
                     options.push(btns[x]);
                 }
             }
-
+            
             let search = element.querySelector('.select__search_inp');
             search.addEventListener('input', function () {
                 // здесь должна быть фильтрация, фильтрует среди элементов внутри options по тексту
