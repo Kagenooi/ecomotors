@@ -274,12 +274,10 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             display: inline-block;
-            max-width: 90px;
             overflow: hidden;
 
             @media (max-width: 768px) {
                 font-size: 12px;
-                max-width: 70px;
             }
         }
 
