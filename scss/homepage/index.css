@@ -1673,9 +1673,6 @@ button {
   }
 }
 .product__desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 11px 13px;
 }
 @media (max-width: 768px) {
@@ -1712,7 +1709,6 @@ button {
 .product__desc_name {
   font-weight: 600;
   font-size: 18px;
-  line-height: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1735,7 +1731,6 @@ button {
 }
 .product__desc_footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 5px;
 }
