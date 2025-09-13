@@ -1684,11 +1684,11 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 7px;
-  height: 36px;
+  min-height: 36px;
 }
 @media (max-width: 768px) {
   .product__desc_header {
-    height: 20px;
+    min-height: 20px;
   }
 }
 .product__desc_pr {
