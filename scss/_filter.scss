@@ -370,13 +370,16 @@
         top: 30px;
         max-height: 0px;
         transition: .3s;
-        width: calc(100% + 2px);
+        min-width: 150px;
         overflow: hidden;
         border: 1px solid #819091;
         border-top: none;
         opacity: 0;
         z-index: 1070;
 
+        @media (max-width: 768px) {
+            min-width: 127px;
+        }
         &.active {
             transition: .2s;
             opacity: 1;
