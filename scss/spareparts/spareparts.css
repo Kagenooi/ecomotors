@@ -1724,18 +1724,22 @@ button {
   flex-direction: column;
   justify-content: space-between;
   padding: 11px 13px;
-  min-height: 80px;
 }
 @media (max-width: 768px) {
   .product__desc {
     padding: 4px 5px 4px 7px;
-    min-height: 38px;
   }
 }
 .product__desc_header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 7px;
+  height: 36px;
+}
+@media (max-width: 768px) {
+  .product__desc_header {
+    height: 20px;
+  }
 }
 .product__desc_pr {
   margin: 13px 0 18px;
