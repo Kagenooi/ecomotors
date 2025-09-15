@@ -29,10 +29,14 @@ export function adaptive() {
     }
 
     if (document.body.clientWidth > 1281) {
+        const wrapper = document.querySelectorAll('.navbar .wrapper');
+        let minusHeight = 0;
+        wrapper.forEach(element => {
+            let realHeight = element.clientHeight * zoom;
+            minusHeight = minusHeight + realHeight;
+        });
         
-        const topAds = Math.round(window.innerHeight - 165 * 1); // 90% vh
-        console.log(topAds);
-        
+        const topAds = Math.round(window.innerHeight - minusHeight * 1); // 90% vh
         document.querySelectorAll('.topAds__item').forEach(modal => {
             // высота, которую нужно присвоить до масштабирования
             const neededHeight = Math.max(Math.round(topAds / zoom), 0); // минимум 240px
