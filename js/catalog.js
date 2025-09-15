@@ -139,7 +139,6 @@ window.addEventListener('resize', function () { adaptive() });
         }
 
         // We're dragging horizontally. Prevent default to avoid horizontal bounce.
-        if (e.cancelable) e.preventDefault?.();
 
         container.scrollLeft = scrollStart - dx;
 
@@ -202,7 +201,6 @@ window.addEventListener('resize', function () { adaptive() });
         if (ev.button !== 0 || ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.altKey) return;
 
         if (movedLeft) {
-            ev.preventDefault();
             ev.stopPropagation();
         }
     }, true);
@@ -224,7 +222,7 @@ window.addEventListener('resize', function () { adaptive() });
 
         container.addEventListener('touchmove', function (ev) {
             const t = ev.touches[0];
-            onPointerMove({ clientX: t.clientX, clientY: t.clientY, pointerId: 'touch', cancelable: ev.cancelable, preventDefault: () => ev.preventDefault() });
+            onPointerMove({ clientX: t.clientX, clientY: t.clientY, pointerId: 'touch', cancelable: ev.cancelable });
         }, { passive: false });
 
         container.addEventListener('touchend', function () {
