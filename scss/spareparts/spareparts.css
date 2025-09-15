@@ -124,6 +124,7 @@ button {
 
 .topAds {
   margin-top: 40px !important;
+  top: 124px !important;
 }
 .topAds__header * {
   font-size: 18px !important;
