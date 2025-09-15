@@ -36,10 +36,9 @@ export function adaptive() {
             minusHeight = minusHeight + realHeight;
         });
 
-        const topAds = Math.round(window.innerHeight - minusHeight * 1); // 90% vh
         document.querySelectorAll('.topAds__item').forEach(modal => {
             // высота, которую нужно присвоить до масштабирования
-            const neededHeight = Math.max(Math.round(topAds / zoom), 0); // минимум 240px
+            const neededHeight = Math.max(Math.round(window.innerHeight / zoom), 0); // минимум 240px
 
             // удобно задать и max-height, чтобы скролл внутри работал корректно
             modal.style.zoom = neededHeight / 1000;
