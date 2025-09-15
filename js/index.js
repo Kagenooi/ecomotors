@@ -71,176 +71,6 @@ window.addEventListener('resize', function () { adaptive() });
 
 
 
-/* touch-scroll (updated to allow middle-button autoscroll) */
-(function () {
-    const container = document.querySelector('.header__submenu_list') || document.querySelector('.header__submenu');
-    if (!container) return;
-
-    // keep most logic same as before but track which mouse button started the interaction
-    let pointerDown = false;
-    let dragging = false;
-    let startX = 0;
-    let startY = 0;
-    let scrollStart = 0;
-    let lastX = 0;
-    let lastTime = 0;
-    let velocity = 0;
-    let rafId = null;
-
-    // NEW: track which button started the interaction (0 = left, 1 = middle, 2 = right)
-    let startButton = null;
-    // NEW: only treat left-button drags as "moved for click-block"
-    let movedLeft = false;
-
-    const THRESHOLD_DRAG_START = 6;
-    const VELOCITY_STOP = 0.02;
-    const FRAME_MS = 16;
-
-    function now() { return performance.now(); }
-
-    function onPointerDown(e) {
-        // remember which button started
-        startButton = (typeof e.button === 'number') ? e.button : 0;
-
-        // If it's a mouse event and NOT left button, bail out early so browser handles middle-click autoscroll
-        if (e.pointerType === 'mouse' && e.button !== 0) {
-            // don't set pointerDown / capture — allow browser native behavior (autoscroll etc.)
-            startButton = e.button;
-            return;
-        }
-
-        pointerDown = true;
-        dragging = false;
-        movedLeft = false;
-        startX = e.clientX;
-        startY = e.clientY;
-        scrollStart = container.scrollLeft;
-        lastX = e.clientX;
-        lastTime = now();
-        velocity = 0;
-
-        if (e.pointerId != null && container.setPointerCapture) {
-            try { container.setPointerCapture(e.pointerId); } catch (err) { }
-        }
-        container.classList.add('is-dragging');
-    }
-
-    function onPointerMove(e) {
-        if (!pointerDown) return;
-
-        const x = e.clientX;
-        const y = e.clientY;
-        const dx = x - startX;
-        const dy = y - startY;
-
-        if (!dragging) {
-            if (Math.abs(dx) > THRESHOLD_DRAG_START && Math.abs(dx) > Math.abs(dy)) {
-                dragging = true;
-            } else if (Math.abs(dy) > THRESHOLD_DRAG_START && Math.abs(dy) > Math.abs(dx)) {
-                // vertical scroll: abort our handling so page scrolls naturally
-                pointerDown = false;
-                container.classList.remove('is-dragging');
-                if (e.pointerId != null && container.releasePointerCapture) {
-                    try { container.releasePointerCapture(e.pointerId); } catch (err) { }
-                }
-                return;
-            } else {
-                return;
-            }
-        }
-
-
-        container.scrollLeft = scrollStart - dx;
-
-        // Only count movedLeft if the drag was started by left button (startButton === 0)
-        if (startButton === 0) {
-            movedLeft = Math.abs(dx) > 5;
-        }
-
-        // velocity px/ms
-        const t = now();
-        const dt = Math.max(1, t - lastTime);
-        velocity = (x - lastX) / dt;
-        lastX = x;
-        lastTime = t;
-    }
-
-    function applyMomentum(initialVelocity) {
-        let v = initialVelocity;
-        if (rafId) cancelAnimationFrame(rafId);
-        function step() {
-            v *= 0.95;
-            container.scrollLeft -= v * FRAME_MS;
-            if (Math.abs(v) > VELOCITY_STOP) {
-                rafId = requestAnimationFrame(step);
-            } else {
-                rafId = null;
-            }
-        }
-        rafId = requestAnimationFrame(step);
-    }
-
-    function onPointerUp(e) {
-        // If pointerUp corresponds to a middle-click that we didn't handle (we returned early on down),
-        // startButton will be non-zero and pointerDown may be false — just allow native behavior.
-        if (!pointerDown && startButton !== 0) {
-            startButton = null;
-            return;
-        }
-
-        if (e.pointerId != null && container.releasePointerCapture) {
-            try { container.releasePointerCapture(e.pointerId); } catch (err) { }
-        }
-
-        if (dragging && Math.abs(velocity) > 0.02) {
-            applyMomentum(velocity);
-        }
-
-        // reset movedLeft shortly after so clicks resume normal behavior
-        setTimeout(() => { movedLeft = false; }, 50);
-
-        pointerDown = false;
-        dragging = false;
-        startButton = null;
-        container.classList.remove('is-dragging');
-    }
-
-    // Only block plain left-clicks when a left-button drag actually happened.
-    container.addEventListener('click', function (ev) {
-        // allow middle / right / modifier clicks to pass
-        if (ev.button !== 0 || ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.altKey) return;
-
-        if (movedLeft) {
-            ev.stopPropagation();
-        }
-    }, true);
-
-    // Do not block auxiliary clicks (middle click autoscroll / open-in-new-tab)
-    container.addEventListener('auxclick', function () { /* intentionally empty */ }, true);
-
-    if (window.PointerEvent) {
-        container.addEventListener('pointerdown', onPointerDown, { passive: false });
-        window.addEventListener('pointermove', onPointerMove, { passive: false });
-        window.addEventListener('pointerup', onPointerUp, { passive: false });
-        window.addEventListener('pointercancel', onPointerUp, { passive: false });
-    } else {
-        // Touch fallback
-        container.addEventListener('touchstart', function (ev) {
-            const t = ev.touches[0];
-            onPointerDown({ clientX: t.clientX, clientY: t.clientY, pointerType: 'touch', button: 0, pointerId: 'touch' });
-        }, { passive: true });
-
-        container.addEventListener('touchmove', function (ev) {
-            const t = ev.touches[0];
-            onPointerMove({ clientX: t.clientX, clientY: t.clientY, pointerId: 'touch', cancelable: ev.cancelable});
-        }, { passive: false });
-
-        container.addEventListener('touchend', function () {
-            onPointerUp({ pointerId: 'touch' });
-        }, { passive: true });
-    }
-})();
-
 
 (function () {
     const btn = document.getElementById('toTop');
@@ -270,4 +100,159 @@ window.addEventListener('resize', function () { adaptive() });
     window.addEventListener('scroll', toggle, { passive: true });
     window.addEventListener('load', toggle);
     toggle();
+})();
+
+
+
+/* touch-scroll (fixed: allow normal link clicks) */
+(function () {
+    const container = document.querySelector('.header__submenu_list') || document.querySelector('.header__submenu');
+    if (!container) return;
+
+    let pointerDown = false;
+    let dragging = false;
+    let startX = 0;
+    let startY = 0;
+    let scrollStart = 0;
+    let lastX = 0;
+    let lastTime = 0;
+    let velocity = 0;
+    let rafId = null;
+    let startButton = null;
+    let movedLeft = false;
+
+    const THRESHOLD_DRAG_START = 6;
+    const VELOCITY_STOP = 0.02;
+    const FRAME_MS = 16;
+
+    function now() { return performance.now(); }
+
+    function onPointerDown(e) {
+        startButton = (typeof e.button === 'number') ? e.button : 0;
+
+        // allow browser handle non-left mouse buttons (middle/right)
+        if (e.pointerType === 'mouse' && e.button !== 0) {
+            startButton = e.button;
+            return;
+        }
+
+        pointerDown = true;
+        dragging = false;
+        movedLeft = false;
+        startX = e.clientX;
+        startY = e.clientY;
+        scrollStart = container.scrollLeft;
+        lastX = e.clientX;
+        lastTime = now();
+        velocity = 0;
+
+        // DO NOT call setPointerCapture here — it can interfere with click delivery.
+        container.classList.add('is-dragging');
+    }
+
+    function onPointerMove(e) {
+        if (!pointerDown) return;
+
+        const x = e.clientX;
+        const y = e.clientY;
+        const dx = x - startX;
+        const dy = y - startY;
+
+        if (!dragging) {
+            if (Math.abs(dx) > THRESHOLD_DRAG_START && Math.abs(dx) > Math.abs(dy)) {
+                dragging = true;
+                // start actual drag: capture pointer now (so we keep receiving moves)
+                if (e.pointerId != null && container.setPointerCapture) {
+                    try { container.setPointerCapture(e.pointerId); } catch (err) {}
+                }
+            } else if (Math.abs(dy) > THRESHOLD_DRAG_START && Math.abs(dy) > Math.abs(dx)) {
+                // vertical scroll — abort our handling
+                pointerDown = false;
+                container.classList.remove('is-dragging');
+                if (e.pointerId != null && container.releasePointerCapture) {
+                    try { container.releasePointerCapture(e.pointerId); } catch (err) {}
+                }
+                return;
+            } else {
+                return;
+            }
+        }
+
+        // horizontal dragging
+        container.scrollLeft = scrollStart - dx;
+
+        if (startButton === 0) {
+            movedLeft = Math.abs(dx) > 5;
+        }
+
+        const t = now();
+        const dt = Math.max(1, t - lastTime);
+        velocity = (x - lastX) / dt;
+        lastX = x;
+        lastTime = t;
+    }
+
+    function applyMomentum(initialVelocity) {
+        let v = initialVelocity;
+        if (rafId) cancelAnimationFrame(rafId);
+        function step() {
+            v *= 0.95;
+            container.scrollLeft -= v * FRAME_MS;
+            if (Math.abs(v) > VELOCITY_STOP) {
+                rafId = requestAnimationFrame(step);
+            } else {
+                rafId = null;
+            }
+        }
+        rafId = requestAnimationFrame(step);
+    }
+
+    function onPointerUp(e) {
+        // If we never set pointerDown (e.g. non-left mouse button), allow native behaviour
+        if (!pointerDown && startButton !== 0) {
+            startButton = null;
+            return;
+        }
+
+        if (e.pointerId != null && container.releasePointerCapture) {
+            try { container.releasePointerCapture(e.pointerId); } catch (err) { }
+        }
+
+        if (dragging && Math.abs(velocity) > 0.02) {
+            applyMomentum(velocity);
+        }
+
+        // reset movedLeft shortly after so normal clicks resume
+        setTimeout(() => { movedLeft = false; }, 50);
+
+        pointerDown = false;
+        dragging = false;
+        startButton = null;
+        container.classList.remove('is-dragging');
+    }
+
+    // Remove click/auxclick interception so links behave normally.
+    // (previous code blocked clicks when a drag had happened — we don't do that)
+
+    if (window.PointerEvent) {
+        container.addEventListener('pointerdown', onPointerDown, { passive: false });
+        window.addEventListener('pointermove', onPointerMove, { passive: false });
+        window.addEventListener('pointerup', onPointerUp, { passive: false });
+        window.addEventListener('pointercancel', onPointerUp, { passive: false });
+    } else {
+        // Touch fallback
+        container.addEventListener('touchstart', function (ev) {
+            const t = ev.touches[0];
+            onPointerDown({ clientX: t.clientX, clientY: t.clientY, pointerType: 'touch', button: 0, pointerId: 'touch' });
+        }, { passive: true });
+
+        container.addEventListener('touchmove', function (ev) {
+            const t = ev.touches[0];
+            onPointerMove({ clientX: t.clientX, clientY: t.clientY, pointerId: 'touch', cancelable: ev.cancelable });
+        }, { passive: false });
+
+        container.addEventListener('touchend', function () {
+            onPointerUp({ pointerId: 'touch' });
+        }, { passive: true });
+    }
 })();
