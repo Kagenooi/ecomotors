@@ -162,9 +162,11 @@
 }
 
 #gallery2 {
-    img {
+    .swiper-slide img {
         width: 100%;
         border-radius: 12px;
+        height: 475px;
+        object-fit: cover;
 
         @media (max-width: 768px) {
             height: 168px;

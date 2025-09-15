@@ -2153,12 +2153,15 @@ button {
   background: #032022;
 }
 
-#gallery2 img {
+#gallery2 .swiper-slide img {
   width: 100%;
   border-radius: 12px;
+  height: 475px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 768px) {
-  #gallery2 img {
+  #gallery2 .swiper-slide img {
     height: 168px;
     width: 100%;
   }
