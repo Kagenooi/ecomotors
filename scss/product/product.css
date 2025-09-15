@@ -2329,6 +2329,22 @@ button {
     line-height: 20px;
   }
 }
+.singleproduct__soc_desc_phone {
+  font-size: 19px;
+  font-weight: 600;
+  transition: 0.2s;
+  line-height: 23px;
+}
+@media (max-width: 768px) {
+  .singleproduct__soc_desc_phone {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+.singleproduct__soc_desc_phone:hover {
+  transition: 0.2s;
+  color: #032022;
+}
 .singleproduct__soc_desc_pr {
   font-size: 12px;
   line-height: 23px;
