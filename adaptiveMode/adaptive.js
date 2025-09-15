@@ -35,7 +35,7 @@ export function adaptive() {
             let realHeight = element.clientHeight * zoom;
             minusHeight = minusHeight + realHeight;
         });
-        
+
         const topAds = Math.round(window.innerHeight - minusHeight * 1); // 90% vh
         document.querySelectorAll('.topAds__item').forEach(modal => {
             // высота, которую нужно присвоить до масштабирования
@@ -48,7 +48,7 @@ export function adaptive() {
             let trueSize = 1630 - (234 * 2) + moreSize;
             modal.parentElement.style.maxWidth = trueSize + 'px';
             modal.parentElement.style.minWidth = trueSize + 'px';
-
+            modal.parentElement.style.top = minusHeight + 'px';
         });
     }
 }
