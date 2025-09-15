@@ -29,7 +29,10 @@ export function adaptive() {
     }
 
     if (document.body.clientWidth > 1281) {
-        const topAds = Math.round(window.innerHeight * 1); // 90% vh
+        
+        const topAds = Math.round(window.innerHeight - 165 * 1); // 90% vh
+        console.log(topAds);
+        
         document.querySelectorAll('.topAds__item').forEach(modal => {
             // высота, которую нужно присвоить до масштабирования
             const neededHeight = Math.max(Math.round(topAds / zoom), 0); // минимум 240px
