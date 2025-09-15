@@ -2343,7 +2343,7 @@ button {
 }
 .singleproduct__soc_desc_phone:hover {
   transition: 0.2s;
-  color: #032022;
+  color: #032022 !important;
 }
 .singleproduct__soc_desc_pr {
   font-size: 12px;
