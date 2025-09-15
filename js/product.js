@@ -23,15 +23,17 @@ window.chooseOption = chooseOption;
 window.closeMenuBtn = closeMenuBtn;
 
 
-const recomended = new Swiper("#recomended", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-    navigation: {
-        nextEl: ".recomended__slider_btn.next",
-        prevEl: ".recomended__slider_btn.prev",
-    }
-});
+if (document.body.clientWidth > 768) {
+    const recomended = new Swiper("#recomended", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".recomended__slider_btn.next",
+            prevEl: ".recomended__slider_btn.prev",
+        }
+    });
+}
 
 const swiper = new Swiper("#gallery", {
     spaceBetween: 8,

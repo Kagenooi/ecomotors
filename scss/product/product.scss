@@ -615,6 +615,7 @@
                 align-items: center;
                 justify-content: space-between;
                 padding: 11px 0 11px 14px;
+                gap: 10px;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid #00890030;
@@ -625,6 +626,7 @@
                     font-size: 11px;
                     line-height: 23px;
                     color: #032022;
+                    max-width: 60%;
                 }
 
                 &_val {
@@ -632,6 +634,7 @@
                     font-size: 13px;
                     line-height: 23px;
                     color: #032022;
+                    text-align: right;
                 }
             }
         }
