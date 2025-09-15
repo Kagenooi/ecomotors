@@ -2192,11 +2192,16 @@ button {
   max-width: fit-content;
   left: 5px;
   bottom: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: #032022;
 }
 .singleproduct__gallery .swiper-pagination * {
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
+  color: #032022;
 }
 .singleproduct__gallery_btn {
   position: absolute;
