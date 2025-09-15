@@ -2160,8 +2160,6 @@ button {
 #gallery2 .swiper-slide img {
   height: 100%;
   border-radius: 12px;
-  -o-object-fit: contain;
-     object-fit: contain;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
