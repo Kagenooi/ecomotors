@@ -1699,6 +1699,7 @@ button {
 .product__desc_header {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   margin-bottom: 7px;
   min-height: 44px;
 }
