@@ -2203,9 +2203,13 @@ button {
     width: 26px;
     height: 26px;
   }
+}
+.singleproduct__gallery_btn img {
+  width: 20px !important;
+}
+@media (max-width: 768px) {
   .singleproduct__gallery_btn img {
-    width: 10px;
-    height: 10px !important;
+    width: 10px !important;
   }
 }
 .singleproduct__gallery_btn:hover {

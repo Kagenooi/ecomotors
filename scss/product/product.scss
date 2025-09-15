@@ -208,10 +208,13 @@
             @media (max-width: 768px) {
                 width: 26px;
                 height: 26px;
+            }
 
-                img {
-                    width: 10px;
-                    height: 10px !important;
+            img {
+                width: 20px !important;
+
+                @media (max-width: 768px) {
+                    width: 10px !important;
                 }
             }
 
