@@ -2157,6 +2157,11 @@ button {
   background: #fff;
   height: 475px;
 }
+@media (max-width: 768px) {
+  #gallery2 .swiper-slide {
+    height: auto;
+  }
+}
 #gallery2 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -2167,7 +2172,6 @@ button {
 }
 @media (max-width: 768px) {
   #gallery2 .swiper-slide img {
-    height: 168px;
     width: 100%;
   }
 }
