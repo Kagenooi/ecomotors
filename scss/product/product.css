@@ -2295,8 +2295,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 10px 10px 20px;
-  gap: 24px;
+  padding: 10px 5px 10px 15px;
+  gap: 20px;
   transition: 0.2s;
   max-width: 294px;
   border: 2px solid #E9F1EF;
