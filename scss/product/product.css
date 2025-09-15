@@ -2155,7 +2155,7 @@ button {
 
 #gallery2 .swiper-slide {
   background: #fff;
-  max-height: 475px;
+  height: 475px;
 }
 #gallery2 .swiper-slide img {
   height: 100%;
