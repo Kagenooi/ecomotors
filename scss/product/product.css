@@ -2184,6 +2184,20 @@ button {
     max-width: 290px;
   }
 }
+.singleproduct__gallery .swiper-pagination {
+  background: rgba(255, 255, 255, 0.7607843137);
+  padding: 8px 22px;
+  border-radius: 8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  left: 5px;
+  bottom: 5px;
+}
+.singleproduct__gallery .swiper-pagination * {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+}
 .singleproduct__gallery_btn {
   position: absolute;
   top: 50%;

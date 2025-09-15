@@ -191,6 +191,21 @@
             max-width: 290px;
         }
 
+        .swiper-pagination {
+            background: #FFFFFFC2;
+            padding: 8px 22px;
+            border-radius: 8px;
+            max-width: fit-content;
+            left: 5px;
+            bottom: 5px;
+
+            * {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 1;
+            }
+        }
+
         &_btn {
             position: absolute;
             top: 50%;

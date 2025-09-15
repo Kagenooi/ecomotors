@@ -49,6 +49,10 @@ const swiper2 = new Swiper("#gallery2", {
     thumbs: {
         swiper: swiper,
     },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
 });
 
 function currencyToggle(select) {
