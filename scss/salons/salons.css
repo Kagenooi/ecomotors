@@ -1248,14 +1248,6 @@ button {
   margin: 0 auto;
   overflow-x: hidden;
 }
-@media (max-width: 1646px) {
-  #adaptive {
-    display: flex;
-    flex-direction: column;
-    min-width: 1630px;
-    max-width: 1630px;
-  }
-}
 @media (max-width: 1296px) {
   #adaptive {
     min-width: 1150px;
