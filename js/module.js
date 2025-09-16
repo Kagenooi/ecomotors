@@ -96,8 +96,13 @@ export function chooseOption(element) {
 }
 
 
-export function toggleSearch(inp) {
+export function toggleSearch(inp, btn) {
     document.querySelector(`#${inp}`).classList.toggle('active');
+    if (btn.type != 'submit') {
+        btn.type = 'submit';
+    } else {
+        btn.type = 'button';
+    }
 }
 
 

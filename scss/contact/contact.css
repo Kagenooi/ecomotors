@@ -820,21 +820,27 @@ button {
 }
 @media (max-width: 768px) {
   .navbar__search_btn {
-    padding: 7px;
+    padding: 8px;
     width: -moz-fit-content;
     width: fit-content;
     height: -moz-fit-content;
     height: fit-content;
     position: relative;
-    top: 0;
     right: 0;
     z-index: 1100;
+    border: none;
+    top: -1px;
+  }
+  .navbar__search_btn:hover .navbar__search_btn_icon {
+    transform: scale(1);
   }
 }
 .navbar__search_btn_icon {
   width: 18px;
   transition: 0.3s;
   height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer {

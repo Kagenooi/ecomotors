@@ -231,9 +231,6 @@ window.addEventListener('resize', function () { adaptive() });
         container.classList.remove('is-dragging');
     }
 
-    // Remove click/auxclick interception so links behave normally.
-    // (previous code blocked clicks when a drag had happened — we don't do that)
-
     if (window.PointerEvent) {
         container.addEventListener('pointerdown', onPointerDown, { passive: false });
         window.addEventListener('pointermove', onPointerMove, { passive: false });
