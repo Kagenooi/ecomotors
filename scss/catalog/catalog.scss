@@ -25,52 +25,6 @@
         margin-top: 144px;
     }
 
-    &__submenu {
-        margin: 10px 0;
-
-        &_list {
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-
-            &_link {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                padding: 0 18px;
-                border-radius: 5px;
-                border: 1px solid #00000026;
-                height: 100%;
-                transition: .2s;
-
-                &:hover {
-                    transition: .2s;
-                    background: #032022;
-                }
-
-                &_icon {
-                    max-height: 42px;
-                    max-width: 42px;
-                }
-
-                &:hover &_icon {
-                    filter: invert(100%);
-                }
-
-                &_txt {
-                    font-weight: 500;
-                    font-size: 13px;
-                    text-align: center;
-                    color: #000;
-                }
-
-                &:hover &_txt {
-                    color: #fff;
-                }
-            }
-        }
-    }
-
     &__subfilter {
         margin-top: 21px;
         border-radius: 12px;
