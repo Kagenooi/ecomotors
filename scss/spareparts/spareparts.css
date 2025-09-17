@@ -2128,6 +2128,20 @@ button {
 .product {
   max-width: 250px;
 }
+.product__desc_header {
+  min-height: 66px;
+}
+@media (max-width: 768px) {
+  .product__desc_header {
+    min-height: 42px;
+  }
+}
+.product__desc_name {
+  -webkit-line-clamp: 3;
+}
+.product__desc_pr {
+  -webkit-line-clamp: 5;
+}
 
 .spareadswr {
   width: 100%;

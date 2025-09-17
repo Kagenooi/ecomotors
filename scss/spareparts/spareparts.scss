@@ -304,6 +304,23 @@
 
 .product {
     max-width: 250px;
+
+    &__desc {
+
+        &_header {
+            min-height: 66px;
+
+            @media (max-width: 768px) {
+                min-height: 42px;
+            }
+        }
+        &_name {
+            -webkit-line-clamp: 3;
+        }
+        &_pr {
+            -webkit-line-clamp: 5;
+        }
+    }
 }
 .spareadswr {
     width: 100%;
