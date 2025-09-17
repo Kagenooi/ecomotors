@@ -28,8 +28,9 @@
             border: 1px solid #00000026;
             height: 100%;
             transition: .2s;
-            min-width: 146px;
+            width: 146px;
             white-space: nowrap;
+            min-width: fit-content;
 
             &:hover {
                 transition: .2s;
