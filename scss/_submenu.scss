@@ -29,7 +29,8 @@
             height: 100%;
             transition: .2s;
             min-width: 146px;
-            max-width: 146px;
+            max-width: fit-content;
+            white-space: nowrap;
 
             &:hover {
                 transition: .2s;
