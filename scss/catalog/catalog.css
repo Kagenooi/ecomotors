@@ -1992,8 +1992,6 @@ button {
   height: 100%;
   transition: 0.2s;
   min-width: 146px;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   white-space: nowrap;
 }
 .header__submenu_list_link:hover {
