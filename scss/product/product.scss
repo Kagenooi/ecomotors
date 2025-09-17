@@ -33,7 +33,6 @@
             margin-bottom: 14px;
             font-weight: 700;
             font-size: 30px;
-            line-height: 100%;
             color: #032022;
 
             @media (max-width: 768px) {
@@ -49,14 +48,12 @@
             &_articule {
                 font-weight: 400;
                 font-size: 14px;
-                line-height: 100%;
                 color: #032022;
             }
 
             &_type {
                 font-weight: 400;
                 font-size: 12px;
-                line-height: 100%;
                 color: #03202280;
             }
         }
@@ -76,7 +73,6 @@
         &_sum {
             font-weight: 500;
             font-size: 30px;
-            line-height: 100%;
             margin-bottom: 5px;
             color: #008900;
 
@@ -118,7 +114,6 @@
                     color: #032022;
                     font-weight: 500;
                     font-size: 15px;
-                    line-height: 100%;
                     transition: .2s;
                 }
 

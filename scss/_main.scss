@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #000000;
+    line-height: 1.2;
 }
 
 body {
@@ -64,7 +65,6 @@ button {
     padding: 9px 26px;
     font-weight: 300;
     font-size: 14px;
-    line-height: 100%;
     color: #00000080;
     transition: .2s;
 
@@ -97,13 +97,11 @@ button {
             &_title {
                 font-weight: 600;
                 font-size: 9px;
-                line-height: 100%;
             }
 
             &_seeAll {
                 font-weight: 400;
                 font-size: 11px;
-                line-height: 100%;
                 color: #008900;
             }
         }

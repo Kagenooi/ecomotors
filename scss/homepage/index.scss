@@ -94,7 +94,6 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 33px;
-    line-height: 100%;
 
     @media (max-width: 768px) {
         font-size: 13px;
@@ -170,7 +169,6 @@
     &__seeMore {
         font-weight: 300;
         font-size: 14px;
-        line-height: 100%;
         margin: 0 auto;
         padding: 9px 25px;
         width: fit-content;

@@ -109,7 +109,6 @@
             color: #fff;
             font-weight: 400;
             font-size: 12px;
-            line-height: 100%;
             margin-bottom: 14px;
 
             @media (max-width: 768px) {
@@ -190,7 +189,6 @@
             right: 17px;
             font-size: 11px;
             font-weight: 400;
-            line-height: 100%;
             color: #008900;
         }
     }
@@ -244,7 +242,6 @@
             &_date {
                 font-weight: 500;
                 font-size: 14px;
-                line-height: 100%;
                 color: #00000080;
 
                 @media (max-width: 768px) {
@@ -302,7 +299,6 @@
                     border-radius: 3px;
                     font-weight: 400;
                     font-size: 12px;
-                    line-height: 100%;
                     width: fit-content;
                     transition: .2s;
 
@@ -323,7 +319,6 @@
                     &_txt {
                         font-weight: 400;
                         font-size: 12px;
-                        line-height: 100%;
                     }
                 }
 

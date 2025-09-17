@@ -70,7 +70,7 @@
                 text-align: center;
                 font-weight: 500;
                 font-size: 14px;
-                line-height: 100%;
+                line-height: 1.2;
                 color: #4f5456;
                 position: relative;
                 z-index: 1010;
@@ -138,7 +138,7 @@
                 padding: 13px;
                 font-weight: 400;
                 font-size: 14px;
-                line-height: 100%;
+                line-height: 1.2;
                 color: #03202280;
                 border-radius: 5px;
             }
@@ -151,7 +151,7 @@
                 color: #fff;
                 font-weight: 400;
                 font-size: 14px;
-                line-height: 100%;
+                line-height: 1.2;
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -215,15 +215,22 @@
             justify-content: center;
             gap: 8px;
             color: #fff;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 14px;
-            line-height: 100%;
+            line-height: 1.2;
             padding: 9px;
             border-radius: 7px;
             transition: .2s;
 
             @media (max-width: 768px) {
                 max-width: 100%;
+            }
+
+            span {
+                color: #fff;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.2;
             }
 
             &:hover {
@@ -268,7 +275,7 @@
         &_txt {
             font-weight: 400;
             font-size: 14px;
-            line-height: 100%;
+            line-height: 1.2;
             color: #FFFFFF80;
             text-align: center;
             white-space: nowrap;
@@ -305,7 +312,7 @@
             text-align: center;
             font-weight: 400;
             font-size: 12px;
-            line-height: 100%;
+            line-height: 1.2;
             text-align: center;
             color: #FFFFFF4D;
 
@@ -337,7 +344,6 @@
             color: #fff;
             font-weight: 400;
             font-size: 12px;
-            line-height: 100%;
             text-align: left;
             width: 100%;
             transition: .2s;

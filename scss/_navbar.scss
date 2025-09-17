@@ -63,7 +63,6 @@
                 padding: 0 38px;
                 font-weight: 500;
                 font-size: 14px;
-                line-height: 100%;
                 color: #fff;
                 white-space: nowrap;
                 transition: .2s;
@@ -195,7 +194,6 @@
                     color: #4FEC00;
                     font-weight: 600;
                     font-size: 19px;
-                    line-height: 100%;
 
                     @media (max-width: 768px) {
                         display: none;
@@ -216,7 +214,6 @@
                     &_txt {
                         font-weight: 300;
                         font-size: 12px;
-                        line-height: 100%;
                         color: #FFFFFF80;
 
                         @media (max-width: 768px) {
@@ -303,7 +300,6 @@
                         display: block;
                         margin-bottom: 6px;
                         font-size: 14px;
-                        line-height: 100%;
                         color: #fff;
 
                         &.bold {
@@ -382,7 +378,6 @@
                         gap: 14px;
                         font-weight: 500;
                         font-size: 14px;
-                        line-height: 100%;
                         color: #fff;
 
                         @media (max-width: 768px) {
@@ -396,7 +391,6 @@
                             background: #FFD600;
                             color: #032022;
                             font-size: 10px;
-                            line-height: 100%;
                         }
                     }
                 }
@@ -433,7 +427,6 @@
                         &_txt {
                             font-weight: 500;
                             font-size: 14px;
-                            line-height: 100%;
                             color: #fff;
                         }
 
@@ -494,7 +487,6 @@
                             &_txt {
                                 font-weight: 500;
                                 font-size: 14px;
-                                line-height: 100%;
                                 color: #fff;
                             }
                         }
@@ -534,7 +526,6 @@
             &_txt {
                 font-weight: 500;
                 font-size: 14px;
-                line-height: 100%;
                 color: #fff;
             }
 
@@ -595,7 +586,6 @@
                 &_txt {
                     font-weight: 500;
                     font-size: 14px;
-                    line-height: 100%;
                     color: #fff;
                 }
             }
@@ -632,7 +622,6 @@
             padding: 15px 43px;
             font-weight: 300;
             font-size: 14px;
-            line-height: 100%;
             color: #032022;
 
             @media (max-width: 768px) {

@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #000000;
+  line-height: 1.2;
 }
 
 body {
@@ -67,7 +68,6 @@ button {
   padding: 9px 26px;
   font-weight: 300;
   font-size: 14px;
-  line-height: 100%;
   color: rgba(0, 0, 0, 0.5019607843);
   transition: 0.2s;
 }
@@ -100,12 +100,10 @@ button {
   .mobileads__header_title {
     font-weight: 600;
     font-size: 9px;
-    line-height: 100%;
   }
   .mobileads__header_seeAll {
     font-weight: 400;
     font-size: 11px;
-    line-height: 100%;
     color: #008900;
   }
   .mobileads__wrapper {
@@ -253,7 +251,6 @@ button {
   padding: 0 38px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
   white-space: nowrap;
   transition: 0.2s;
@@ -371,7 +368,6 @@ button {
   color: #4FEC00;
   font-weight: 600;
   font-size: 19px;
-  line-height: 100%;
 }
 @media (max-width: 768px) {
   .navbar__menu .burger__header_title {
@@ -393,7 +389,6 @@ button {
 .navbar__menu .burger__header_close_txt {
   font-weight: 300;
   font-size: 12px;
-  line-height: 100%;
   color: rgba(255, 255, 255, 0.5019607843);
 }
 @media (max-width: 768px) {
@@ -471,7 +466,6 @@ button {
   display: block;
   margin-bottom: 6px;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
 }
 .navbar__menu .burger__contacts_phone_link.bold {
@@ -545,7 +539,6 @@ button {
   gap: 14px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -560,7 +553,6 @@ button {
   background: #FFD600;
   color: #032022;
   font-size: 10px;
-  line-height: 100%;
 }
 .navbar__menu .burger__menu_lang {
   position: relative;
@@ -594,7 +586,6 @@ button {
 .navbar__menu .burger__menu_lang_btn_txt {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
 }
 .navbar__menu .burger__menu_lang_btn_icon {
@@ -648,7 +639,6 @@ button {
 .navbar__menu .burger__menu_lang_list_btn_txt {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
 }
 .navbar__lang {
@@ -681,7 +671,6 @@ button {
 .navbar__lang_btn_txt {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
 }
 .navbar__lang_btn_icon {
@@ -735,7 +724,6 @@ button {
 .navbar__lang_list_btn_txt {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
   color: #fff;
 }
 .navbar__logo {
@@ -769,7 +757,6 @@ button {
   padding: 15px 43px;
   font-weight: 300;
   font-size: 14px;
-  line-height: 100%;
   color: #032022;
 }
 @media (max-width: 768px) {
@@ -924,7 +911,6 @@ button {
   margin-bottom: 13px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 100%;
   color: #4FEC00;
 }
 @media (max-width: 768px) {
@@ -941,7 +927,6 @@ button {
 .footer .info__contact_list_link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 100%;
 }
 .footer .info__social {
   width: 100%;
@@ -1001,7 +986,6 @@ button {
   background: rgba(217, 217, 217, 0.2509803922);
   font-weight: 400;
   font-size: 11px;
-  line-height: 100%;
   color: rgba(255, 255, 255, 0.5019607843);
 }
 @media (max-width: 768px) {
@@ -1024,7 +1008,6 @@ button {
 .footer .info__list_link {
   font-weight: 400;
   font-size: 13px;
-  line-height: 100%;
 }
 @media (max-width: 768px) {
   .footer .info__list_link {
@@ -1271,7 +1254,6 @@ button {
 .header__address_social_title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
   margin-bottom: 16px;
   color: #4FEC00;
 }
@@ -1312,7 +1294,6 @@ button {
   color: #fff;
   font-weight: 400;
   font-size: 13px;
-  line-height: 100%;
   transition: 0.2s;
 }
 .header__address_social_list_link:hover .header__address_social_list_link_txt {
@@ -1337,7 +1318,6 @@ button {
 .header__address_list_link {
   font-weight: 500;
   font-size: 25px;
-  line-height: 100%;
   color: #008900;
   text-align: right;
   transition: 0.2s;

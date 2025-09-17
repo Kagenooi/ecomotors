@@ -60,7 +60,6 @@
                 &_txt {
                     font-weight: 500;
                     font-size: 13px;
-                    line-height: 100%;
                     text-align: center;
                     color: #000;
                 }
@@ -252,7 +251,6 @@
     &__title {
         font-weight: 500;
         font-size: 33px;
-        line-height: 100%;
 
         @media (max-width: 768px) {
             font-size: 13px;
