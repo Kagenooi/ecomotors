@@ -2002,7 +2002,7 @@ button {
 }
 .header__submenu_list_link_icon {
   max-height: 42px;
-  max-width: 42px;
+  max-width: 36px;
 }
 .header__submenu_list_link:hover .header__submenu_list_link_icon {
   filter: invert(100%);
