@@ -318,7 +318,13 @@
             -webkit-line-clamp: 3;
         }
         &_pr {
+            min-height: 85px;
             -webkit-line-clamp: 5;
+
+            @media (max-width: 768px) {
+                line-height: 14px;
+                min-height: 70px;
+            }   
         }
     }
 }
