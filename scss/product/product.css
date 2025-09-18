@@ -2636,6 +2636,11 @@ button {
 .container .characters__item {
   padding: 11px 16px;
 }
+@media (max-width: 768px) {
+  .container .characters__item {
+    max-width: 290px;
+  }
+}
 .container .characters__item_el {
   display: flex;
   align-items: center;

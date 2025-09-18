@@ -605,6 +605,9 @@
         &__item {
             padding: 11px 16px;
 
+            @media (max-width: 768px) {
+                max-width: 290px;
+            }
             &_el {
                 display: flex;
                 align-items: center;
