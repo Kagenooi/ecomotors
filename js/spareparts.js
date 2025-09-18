@@ -81,12 +81,15 @@ window.addEventListener('resize', function () { adaptive() });
 const choosemb = document.querySelector('#choosemb');
 const chooseInps = choosemb.querySelectorAll('input');
 chooseInps.forEach(element => {
+    let activeEl;
     if (element.checked) {
+        activeEl = element.id;
         choosemb.classList.remove('active');
     }
     element.addEventListener('change', function () {
         choosemb.classList.remove('active');
-        if (this.dataset.id == 'patver' && this.checked) {
+        if (this.dataset.id != activeEl && this.checked) {
+            console.log(true);
             choosemb.classList.add('active');
         }
     })
