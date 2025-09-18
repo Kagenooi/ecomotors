@@ -81,8 +81,8 @@ window.addEventListener('resize', function () { adaptive() });
 const choosemb = document.querySelector('#choosemb');
 const chooseInps = choosemb.querySelectorAll('input');
 chooseInps.forEach(element => {
-    if (this.checked) {
-        choosemb.classList.add('active');
+    if (element.checked) {
+        choosemb.classList.remove('active');
     }
     element.addEventListener('change', function () {
         choosemb.classList.remove('active');
