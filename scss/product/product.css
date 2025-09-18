@@ -2651,6 +2651,7 @@ button {
 @media (max-width: 768px) {
   .container .characters__item_el {
     max-width: 290px;
+    flex-wrap: wrap;
   }
 }
 .container .characters__item_el:not(:last-child) {
