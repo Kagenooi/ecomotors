@@ -163,14 +163,14 @@ window.toggleSubfilter = toggleSubfilter;
                 dragging = true;
                 // start actual drag: capture pointer now (so we keep receiving moves)
                 if (e.pointerId != null && container.setPointerCapture) {
-                    try { container.setPointerCapture(e.pointerId); } catch (err) {}
+                    try { container.setPointerCapture(e.pointerId); } catch (err) { }
                 }
             } else if (Math.abs(dy) > THRESHOLD_DRAG_START && Math.abs(dy) > Math.abs(dx)) {
                 // vertical scroll — abort our handling
                 pointerDown = false;
                 container.classList.remove('is-dragging');
                 if (e.pointerId != null && container.releasePointerCapture) {
-                    try { container.releasePointerCapture(e.pointerId); } catch (err) {}
+                    try { container.releasePointerCapture(e.pointerId); } catch (err) { }
                 }
                 return;
             } else {
@@ -261,6 +261,9 @@ window.toggleSubfilter = toggleSubfilter;
 const choosemb = document.querySelector('#choosemb');
 const chooseInps = choosemb.querySelectorAll('input');
 chooseInps.forEach(element => {
+    if (this.checked) {
+        choosemb.classList.add('active');
+    }
     element.addEventListener('change', function () {
         choosemb.classList.remove('active');
         if (this.dataset.id == 'patver' && this.checked) {

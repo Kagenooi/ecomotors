@@ -81,6 +81,9 @@ window.addEventListener('resize', function () { adaptive() });
 const choosemb = document.querySelector('#choosemb');
 const chooseInps = choosemb.querySelectorAll('input');
 chooseInps.forEach(element => {
+    if (this.checked) {
+        choosemb.classList.add('active');
+    }
     element.addEventListener('change', function () {
         choosemb.classList.remove('active');
         if (this.dataset.id == 'patver' && this.checked) {

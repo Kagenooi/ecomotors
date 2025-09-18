@@ -2676,6 +2676,12 @@ button {
   font-size: 13px;
   line-height: 23px;
   color: #032022;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .container .characters__item_el_val {
+    text-align: left;
+  }
 }
 .container .recomended {
   grid-column: 1/3;
