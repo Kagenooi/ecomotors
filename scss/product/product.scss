@@ -616,10 +616,10 @@
                 justify-content: space-between;
                 padding: 11px 0 11px 14px;
                 gap: 10px;
+                flex-wrap: wrap;
 
                 @media (max-width: 768px) {
                     max-width: 290px;
-                    flex-wrap: wrap;
                 }
 
                 &:not(:last-child) {
@@ -632,6 +632,10 @@
                     line-height: 23px;
                     color: #032022;
                     max-width: 60%;
+
+                    @media (max-width: 768px) {
+                        max-width: 100%;
+                    }
                 }
 
                 &_val {
@@ -639,7 +643,6 @@
                     font-size: 13px;
                     line-height: 23px;
                     color: #032022;
-                    // text-align: right;
                 }
             }
         }

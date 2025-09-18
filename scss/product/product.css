@@ -2647,11 +2647,11 @@ button {
   justify-content: space-between;
   padding: 11px 0 11px 14px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .container .characters__item_el {
     max-width: 290px;
-    flex-wrap: wrap;
   }
 }
 .container .characters__item_el:not(:last-child) {
@@ -2663,6 +2663,11 @@ button {
   line-height: 23px;
   color: #032022;
   max-width: 60%;
+}
+@media (max-width: 768px) {
+  .container .characters__item_el_name {
+    max-width: 100%;
+  }
 }
 .container .characters__item_el_val {
   font-weight: 500;
