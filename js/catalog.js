@@ -260,17 +260,17 @@ window.toggleSubfilter = toggleSubfilter;
 
 const choosemb = document.querySelector('#choosemb');
 const chooseInps = choosemb.querySelectorAll('input');
-chooseInps.forEach(element => {
-    let activeEl;
-    if (element.checked) {
-        activeEl = element.id;
+for (let i = 0; i < chooseInps.length; i++) {
+    if (chooseInps[i].checked && i > 0) {
+        choosemb.classList.add('active');
+    } else {
         choosemb.classList.remove('active');
     }
-    element.addEventListener('change', function () {
-        choosemb.classList.remove('active');
-        if (this.dataset.id != activeEl && this.checked) {
-            console.log(true);
+    chooseInps[i].addEventListener('click', function () {
+        if (chooseInps[i].checked && i > 0) {
             choosemb.classList.add('active');
+        } else {
+            choosemb.classList.remove('active');
         }
     })
-});
+}
