@@ -1222,6 +1222,9 @@ button {
     justify-content: center;
     border: 1px solid #032022;
   }
+  .header__filter_mobBtn.full {
+    width: 100%;
+  }
   .header__filter_mobBtn_txt {
     font-weight: 400;
     font-size: 12px;
