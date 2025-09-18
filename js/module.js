@@ -95,6 +95,14 @@ export function chooseOption(element) {
     return null; // если не найден
 }
 
+export function toggleFilter(acc) {
+    let wrapper = document.querySelector(`#${acc}`);
+    if (wrapper.style.maxHeight) {
+        wrapper.style.maxHeight = null;
+    } else {
+        wrapper.style.maxHeight = wrapper.style.maxHeight + wrapper.scrollHeight + 'px';
+    }
+}
 
 export function toggleSearch(inp, btn) {
     document.querySelector(`#${inp}`).classList.toggle('active');

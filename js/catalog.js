@@ -8,9 +8,11 @@ import {
     chooseLang,
     filterSelect,
     closeLang,
-    toggleSearch
+    toggleSearch,
+    toggleFilter
 } from "./module.js";
 
+window.toggleFilter = toggleFilter;
 window.filterSelect = filterSelect;
 filterSelect();
 
@@ -254,3 +256,15 @@ window.toggleSubfilter = toggleSubfilter;
         }, { passive: true });
     }
 })();
+
+
+const choosemb = document.querySelector('#choosemb');
+const chooseInps = choosemb.querySelectorAll('input');
+chooseInps.forEach(element => {
+    element.addEventListener('change', function () {
+        choosemb.classList.remove('active');
+        if (this.dataset.id == 'patver' && this.checked) {
+            choosemb.classList.add('active');
+        }
+    })
+});

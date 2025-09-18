@@ -163,13 +163,11 @@
                             <img src="images/arrow.png" alt="" class="navbar__lang_btn_icon">
                         </button>
                         <div class="navbar__lang_list" id="topLang">
-                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Eng"
-                                onclick="chooseLang(event)">
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Eng" onclick="chooseLang(event)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang2">Eng</span>
                             </a>
-                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Rus"
-                                onclick="chooseLang(event)">
+                            <a href="#" class="navbar__lang_list_btn lang__btn" value="Rus" onclick="chooseLang(event)">
                                 <img src="images/flag.png" alt="" class="navbar__lang_list_btn_flag">
                                 <span class="navbar__lang_list_btn_txt" id="chooseLang3">Rus</span>
                             </a>
@@ -258,299 +256,311 @@
                         </ul>
                     </div>
                     <div class="header__filter">
+                        <div class="header__filter_header">
+                            <button type="button" class="header__filter_mobBtn" onclick="toggleFilter('filter')">
+                                <img src="images/filter.svg" alt="" class="header__filter_mobBtn_icon">
+                                <span class="header__filter_mobBtn_txt">Ֆիլտր</span>
+                            </button>
+                            <button type="button" class="header__filter_header_btn">
+                                <span class="header__filter_header_btn_txt">Առկա</span>
+                                <img src="images/idk.svg" alt="" class="header__filter_header_btn_icon">
+                            </button>
+                        </div>
                         <form action="">
-                            <div class="header__filter_wrapper">
-                                <div class="header__filter_item">
-                                    <div class="header__filter_item_select select">
-                                        <button type="button" class="select__btn" onclick="openSelect(this)">
-                                            <span class="select__btn_txt">Մակնիշը</span>
-                                            <img src="images/selectArr.png" alt="" class="select__btn_icon">
-                                        </button>
-                                        <div class="select__content">
-                                            <div class="select__wrapper">
-                                                <div class="select__scroll">
-                                                    <div class="select__search">
-                                                        <input type="search" class="select__search_inp"
-                                                            placeholder="Search Mark">
-                                                        <img src="" alt="" class="select__search_icon">
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
+                            <div class="header__filter_acc" id="filter">
+                                <div class="header__filter_container">
+                                    <div class="header__filter_wrapper">
+                                        <div class="header__filter_item">
+                                            <div class="header__filter_item_select select">
+                                                <button type="button" class="select__btn" onclick="openSelect(this)">
+                                                    <span class="select__btn_txt">Մակնիշը</span>
+                                                    <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                                </button>
+                                                <div class="select__content">
+                                                    <div class="select__wrapper">
+                                                        <div class="select__scroll">
+                                                            <div class="select__search">
+                                                                <input type="search" class="select__search_inp"
+                                                                    placeholder="Search Mark">
+                                                                <img src="" alt="" class="select__search_icon">
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="header__filter_item">
+                                            <div class="header__filter_item_select select">
+                                                <button type="button" class="select__btn" onclick="openSelect(this)">
+                                                    <span class="select__btn_txt">Մոդելը</span>
+                                                    <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                                </button>
+                                                <div class="select__content">
+                                                    <div class="select__wrapper">
+                                                        <div class="select__scroll">
+                                                            <div class="select__search">
+                                                                <input type="search" class="select__search_inp"
+                                                                    placeholder="Search Mark">
+                                                                <img src="" alt="" class="select__search_icon">
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__filter_item double">
+                                            <div class="header__filter_item_select select">
+                                                <button type="button" class="select__btn" onclick="openSelect(this)">
+                                                    <span class="select__btn_txt">Տարին սկսած</span>
+                                                    <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                                </button>
+                                                <div class="select__content">
+                                                    <div class="select__wrapper">
+                                                        <div class="select__scroll">
+                                                            <div class="select__search">
+                                                                <input type="search" class="select__search_inp"
+                                                                    placeholder="Search Mark">
+                                                                <img src="" alt="" class="select__search_icon">
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="header__filter_item_select select">
+                                                <button type="button" class="select__btn" onclick="openSelect(this)">
+                                                    <span class="select__btn_txt">Տարին մինչև</span>
+                                                    <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                                </button>
+                                                <div class="select__content">
+                                                    <div class="select__wrapper">
+                                                        <div class="select__scroll">
+                                                            <div class="select__search">
+                                                                <input type="search" class="select__search_inp"
+                                                                    placeholder="Search Mark">
+                                                                <img src="" alt="" class="select__search_icon">
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header__filter_item double">
+                                            <div class="header__filter_item_select select">
+                                                <button type="button" class="select__btn" onclick="openSelect(this)">
+                                                    <span class="select__btn_txt">Գինը սկսած</span>
+                                                    <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                                </button>
+                                                <div class="select__content">
+                                                    <div class="select__wrapper">
+                                                        <div class="select__scroll">
+                                                            <div class="select__search">
+                                                                <input type="search" class="select__search_inp"
+                                                                    placeholder="Search Mark">
+                                                                <img src="" alt="" class="select__search_icon">
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="header__filter_item_select select">
+                                                <button type="button" class="select__btn" onclick="openSelect(this)">
+                                                    <span class="select__btn_txt">Գինը մինչև</span>
+                                                    <img src="images/selectArr.png" alt="" class="select__btn_icon">
+                                                </button>
+                                                <div class="select__content">
+                                                    <div class="select__wrapper">
+                                                        <div class="select__scroll">
+                                                            <div class="select__search">
+                                                                <input type="search" class="select__search_inp"
+                                                                    placeholder="Search Mark">
+                                                                <img src="" alt="" class="select__search_icon">
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                            <div class="select__list">
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button1</button>
+                                                                <button type="button" class="select__list_btn"
+                                                                    onclick="chooseOption(this)">Button2</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__filter_bottom">
+                                        <div class="header__filter_bottom_wrapper">
+                                            <label class="header__filter_bottom_lab" for="carfil1">
+                                                <input type="radio" name="carfil" id="carfil1" checked>
+                                                <span>Բոլոր</span>
+                                            </label>
+                                            <label class="header__filter_bottom_lab" for="carfil2">
+                                                <input type="radio" name="carfil" id="carfil2">
+                                                <span>Չինաստան</span>
+                                            </label>
+                                            <label class="header__filter_bottom_lab" for="carfil3">
+                                                <input type="radio" name="carfil" id="carfil3">
+                                                <span>Դուբայ</span>
+                                            </label>
+                                            <label class="header__filter_bottom_lab" for="carfil4">
+                                                <input type="radio" name="carfil" id="carfil4">
+                                                <span>Գերմանիա</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="header__filter_bottom_submit">
+                                            <img src="images/loop2.png" alt=""
+                                                class="header__filter_bottom_submit_icon">
+                                            <span class="header__filter_bottom_submit_txt">Որոնել</span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="header__filter_item">
-                                    <div class="header__filter_item_select select">
-                                        <button type="button" class="select__btn" onclick="openSelect(this)">
-                                            <span class="select__btn_txt">Մոդելը</span>
-                                            <img src="images/selectArr.png" alt="" class="select__btn_icon">
-                                        </button>
-                                        <div class="select__content">
-                                            <div class="select__wrapper">
-                                                <div class="select__scroll">
-                                                    <div class="select__search">
-                                                        <input type="search" class="select__search_inp"
-                                                            placeholder="Search Mark">
-                                                        <img src="" alt="" class="select__search_icon">
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header__filter_item double">
-                                    <div class="header__filter_item_select select">
-                                        <button type="button" class="select__btn" onclick="openSelect(this)">
-                                            <span class="select__btn_txt">Տարին սկսած</span>
-                                            <img src="images/selectArr.png" alt="" class="select__btn_icon">
-                                        </button>
-                                        <div class="select__content">
-                                            <div class="select__wrapper">
-                                                <div class="select__scroll">
-                                                    <div class="select__search">
-                                                        <input type="search" class="select__search_inp"
-                                                            placeholder="Search Mark">
-                                                        <img src="" alt="" class="select__search_icon">
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="header__filter_item_select select">
-                                        <button type="button" class="select__btn" onclick="openSelect(this)">
-                                            <span class="select__btn_txt">Տարին մինչև</span>
-                                            <img src="images/selectArr.png" alt="" class="select__btn_icon">
-                                        </button>
-                                        <div class="select__content">
-                                            <div class="select__wrapper">
-                                                <div class="select__scroll">
-                                                    <div class="select__search">
-                                                        <input type="search" class="select__search_inp"
-                                                            placeholder="Search Mark">
-                                                        <img src="" alt="" class="select__search_icon">
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header__filter_item double">
-                                    <div class="header__filter_item_select select">
-                                        <button type="button" class="select__btn" onclick="openSelect(this)">
-                                            <span class="select__btn_txt">Գինը սկսած</span>
-                                            <img src="images/selectArr.png" alt="" class="select__btn_icon">
-                                        </button>
-                                        <div class="select__content">
-                                            <div class="select__wrapper">
-                                                <div class="select__scroll">
-                                                    <div class="select__search">
-                                                        <input type="search" class="select__search_inp"
-                                                            placeholder="Search Mark">
-                                                        <img src="" alt="" class="select__search_icon">
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="header__filter_item_select select">
-                                        <button type="button" class="select__btn" onclick="openSelect(this)">
-                                            <span class="select__btn_txt">Գինը մինչև</span>
-                                            <img src="images/selectArr.png" alt="" class="select__btn_icon">
-                                        </button>
-                                        <div class="select__content">
-                                            <div class="select__wrapper">
-                                                <div class="select__scroll">
-                                                    <div class="select__search">
-                                                        <input type="search" class="select__search_inp"
-                                                            placeholder="Search Mark">
-                                                        <img src="" alt="" class="select__search_icon">
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                    <div class="select__list">
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button1</button>
-                                                        <button type="button" class="select__list_btn"
-                                                            onclick="chooseOption(this)">Button2</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header__filter_bottom">
-                                <div class="header__filter_bottom_wrapper">
-                                    <label class="header__filter_bottom_lab" for="carfil1">
-                                        <input type="radio" name="carfil" id="carfil1" checked>
-                                        <span>Բոլոր</span>
-                                    </label>
-                                    <label class="header__filter_bottom_lab" for="carfil2">
-                                        <input type="radio" name="carfil" id="carfil2">
-                                        <span>Չինաստան</span>
-                                    </label>
-                                    <label class="header__filter_bottom_lab" for="carfil3">
-                                        <input type="radio" name="carfil" id="carfil3">
-                                        <span>Դուբայ</span>
-                                    </label>
-                                    <label class="header__filter_bottom_lab" for="carfil4">
-                                        <input type="radio" name="carfil" id="carfil4">
-                                        <span>Գերմանիա</span>
-                                    </label>
-                                </div>
-                                <button type="submit" class="header__filter_bottom_submit">
-                                    <img src="images/loop2.png" alt="" class="header__filter_bottom_submit_icon">
-                                    <span class="header__filter_bottom_submit_txt">Որոնել</span>
-                                </button>
                             </div>
                         </form>
                     </div>
                     <div class="header__subfilter">
                         <form action="">
-                            <div class="header__subfilter_mob">
-                                <p class="header__subfilter_mob_title">Ընտրել սրահը՝</p>
-                                <button type="button" class="header__subfilter_mob_btn" onclick="toggleSubfilter('subfilter')">
-                                    <img src="images/filter.svg" alt="" class="header__subfilter_mob_btn_icon">
-                                    <span class="header__subfilter_mob_btn_txt">Ֆիլտր</span>
-                                    <img src="images/chevDown.svg" alt="" class="header__subfilter_mob_btn_icon">
-                                </button>
-                            </div>
+                            <button type="button" class="header__subfilter_mob_btn"
+                                onclick="toggleSubfilter('subfilter')">
+                                <span class="header__subfilter_mob_btn_txt">Ընտրել սրահը՝</span>
+                                <img src="images/chevDown.svg" alt="" class="header__subfilter_mob_btn_icon">
+                            </button>
                             <div class="header__subfilter_wrapper" id="subfilter">
                                 <label for="subfilter1" class="header__subfilter_lab">
                                     <input type="checkbox" id="subfilter1" name="" class="header__subfilter_lab_inp">
@@ -594,13 +604,15 @@
         <section class="catalog wrapper">
             <div class="catalog__header">
                 <h1 class="catalog__title">ԱՌԿԱ ՄԵՔԵՆԱՆԵՐ</h1>
-                <div class="catalog__labs">
+                <div class="header__filter_choose" id="choosemb">
                     <label for="arka" class="header__filter_choose_lab">
-                        <input type="radio" name="choose" id="arka" class="header__filter_choose_lab_inp" checked>
+                        <input type="radio" name="choose" id="arka" class="header__filter_choose_lab_inp" data-id="arka"
+                            checked>
                         <span class="header__filter_choose_lab_txt">Առկա</span>
                     </label>
                     <label for="patver" class="header__filter_choose_lab">
-                        <input type="radio" name="choose" id="patver" class="header__filter_choose_lab_inp">
+                        <input type="radio" name="choose" id="patver" class="header__filter_choose_lab_inp"
+                            data-id="patver">
                         <span class="header__filter_choose_lab_txt">Պատվերով</span>
                     </label>
                 </div>

@@ -8,9 +8,11 @@ import {
     chooseLang,
     closeLang,
     filterSelect,
-    toggleSearch
+    toggleSearch,
+    toggleFilter
 } from "./module.js";
 
+window.toggleFilter = toggleFilter;
 window.filterSelect = filterSelect;
 filterSelect();
 window.toggleSearch = toggleSearch;
@@ -37,12 +39,12 @@ const productSwiper = new Swiper(".productSwiper", {
 });
 
 
-import { 
+import {
     adaptive
 } from "../adaptiveMode/adaptive.js";
 window.adaptive = adaptive;
 adaptive();
-window.addEventListener('resize', function() {adaptive()});
+window.addEventListener('resize', function () { adaptive() });
 
 
 (function () {
@@ -74,3 +76,15 @@ window.addEventListener('resize', function() {adaptive()});
     window.addEventListener('load', toggle);
     toggle();
 })();
+
+
+const choosemb = document.querySelector('#choosemb');
+const chooseInps = choosemb.querySelectorAll('input');
+chooseInps.forEach(element => {
+    element.addEventListener('change', function () {
+        choosemb.classList.remove('active');
+        if (this.dataset.id == 'patver' && this.checked) {
+            choosemb.classList.add('active');
+        }
+    })
+});

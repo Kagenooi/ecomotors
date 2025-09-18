@@ -8,9 +8,11 @@ import {
     chooseLang,
     closeLang,
     toggleSearch,
-    filterSelect
+    filterSelect,
+    toggleFilter
 } from "./module.js";
 
+window.toggleFilter = toggleFilter;
 window.filterSelect = filterSelect;
 filterSelect();
 window.toggleSearch = toggleSearch;

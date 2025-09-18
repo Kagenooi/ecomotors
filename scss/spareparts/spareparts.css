@@ -1231,20 +1231,101 @@ button {
   transition: 0.2s;
 }
 
-.header__filter {
+.header__filter_container {
   border-radius: 5px;
   background: #032022;
   padding: 30px 58px 15px;
   margin-bottom: 11px;
 }
 @media (max-width: 768px) {
-  .header__filter {
+  .header__filter_container {
     padding: 13px 11px;
     margin-bottom: 5px;
   }
 }
-.header__filter * {
+.header__filter_container * {
   color: #fff;
+}
+@media (max-width: 768px) {
+  .header__filter_acc {
+    max-height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+}
+.header__filter_mobBtn {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__filter_mobBtn {
+    display: flex;
+    align-items: center;
+    background: #F2F2F2;
+    border-radius: 50px;
+    padding: 8px 22px;
+    gap: 9px;
+    transition: 0.2s;
+    margin-bottom: 15px;
+    justify-content: center;
+    border: 1px solid #032022;
+  }
+  .header__filter_mobBtn_txt {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #032022;
+    transition: 0.2s;
+  }
+  .header__filter_mobBtn_icon {
+    width: 11px;
+    height: 11px;
+    transition: 0.2s;
+  }
+  .header__filter_mobBtn:hover .header__filter_mobBtn_txt {
+    color: #fff;
+    transition: 0.2s;
+  }
+  .header__filter_mobBtn:hover {
+    background: #032022;
+    transition: 0.2s;
+  }
+  .header__filter_mobBtn:hover .header__filter_mobBtn_icon {
+    filter: invert(1);
+    transition: 0.2s;
+  }
+}
+.header__filter_header {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__filter_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .header__filter_header_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 50px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1px solid #008900;
+    border-radius: 100px;
+  }
+  .header__filter_header_btn_txt {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #032022;
+  }
+  .header__filter_header_btn_icon {
+    width: 14px;
+    height: 9px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 .header__filter_item {
   display: flex;
@@ -1275,46 +1356,47 @@ button {
 .header__filter_choose {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: rgba(242, 242, 247, 0.6509803922);
+  position: relative;
+  border-radius: 65px;
+}
+@media (max-width: 768px) {
+  .header__filter_choose {
+    margin: 0 auto 15px;
+  }
+}
+.header__filter_choose::before {
+  content: "";
+  display: block;
+  width: 122px;
+  height: 41px;
+  position: absolute;
+  background: #fff;
+  z-index: 1010;
+  border-radius: 100px;
+  transition: 0.3s;
+  left: -15px;
+}
+.header__filter_choose.active::before {
+  left: 85px;
+  width: 160px;
+  transition: 0.3s;
 }
 .header__filter_choose_lab {
   cursor: pointer;
+  padding: 8px 26px;
   position: relative;
+  z-index: 1020;
 }
 .header__filter_choose_lab_inp {
   display: none;
 }
-.header__filter_choose_lab:first-child {
-  right: -25px;
-}
-.header__filter_choose_lab:last-child {
-  right: 0;
-}
 .header__filter_choose_lab_txt {
-  display: block;
-  width: 138px;
-  padding: 8px;
-  transition: 0.2s;
-  border-radius: 50px;
-  background: #9ea8ad;
-  text-align: center;
+  color: #000;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
-  color: #4f5456;
-  position: relative;
-  z-index: 1010;
-}
-.header__filter_choose_lab_txt:hover {
   transition: 0.2s;
-  background: #fff;
-  color: #032022;
-}
-.header__filter_choose_lab_inp:checked + .header__filter_choose_lab_txt {
-  padding: 12px;
-  z-index: 1020;
-  transition: 0.2s;
-  background: #fff;
-  color: #032022;
 }
 .header__filter_wrapper {
   display: flex;
@@ -1862,9 +1944,21 @@ button {
 .header {
   width: 100%;
 }
+.header__title {
+  margin: 6px 0 26px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #032022;
+}
 @media (max-width: 768px) {
-  .header__filter {
-    padding: 38px 23px;
+  .header__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header__filter_container {
+    margin-bottom: 15px;
   }
   .header__filter_content {
     display: grid;
@@ -1875,38 +1969,21 @@ button {
     width: 242px;
     margin-bottom: 0;
   }
-  .header__filter_choose {
-    margin: 0;
-    max-width: 242px;
-    overflow: hidden;
-    height: 38px;
-    margin-bottom: 20px;
-  }
-  .header__filter_choose_lab:first-child .header__filter_choose_lab_txt {
-    right: 0;
-    width: 115px;
-  }
-  .header__filter_choose_lab:last-child .header__filter_choose_lab_txt {
-    right: 12px;
-    text-align: right;
-    padding: 8px 22px;
-  }
-  .header__filter_choose_lab_inp:checked + .header__filter_choose_lab_txt {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
   .header__filter_bottom {
     margin-top: 0 !important;
     gap: 20px;
   }
   .header__filter_bottom_wrapper {
-    max-width: 242px;
+    max-width: 268px;
+  }
+  .header__filter_bottom_vinlab {
+    max-width: 268px;
   }
   .header__filter_bottom_vinlab_inp {
-    max-width: 242px;
+    max-width: 268px;
   }
   .header__filter_item {
-    min-width: 242px;
+    min-width: 268px;
   }
   .header__filter_item .select {
     min-width: 100%;
