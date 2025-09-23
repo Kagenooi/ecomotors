@@ -2644,6 +2644,13 @@ button {
     max-width: 290px;
   }
 }
+@media (max-width: 768px) {
+  .container .characters__item .characters__acc {
+    max-height: 0;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+}
 .container .characters__item_el {
   display: flex;
   align-items: center;
@@ -2663,10 +2670,28 @@ button {
 .container .characters__item_el:not(:last-child) {
   border-bottom: 1px solid rgba(0, 137, 0, 0.1882352941);
 }
+@media (max-width: 768px) {
+  .container .characters__item_el.characters__accBtn {
+    position: relative;
+  }
+  .container .characters__item_el.characters__accBtn .characters__item_el_name_icon {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+  .container .characters__item_el.characters__accBtn.active .characters__item_el_name_icon {
+    transform: rotate(180deg);
+    transition: 0.2s;
+  }
+  .container .characters__item_el.characters__accBtn .characters__item_el_name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
 .container .characters__item_el_name {
   max-width: 60%;
-}
-.container .characters__item_el_name_txt {
   font-weight: 400;
   font-size: 11px;
   line-height: 23px;
@@ -2681,16 +2706,8 @@ button {
     transition: 0.2s;
   }
 }
-.container .characters__item_el_name.active .characters__item_el_name_icon {
-  transform: rotate(180deg);
-  transition: 0.2s;
-}
 @media (max-width: 768px) {
   .container .characters__item_el_name {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 15px;
     max-width: 100%;
   }
 }
@@ -2704,9 +2721,6 @@ button {
 @media (max-width: 768px) {
   .container .characters__item_el_val {
     text-align: left;
-    max-height: 0;
-    transition: 0.2s;
-    overflow: hidden;
   }
 }
 .container .recomended {

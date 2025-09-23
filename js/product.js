@@ -135,15 +135,15 @@ window.openFaq = openFaq;
 })();
 
 if (document.body.clientWidth < 769) {
-    const characters = document.querySelectorAll('.characters__item_el_name');
-    characters.forEach(element => {
+    const accBtns = document.querySelectorAll('.characters__accBtn');
+    accBtns.forEach(element => {
         element.addEventListener('click', () => {
-            let item = element.nextElementSibling;
-            if (item.style.maxHeight) {
-                item.style.maxHeight = null;
+            let accs = element.nextElementSibling;
+            if (accs.style.maxHeight) {
+                accs.style.maxHeight = null;
                 element.classList.remove('active');
             } else {
-                item.style.maxHeight = item.style.maxHeight + item.scrollHeight + 'px';
+                accs.style.maxHeight = accs.style.maxHeight + accs.scrollHeight + 'px';
                 element.classList.add('active');
             }
         })

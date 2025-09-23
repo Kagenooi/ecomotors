@@ -296,8 +296,11 @@
 }
 
 .product {
-    max-width: 142px;
+    max-width: 250px;
 
+    @media (max-width: 768px) {
+        max-width: 142px;
+    }
     &__desc {
 
         &_header {

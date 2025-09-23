@@ -610,6 +610,14 @@
                 max-width: 290px;
             }
 
+            .characters__acc {
+                @media (max-width: 768px) {
+                    max-height: 0;
+                    transition: .2s;
+                    overflow: hidden;
+                }
+            }
+
             &_el {
                 display: flex;
                 align-items: center;
@@ -629,15 +637,37 @@
                     border-bottom: 1px solid #00890030;
                 }
 
+                @media (max-width: 768px) {
+                    &.characters__accBtn {
+                        position: relative;
+
+                        .characters__item_el_name_icon {
+                            position: absolute;
+                            top: 15px;
+                            right: 0;
+                        }
+                        &.active {
+                            .characters__item_el_name_icon {
+                                transform: rotate(180deg);
+                                transition: .2s;
+                            }
+                        }
+
+                        .characters__item_el_name {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                            gap: 15px;
+                        }
+                    }
+                }
+
                 &_name {
                     max-width: 60%;
-
-                    &_txt {
-                        font-weight: 400;
-                        font-size: 11px;
-                        line-height: 23px;
-                        color: #032022;
-                    }
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 23px;
+                    color: #032022;
 
                     &_icon {
                         display: none;
@@ -648,18 +678,7 @@
                         }
                     }
 
-                    &.active {
-                        .characters__item_el_name_icon {
-                            transform: rotate(180deg);
-                            transition: .2s;
-                        }
-                    }
-
                     @media (max-width: 768px) {
-                        display: flex;
-                        width: 100%;
-                        justify-content: space-between;
-                        gap: 15px;
                         max-width: 100%;
                     }
                 }
@@ -673,9 +692,6 @@
 
                     @media (max-width: 768px) {
                         text-align: left;
-                        max-height: 0;
-                        transition: .2s;
-                        overflow: hidden;
                     }
                 }
             }
