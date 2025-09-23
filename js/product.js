@@ -133,3 +133,19 @@ window.openFaq = openFaq;
     window.addEventListener('load', toggle);
     toggle();
 })();
+
+if (document.body.clientWidth < 769) {
+    const characters = document.querySelectorAll('.characters__item_el_name');
+    characters.forEach(element => {
+        element.addEventListener('click', () => {
+            let item = element.nextElementSibling;
+            if (item.style.maxHeight) {
+                item.style.maxHeight = null;
+                element.classList.remove('active');
+            } else {
+                item.style.maxHeight = item.style.maxHeight + item.scrollHeight + 'px';
+                element.classList.add('active');
+            }
+        })
+    });
+}

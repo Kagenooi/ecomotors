@@ -1559,16 +1559,16 @@ button {
   padding: 5px 12px;
   text-align: center;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   text-align: center;
-  color: rgba(255, 255, 255, 0.3019607843);
+  color: #FFFFFF;
 }
 .select__search_inp::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3019607843);
+  color: #FFFFFF;
 }
 .select__search_inp::placeholder {
-  color: rgba(255, 255, 255, 0.3019607843);
+  color: #FFFFFF;
 }
 .select__list {
   position: relative;

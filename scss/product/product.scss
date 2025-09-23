@@ -622,6 +622,7 @@
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: start;
+                    gap: 0;
                 }
 
                 &:not(:last-child) {
@@ -629,13 +630,36 @@
                 }
 
                 &_name {
-                    font-weight: 400;
-                    font-size: 11px;
-                    line-height: 23px;
-                    color: #032022;
                     max-width: 60%;
 
+                    &_txt {
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 23px;
+                        color: #032022;
+                    }
+
+                    &_icon {
+                        display: none;
+
+                        @media (max-width: 768px) {
+                            display: block;
+                            transition: .2s;
+                        }
+                    }
+
+                    &.active {
+                        .characters__item_el_name_icon {
+                            transform: rotate(180deg);
+                            transition: .2s;
+                        }
+                    }
+
                     @media (max-width: 768px) {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        gap: 15px;
                         max-width: 100%;
                     }
                 }
@@ -649,6 +673,9 @@
 
                     @media (max-width: 768px) {
                         text-align: left;
+                        max-height: 0;
+                        transition: .2s;
+                        overflow: hidden;
                     }
                 }
             }
