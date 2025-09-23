@@ -105,11 +105,13 @@ export function toggleFilter(acc) {
 }
 
 export function toggleSearch(inp, btn) {
-    document.querySelector(`#${inp}`).classList.toggle('active');
-    if (btn.type != 'submit') {
-        btn.type = 'submit';
-    } else {
-        btn.type = 'button';
+    if (document.body.clientWidth < 769) {
+        document.querySelector(`#${inp}`).classList.toggle('active');
+        if (btn.type != 'submit') {
+            btn.type = 'submit';
+        } else {
+            btn.type = 'button';
+        }
     }
 }
 
@@ -129,7 +131,7 @@ export function filterSelect() {
                     options.push(btns[x]);
                 }
             }
-            
+
             let search = element.querySelector('.select__search_inp');
             search.addEventListener('input', function () {
                 // здесь должна быть фильтрация, фильтрует среди элементов внутри options по тексту
