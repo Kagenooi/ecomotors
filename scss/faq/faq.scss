@@ -1,0 +1,112 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../ads';
+@import '../crumbs';
+@import '../../font/styles/font.css';
+
+
+.topAds {
+    @media (max-width: 1296px) {
+        display: none !important;
+    }
+}
+
+.crumbs {
+    margin-top: 207px;
+}
+
+.faq {
+    width: 100%;
+    max-width: 1120px;
+    padding: 50px 150px 90px;
+    background: #E9F1EF;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        padding: 30px 15px;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #008900;
+        margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 8px;
+
+        &_btn {
+            width: 100%;
+            background: #032022;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 22px 40px;
+            border-radius: 5px;
+
+            @media (max-width: 768px) {
+                padding: 10px 15px;
+                gap: 10px;
+                text-align: left;
+            }
+
+            &_txt {
+                color: #fff;
+                font-weight: 600;
+                font-size: 18px;
+                transition: .2s;
+
+                @media (max-width: 768px) {
+                   font-size: 16px;
+                }
+            }
+
+            &.active &_txt {
+                color: #4FEC00;
+                transition: .2s;
+            }
+
+            &_icon {
+                transition: .2s;
+            }
+
+            &.active &_icon {
+                transition: .2s;
+                transform: rotate(180deg);
+            }
+        }
+
+        &_content {
+            max-height: 0;
+            overflow: hidden;
+            transition: .3s;
+        }
+
+        &_pr {
+            padding: 25px 40px;
+            background: #4FEC00;
+            border-radius: 5px;
+            color: #032022;
+            font-weight: 400;
+            font-size: 18px;
+
+            @media (max-width: 768px) {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}

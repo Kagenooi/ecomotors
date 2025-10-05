@@ -2050,21 +2050,31 @@ button {
   margin: 10px 0;
 }
 .header__submenu_list {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  overflow-y: scroll;
   max-width: 1120px;
 }
 @media (max-width: 768px) {
   .header__submenu_list {
+    display: flex;
+    gap: 16px;
     min-width: 305px;
     max-width: 305px;
     padding-right: 16px;
+    overflow-x: scroll;
+  }
+  .header__submenu_list::-webkit-scrollbar {
+    display: none;
   }
 }
 .header__submenu_list::-webkit-scrollbar {
   display: none;
+}
+.header__submenu_list li {
+  height: 39px;
+}
+@media (max-width: 768px) {
+  .header__submenu_list li {
+    width: 146px;
+  }
 }
 .header__submenu_list_link {
   display: flex;
@@ -2147,6 +2157,9 @@ button {
   }
 }
 .header__subfilter_mob {
+  display: none;
+}
+.header__subfilter_mob_btn {
   display: none;
 }
 @media (max-width: 768px) {

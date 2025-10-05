@@ -346,6 +346,7 @@
 
             &.align-start {
                 align-items: flex-start;
+                flex-wrap: wrap;
                 padding: 26px 10px 23px 20px;
 
                 .singleproduct__soc_icon {
@@ -360,7 +361,7 @@
         }
 
         &_desc {
-            width: 220px;
+            width: 215px;
 
             &_title {
                 font-size: 13px;
@@ -401,9 +402,27 @@
                 }
             }
 
+            &_imgs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 8px 22px;
+            }
+
             &_img {
-                width: 144px;
-                margin: 14px 0 24px;
+                padding: 8px;
+                border-radius: 5px;
+                background: #fff;
+                width: 121px;
+                transition: .2s;
+
+                &:hover {
+                    transition: .2s;
+                    background: #6ABB32;
+                }
+
+                img {
+                    width: 100%;
+                }
             }
 
             &_btn {
@@ -646,6 +665,7 @@
                             top: 15px;
                             right: 0;
                         }
+
                         &.active {
                             .characters__item_el_name_icon {
                                 transform: rotate(180deg);

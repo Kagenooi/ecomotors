@@ -1,0 +1,40 @@
+@import '../main';
+@import '../navbar';
+@import '../footer';
+@import '../crumbs';
+@import '../ads';
+@import '../../font/styles/font.css';
+
+
+.topAds {
+    @media (max-width: 1296px) {
+        display: none !important;
+    }
+}
+
+
+.notfound {
+    margin-top: 207px;
+    margin-bottom: 30px;
+
+    &__link {
+        display: block;
+        background: #FFFFFF;
+        color: #032022;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 8px 43px;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+        top: -90px;
+        border-radius: 7px;
+        transition: .2s;
+
+        &:hover {
+            transition: .2s;
+            background: #032022;
+            color: #FFFFFF;
+        }
+    }
+}

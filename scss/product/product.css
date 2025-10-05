@@ -2412,6 +2412,7 @@ button {
 }
 .singleproduct__soc_el.align-start {
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 26px 10px 23px 20px;
 }
 .singleproduct__soc_el.align-start .singleproduct__soc_icon {
@@ -2422,7 +2423,7 @@ button {
   border: 2px solid #032022;
 }
 .singleproduct__soc_desc {
-  width: 220px;
+  width: 215px;
 }
 .singleproduct__soc_desc_title {
   font-size: 13px;
@@ -2462,9 +2463,24 @@ button {
     line-height: 20px;
   }
 }
+.singleproduct__soc_desc_imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px 22px;
+}
 .singleproduct__soc_desc_img {
-  width: 144px;
-  margin: 14px 0 24px;
+  padding: 8px;
+  border-radius: 5px;
+  background: #fff;
+  width: 121px;
+  transition: 0.2s;
+}
+.singleproduct__soc_desc_img:hover {
+  transition: 0.2s;
+  background: #6ABB32;
+}
+.singleproduct__soc_desc_img img {
+  width: 100%;
 }
 .singleproduct__soc_desc_btn {
   width: 144px;
