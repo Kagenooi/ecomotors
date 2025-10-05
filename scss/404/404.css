@@ -1237,10 +1237,15 @@ button {
   }
 }
 
-.notfound {
+.crumbs {
   margin-top: 207px;
-  margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .crumbs {
+    margin: 133px 0 0;
+  }
+}
+
 .notfound__link {
   display: block;
   background: #FFFFFF;
@@ -1256,8 +1261,16 @@ button {
   border-radius: 7px;
   transition: 0.2s;
 }
+@media (max-width: 768px) {
+  .notfound__link {
+    top: -50px;
+  }
+}
 .notfound__link:hover {
   transition: 0.2s;
   background: #032022;
   color: #FFFFFF;
+}
+.notfound__img {
+  width: 100%;
 }/*# sourceMappingURL=404.css.map */

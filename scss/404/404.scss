@@ -12,10 +12,15 @@
     }
 }
 
+.crumbs {
+    margin-top: 207px;
+
+    @media (max-width: 768px) {
+        margin: 133px 0 0;
+    }
+}
 
 .notfound {
-    margin-top: 207px;
-    margin-bottom: 30px;
 
     &__link {
         display: block;
@@ -31,10 +36,17 @@
         border-radius: 7px;
         transition: .2s;
 
+        @media (max-width: 768px) {
+            top: -50px;
+        }
         &:hover {
             transition: .2s;
             background: #032022;
             color: #FFFFFF;
         }
+    }
+
+    &__img {
+        width: 100%;
     }
 }
