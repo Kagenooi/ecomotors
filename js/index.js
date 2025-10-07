@@ -47,7 +47,7 @@ const productSwiper = new Swiper(".productSwiper", {
 
 if (document.body.clientWidth > 768) {
     const headerSubmenu = new Swiper(".header__submenu", {
-        slidesPerView: 7,
+        slidesPerView: "auto",
         spaceBetween: 16,
     });
 }

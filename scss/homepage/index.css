@@ -1916,11 +1916,14 @@ button {
   display: none;
 }
 .header__submenu_list li {
+  width: -moz-fit-content;
+  width: fit-content;
   height: 39px;
 }
 @media (max-width: 768px) {
   .header__submenu_list li {
-    width: 146px;
+    min-width: 146px;
+    width: auto;
   }
 }
 .header__submenu_list_link {
@@ -1934,6 +1937,8 @@ button {
   height: 100%;
   transition: 0.2s;
   min-width: 146px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   white-space: nowrap;
 }
 .header__submenu_list_link:hover {
