@@ -1741,7 +1741,6 @@ button {
 @media (max-width: 768px) {
   .singleArticle__pic_img {
     margin-bottom: 12px;
-    height: 142px;
   }
 }
 .singleArticle__pic_footer {

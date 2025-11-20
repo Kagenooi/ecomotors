@@ -414,6 +414,16 @@
                 background: #fff;
                 width: 121px;
                 transition: .2s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.align-start {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    padding: 26px 10px 23px 11px !important;
+                }
 
                 &:hover {
                     transition: .2s;

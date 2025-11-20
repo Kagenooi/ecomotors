@@ -1790,6 +1790,14 @@ button {
   min-width: 150px;
   max-width: 150px;
 }
+.select .select {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  border-radius: 5px;
+  width: 100%;
+  min-width: 240px;
+  max-width: 240px;
+}
 @media (max-width: 768px) {
   .select {
     min-width: 127px;
