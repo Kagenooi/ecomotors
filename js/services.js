@@ -28,59 +28,6 @@ window.chooseOption = chooseOption;
 window.chooseLang = chooseLang;
 window.closeMenuBtn = closeMenuBtn;
 
-const productSwiper = new Swiper(".productSwiper", {
-    loop: true,
-    navigation: {
-        nextEl: ".product__slider_btn.next",
-        prevEl: ".product__slider_btn.prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-    },
-    breakpoints: {
-        768: {
-            autoplay: false
-        }
-    }
-});
-
-
-if (document.body.clientWidth > 768) {
-    const headerSubmenu = new Swiper(".header__submenu", {
-        slidesPerView: "auto",
-        spaceBetween: 16,
-    });
-    const headerNew = new Swiper("#headerNew", {
-        slidesPerView: 2,
-        spaceBetween: 18,
-        loop: true,
-        navigation: {
-            nextEl: ".header__newDesc_slider_btn.next",
-            prevEl: ".header__newDesc_slider_btn.prev",
-        },
-    });
-}
-
-const headerSwiper = new Swiper(".headerSwiper", {
-    loop: true,
-    autoplay: true,
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
-});
-
-const partners = new Swiper("#partners", {
-    loop: true,
-    autoplay: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-        768: {
-            slidesPerView: 4,
-        }
-    }
-});
 
 import {
     adaptive

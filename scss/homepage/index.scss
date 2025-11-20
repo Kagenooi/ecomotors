@@ -7,12 +7,18 @@
 @import '../../font/styles/font.css';
 @import '../submenu';
 
+
+.contactUs {
+    margin-top: 0px;
+}
+
 .header {
     padding-top: 204px;
 
     @media (max-width: 768px) {
         padding-top: 133px;
     }
+
     &__wrapper {
         display: flex;
         gap: 7px;
@@ -22,14 +28,167 @@
         position: relative;
     }
 
+    &__newDesc {
+        width: 100%;
+        max-width: 690px;
+        padding: 8px 15px 12px;
+        background: #F2F2F7;
+        border-radius: 10px;
+        height: 138px;
 
+        @media (max-width: 768px) {
+            padding: 18px 0;
+        }
+
+        &_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+
+            @media (max-width: 768px) {
+                padding: 0 13px;   
+                }
+            &_title {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            &_link {
+                font-size: 11px;
+                font-weight: 400;
+                color: #008900;
+            }
+        }
+
+        &_slider {
+            margin: 0 50px;
+
+            @media (max-width: 768px) {
+                min-width: fit-content;
+                margin: 0;
+                padding: 0 13px;
+
+                .swiper-wrapper {
+                    display: flex;
+                    gap: 18px;
+                }
+
+                .swiper-slide {
+                    max-width: fit-content;
+                }
+            }
+
+            &_btn {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background: #98989840;
+                transition: .2s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+
+                &:hover {
+                    transition: .2s;
+                    background: #008900;
+                }
+
+                &_icon {
+                    height: 9px;
+                    object-fit: contain;
+                }
+
+                &.prev {
+                    left: 0px;
+                }
+
+                &.next {
+                    right: 0px;
+                }
+            }
+        }
+
+        &_content {
+            position: relative;
+
+            @media (max-width: 768px) {
+                overflow-x: scroll;
+            }
+        }
+
+        &_el {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            @media (max-width: 768px) {
+                gap: 10px;
+            }
+
+            &_desc {
+                display: flex;
+                flex-direction: column;
+                max-width: 150px;
+
+                @media (max-width: 768px) {
+                    max-width: 130px;
+                }
+
+                &_title {
+                    font-weight: 600;
+                    font-size: 12.69px;
+                    color: #008900;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    /* кол-во строк */
+                    overflow: hidden;
+
+                    @media (max-width: 768px) {
+                        font-size: 11px;
+                    }
+                }
+
+                &_pr {
+                    margin-top: 5px;
+                    color: #00000080;
+                    font-weight: 600;
+                    font-size: 11.53px;
+
+                    @media (max-width: 768px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            &_img {
+                width: 127px;
+                max-height: 89px;
+                object-fit: cover;
+                border-radius: 6px;
+
+                @media (max-width: 768px) {
+                    width: 110px;
+                    max-height: 77px;
+                }
+            }
+        }
+    }
 
     &__content {
         display: flex;
         gap: 14px;
 
         @media (max-width: 768px) {
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
     }
 
@@ -135,6 +294,7 @@
             align-items: center;
         }
     }
+
     &__img {
         max-width: 240px;
         margin: 0 auto;

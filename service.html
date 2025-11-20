@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="scss/homepage/index.css">
+    <link rel="stylesheet" href="scss/services/services.css">
 </head>
 
 <body>
@@ -227,7 +226,89 @@
             </div>
         </div>
 
-        
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="crumbs">
+                    <ul class="crumbs__list">
+                        <li><a href="" class="crumbs__list_link">Տեխզննում և Տեխսպասարկում</a></li>
+                    </ul>
+                </div>
+                <h1 class="header__title">Ծառայություններ</h1>
+            </div>
+        </header>
+
+        <section class="services">
+            <div class="services__wrapper">
+                <div class="services__item">
+                    <h3 class="services__item_title">Դիագնոստիկա և խորհրդատվություն</h3>
+                    <p class="services__item_pr">Արագ դիագնոստիկ ծառայություններ, էլեկտրական համակարգերի ստուգում և
+                        մասնագիտական խորհրդատվություն ձեր մեքենայի սպասարկման վերաբերյալ։</p>
+                    <img src="images/services.png" alt="" class="services__item_img">
+                    <a href="tel:+37495949466" class="services__item_link">
+                        <img src="images/phoneWhite.png" alt="" class="services__item_link_icon">
+                        <span class="services__item_link_content">
+                            <b class="services__item_link_bold">+374 95 94 94 66</b>
+                            <span class="services__item_link_light">Գրանցվելու համար</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="services__item">
+                    <h3 class="services__item_title">Դիագնոստիկա և խորհրդատվություն</h3>
+                    <p class="services__item_pr">Արագ դիագնոստիկ ծառայություններ, էլեկտրական համակարգերի ստուգում և
+                        մասնագիտական խորհրդատվություն ձեր մեքենայի սպասարկման վերաբերյալ։</p>
+                    <img src="images/services.png" alt="" class="services__item_img">
+                    <a href="tel:+37495949466" class="services__item_link">
+                        <img src="images/phoneWhite.png" alt="" class="services__item_link_icon">
+                        <span class="services__item_link_content">
+                            <b class="services__item_link_bold">+374 95 94 94 66</b>
+                            <span class="services__item_link_light">Գրանցվելու համար</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactUs">
+            <form action="">
+                <div class="contactUs__container">
+                    <h2 class="contactUs__title">Ձեր Մեքենան ունի խնդիր, իսկ դուք չունեք ժամանակ</h2>
+                    <div class="contactUs__wrapper">
+                        <div class="contactUs__el">
+                            <input type="text" name="" id="" class="contactUs__inp" placeholder="Անուն">
+                            <input type="phone" name="" id="" class="contactUs__inp" placeholder="Հեռախոսահամար">
+                            <textarea name="" id="" class="contactUs__textarea"
+                                placeholder="Նկարագրել ձեր մեքենայի խնդիրը կամ խնդիրները"></textarea>
+                        </div>
+                        <div class="contactUs__el file">
+                            <div class="contactUs__file">
+                                <div class="contactUs__file_inner" id="files">
+                                    <img src="images/attachDecor.png" alt="" class="contactUs__file_inner_decor">
+                                </div>
+                                <label for="fileAttach" class="contactUs__file_lab">
+                                    <input type="file" name="" id="fileAttach" class="contactUs__file_lab_inp" multiple>
+                                    <img src="images/attach.svg" alt="" class="contactUs__file_lab_icon">
+                                    <img src="images/attachHover.svg" alt="" class="contactUs__file_lab_icon hover">
+                                    <span class="contactUs__file_lab_txt">կցել խնդրի կամ վթարված մասի լուսանկար կամ
+                                        վիդեո</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="contactUs__footer">
+                            <label for="agreement" class="contactUs__agree">
+                                <input type="checkbox" name="" id="agreement" class="contactUs__agree_inp">
+                                <span class="contactUs__agree_checkbox">
+                                    <img src="images/checked.svg" alt="">
+                                </span>
+                                <span class="contactUs__agree_txt">Ես համաձայն եմ, բոլոր դրույթներին</span>
+                            </label>
+                            <p class="contactUs__txt">Մեր մասնագետները կվերլուծեն ձեր մեքենայի խնդիրը և կկապնվեն ձեր հետ
+                            </p>
+                            <button type="submit" class="contactUs__submit">ՈՒՂԱՐԿԵԼ</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
 
         <div class="mobileads">
             <div class="mobileads__header">
@@ -337,8 +418,7 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/services.js"></script>
 </body>
 
 </html>
