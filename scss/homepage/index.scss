@@ -12,15 +12,6 @@
   margin: 0 auto;
 }
 
-.select {
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.5019607843);
-  border-radius: 5px;
-  width: 100%;
-  min-width: 240px;
-    max-width: 240px;
-}
-
 .contactUs {
     margin-top: 0px;
 }
@@ -84,7 +75,7 @@
 
                 .swiper-wrapper {
                     display: flex;
-                    gap: 18px;
+                    gap: 25px;
                 }
 
                 .swiper-slide {
@@ -134,6 +125,10 @@
 
             @media (max-width: 768px) {
                 overflow-x: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
         }
 

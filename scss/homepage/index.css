@@ -1738,17 +1738,9 @@ button {
 
 .select {
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.5019607843);
   border-radius: 5px;
   width: 100%;
-  min-width: 150px;
-  max-width: 150px;
-}
-.select .select {
-  position: relative;
   border: 1px solid rgba(255, 255, 255, 0.5019607843);
-  border-radius: 5px;
-  width: 100%;
   min-width: 240px;
   max-width: 240px;
 }
@@ -2225,15 +2217,6 @@ button {
   margin: 0 auto;
 }
 
-.select {
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.5019607843);
-  border-radius: 5px;
-  width: 100%;
-  min-width: 240px;
-  max-width: 240px;
-}
-
 .contactUs {
   margin-top: 0px;
 }
@@ -2299,7 +2282,7 @@ button {
   }
   .header__newDesc_slider .swiper-wrapper {
     display: flex;
-    gap: 18px;
+    gap: 25px;
   }
   .header__newDesc_slider .swiper-slide {
     max-width: -moz-fit-content;
@@ -2345,6 +2328,9 @@ button {
 @media (max-width: 768px) {
   .header__newDesc_content {
     overflow-x: scroll;
+  }
+  .header__newDesc_content::-webkit-scrollbar {
+    display: none;
   }
 }
 .header__newDesc_el {
