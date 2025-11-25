@@ -2348,7 +2348,7 @@ button {
 }
 @media (max-width: 768px) {
   .header__newDesc_el_desc {
-    width: 100px;
+    width: 130px;
   }
 }
 .header__newDesc_el_desc_title {
