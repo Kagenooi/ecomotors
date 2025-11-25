@@ -1822,6 +1822,12 @@ button {
     line-height: 18px;
   }
 }
+.singleArticle__content span {
+  font-size: 11px !important;
+}
+.singleArticle__content i {
+  font-size: 11px !important;
+}
 .singleArticle__share {
   display: flex;
   gap: 20px;

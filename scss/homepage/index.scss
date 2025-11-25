@@ -8,8 +8,8 @@
 @import '../submenu';
 
 .officials__img {
-  max-width: 162px;
-  margin: 0 auto;
+    max-width: 162px;
+    margin: 0 auto;
 }
 
 .contactUs {
@@ -42,6 +42,7 @@
 
         @media (max-width: 768px) {
             padding: 18px 0;
+            overflow: hidden;
         }
 
         &_header {
@@ -51,8 +52,9 @@
             margin-bottom: 12px;
 
             @media (max-width: 768px) {
-                padding: 0 13px;   
-                }
+                padding: 0 13px;
+            }
+
             &_title {
                 font-weight: 700;
                 font-size: 14px;
@@ -69,17 +71,23 @@
             margin: 0 50px;
 
             @media (max-width: 768px) {
-                min-width: fit-content;
+                max-width: 295px;
                 margin: 0;
-                padding: 0 13px;
+                overflow-x: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
 
                 .swiper-wrapper {
                     display: flex;
-                    gap: 25px;
+                    min-width: fit-content;
+                    padding: 0 13px;
                 }
 
                 .swiper-slide {
                     max-width: fit-content;
+                    padding-right: 12px;
                 }
             }
 
@@ -122,14 +130,6 @@
 
         &_content {
             position: relative;
-
-            @media (max-width: 768px) {
-                overflow-x: scroll;
-
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-            }
         }
 
         &_el {
@@ -147,7 +147,7 @@
                 max-width: 150px;
 
                 @media (max-width: 768px) {
-                    max-width: 130px;
+                    width: 100px;
                 }
 
                 &_title {
