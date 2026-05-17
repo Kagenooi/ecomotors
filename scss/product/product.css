@@ -1922,6 +1922,30 @@ button {
     max-width: 145px;
   }
 }
+.product__see {
+  position: absolute;
+  z-index: 1080;
+  top: 9px;
+  left: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .product__see {
+    top: 6px;
+    left: 6px;
+    font-size: 9px;
+  }
+  .product__see_icon {
+    width: 12px;
+    height: 12px;
+  }
+}
 .product:hover {
   transition: 0.2s;
   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2509803922);
